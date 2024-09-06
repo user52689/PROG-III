@@ -43,6 +43,17 @@
             width: 304px;
             height: 37px;
         }
+        .auto-style13 {
+            width: 304px;
+            height: 34px;
+        }
+        .auto-style14 {
+            width: 290px;
+            height: 34px;
+        }
+        .auto-style15 {
+            height: 34px;
+        }
     </style>
 </head>
 <body>
@@ -93,8 +104,17 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Constraseña:</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtBoxContraseña1" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Repetir Contraseña:</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtBoxContraseña2" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -108,14 +128,9 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style13"></td>
+                <td class="auto-style14"></td>
+                <td class="auto-style15"></td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
