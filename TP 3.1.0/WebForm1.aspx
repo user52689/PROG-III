@@ -54,6 +54,17 @@
         .auto-style15 {
             height: 34px;
         }
+        .auto-style16 {
+            width: 304px;
+            height: 24px;
+        }
+        .auto-style17 {
+            width: 290px;
+            height: 24px;
+        }
+        .auto-style18 {
+            height: 24px;
+        }
     </style>
 </head>
 <body>
@@ -118,18 +129,22 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Correo electrónico:</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtBoxCorreo" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CP:&nbsp;</td>
+                <td class="auto-style17">
+                    <asp:TextBox ID="txtCP" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
+                </td>
+                <td class="auto-style18"></td>
             </tr>
             <tr>
                 <td class="auto-style13"></td>
-                <td class="auto-style14"></td>
+                <td class="auto-style14">&nbsp;</td>
                 <td class="auto-style15"></td>
             </tr>
             <tr>
