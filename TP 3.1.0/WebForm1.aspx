@@ -67,6 +67,17 @@
         .auto-style18 {
             height: 24px;
         }
+        .auto-style19 {
+            width: 304px;
+            height: 30px;
+        }
+        .auto-style20 {
+            width: 290px;
+            height: 30px;
+        }
+        .auto-style21 {
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -145,8 +156,13 @@
                 <td class="auto-style18"></td>
             </tr>
             <tr>
-                <td class="auto-style13"></td>
-                <td class="auto-style14">&nbsp;</td>
+                <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblLocalidades" runat="server" Text="Localidades:"></asp:Label>
+                </td>
+                <td class="auto-style14">
+                    <asp:DropDownList ID="ddlLocalidades" runat="server" Width="201px">
+                    </asp:DropDownList>
+                </td>
                 <td class="auto-style15"></td>
             </tr>
             <tr>
@@ -155,9 +171,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style20">&nbsp;<asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="153px" />
+                </td>
+                <td class="auto-style21"></td>
             </tr>
         </table>
 
