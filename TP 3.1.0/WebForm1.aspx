@@ -131,14 +131,14 @@
             <tr>
                 <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Correo electrónico:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtBoxCorreo" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtBoxCorreo" runat="server" Width="194px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CP:&nbsp;</td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="txtCP" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtCP" runat="server" Width="194px"></asp:TextBox>
                 </td>
                 <td class="auto-style18"></td>
             </tr>
