@@ -78,6 +78,17 @@
         .auto-style21 {
             height: 30px;
         }
+        .auto-style22 {
+            width: 304px;
+            height: 44px;
+        }
+        .auto-style23 {
+            width: 290px;
+            height: 44px;
+        }
+        .auto-style24 {
+            height: 44px;
+        }
     </style>
 </head>
 <body>
@@ -91,15 +102,18 @@
                 <td class="auto-style9"></td>
             </tr>
             <tr>
-                <td class="auto-style11">
+                <td class="auto-style22">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de Localidad:"></asp:Label>
                 </td>
-                <td class="auto-style3">
-        <asp:TextBox ID="txtBox1" runat="server" Width="198px"></asp:TextBox>
+                <td class="auto-style23">
+        <asp:TextBox ID="txtLocalidadIngresada" runat="server" Width="198px"></asp:TextBox>
                 </td>
-                <td>&nbsp;
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtBox1" ID="rfvLocalidades" Text="Ingrese Localidad"></asp:RequiredFieldValidator></td>
+                <td class="auto-style24">
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtLocalidadIngresada" ID="rfvLocalidades" Text="Ingrese Localidad" EnableClientScript="False"></asp:RequiredFieldValidator>
+                    <br />
+                    <asp:CustomValidator ID="cvLocalidadesDuplicadas" runat="server" ControlToValidate="txtLocalidadIngresada" EnableClientScript="False" OnServerValidate="cvLocalidadesDuplicadas_ServerValidate">Localidad existente!</asp:CustomValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
@@ -173,7 +187,7 @@
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style20">&nbsp;<asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="153px" />
+                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" />
                 </td>
                 <td class="auto-style21"></td>
             </tr>
