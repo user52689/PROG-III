@@ -175,11 +175,9 @@
                 <td class="auto-style19">&nbsp;</td>
                 <td class="auto-style20">&nbsp;<asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="153px" />
                 </td>
-                <td class="auto-style21">
-                </td>
+                <td class="auto-style21"></td>
             </tr>
         </table>
-
     </form>
 </body>
 </html>
