@@ -147,19 +147,23 @@
                 <td class="auto-style3">
                     <asp:TextBox ID="txtBoxContraseña1" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="lblContraseñaUno" runat="server"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Repetir Contraseña:</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="txtBoxContraseña2" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="lblCotraseña" runat="server"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Correo electrónico:</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtBoxCorreo" runat="server" Width="194px"></asp:TextBox>
+                    <asp:TextBox ID="txtBoxCorreo" runat="server" Width="194px" TextMode="Email"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -187,7 +191,7 @@
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" />
+                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" OnClick="btnGuardarUsuario_Click" />
                 </td>
                 <td class="auto-style21"></td>
             </tr>

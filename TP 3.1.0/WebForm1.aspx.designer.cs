@@ -105,6 +105,15 @@ namespace TP_3._1._0
         protected global::System.Web.UI.WebControls.TextBox txtBoxContraseña1;
 
         /// <summary>
+        /// Control lblContraseñaUno.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblContraseñaUno;
+
+        /// <summary>
         /// Control txtBoxContraseña2.
         /// </summary>
         /// <remarks>
@@ -112,6 +121,15 @@ namespace TP_3._1._0
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBoxContraseña2;
+
+        /// <summary>
+        /// Control lblCotraseña.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCotraseña;
 
         /// <summary>
         /// Control txtBoxCorreo.
