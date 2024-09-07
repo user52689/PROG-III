@@ -33,13 +33,13 @@ namespace TP_3._1._0
         protected global::System.Web.UI.WebControls.Label lblNombreLocalidad;
 
         /// <summary>
-        /// Control txtBox1.
+        /// Control txtLocalidadIngresada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtLocalidadIngresada;
 
         /// <summary>
         /// Control rfvLocalidades.
@@ -49,6 +49,15 @@ namespace TP_3._1._0
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidades;
+
+        /// <summary>
+        /// Control cvLocalidadesDuplicadas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator cvLocalidadesDuplicadas;
 
         /// <summary>
         /// Control btnGuardarLocalidad.
