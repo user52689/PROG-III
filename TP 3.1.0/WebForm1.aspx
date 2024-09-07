@@ -98,7 +98,8 @@
                 <td class="auto-style3">
         <asp:TextBox ID="txtBox1" runat="server" Width="198px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>&nbsp;
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtBox1" ID="rfvLocalidades" Text="Ingrese Localidad"></asp:RequiredFieldValidator></td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
@@ -177,7 +178,6 @@
                 <td class="auto-style21"></td>
             </tr>
         </table>
-
     </form>
 </body>
 </html>
