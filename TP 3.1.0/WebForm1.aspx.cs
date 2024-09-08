@@ -51,12 +51,7 @@ namespace TP_3._1._0
                 lblCotraseña.ForeColor = System.Drawing.Color.Red;
 
             }
-            if (txtBoxContraseña1.Text.Length == 0 || txtBoxContraseña2.Text.Length == 0)
-            {
-
-                lblContraseñaUno.Text = "Ingresar una contraseña";
-                lblContraseñaUno.ForeColor = System.Drawing.Color.Red;
-            }
+         
 
         }
           
@@ -69,6 +64,11 @@ namespace TP_3._1._0
         protected void btnIrAInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("Inicio.aspx");
+        }
+
+        protected void txtCP_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

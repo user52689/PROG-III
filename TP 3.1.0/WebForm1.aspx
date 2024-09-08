@@ -151,7 +151,7 @@
                     <asp:TextBox ID="txtNombreUsuario" runat="server" Width="194px" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ClientIDMode="Static" ControlToValidate="txtNombreUsuario" EnableClientScript="False" ErrorMessage="RequiredFieldValidator" ValidationGroup="grupo2">Ingrese un usuario</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="txtNombreUsuario" ErrorMessage="Ingresar un Usuario" ForeColor="Red" ValidationGroup="grupo2"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -161,6 +161,7 @@
                 </td>
                 <td class="auto-style27">
                     <asp:Label ID="lblContraseñaUno" runat="server"></asp:Label>
+                    <asp:RequiredFieldValidator ID="rfvContraUno" runat="server" ControlToValidate="txtBoxContraseña1" ForeColor="Red" ValidationGroup="grupo2">Ingresar Contraseña</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -170,6 +171,7 @@
                 </td>
                 <td>
                     <asp:Label ID="lblCotraseña" runat="server" ClientIDMode="Static"></asp:Label>
+                    <asp:RequiredFieldValidator ID="rfvContraseñaDos" runat="server" ControlToValidate="txtBoxContraseña2" ErrorMessage="Ingresar Contraseña" ForeColor="Red" ValidationGroup="grupo2"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -177,15 +179,18 @@
                 <td class="auto-style3">
                     <asp:TextBox ID="txtBoxCorreo" runat="server" Width="194px" TextMode="Email"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="tfvCorreo" runat="server" ControlToValidate="txtBoxCorreo" ErrorMessage="Ingresar Correo" ForeColor="Red" ValidationGroup="grupo2"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CP:&nbsp;</td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="txtCP" runat="server" Width="194px" ValidationGroup="grupo2"></asp:TextBox>
+                    <asp:TextBox ID="txtCP" runat="server" Width="194px" ValidationGroup="grupo2" OnTextChanged="txtCP_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style18">
                     <asp:RangeValidator ID="RvCP" runat="server" ClientIDMode="Static" ControlToValidate="txtCP" EnableClientScript="False" ErrorMessage="RangeValidator" MaximumValue="9999" MinimumValue="1000" Type="Integer" ValidateRequestMode="Disabled" ValidationGroup="grupo2">Número Invalido</asp:RangeValidator>
+                    <asp:RequiredFieldValidator ID="rfvCp" runat="server" ControlToValidate="txtCP" ForeColor="Red" ValidationGroup="grupo2">Ingresar CP</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -196,7 +201,7 @@
                     <asp:DropDownList ID="ddlLocalidades" runat="server" Width="201px">
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style15">&nbsp;</td>
+                <td class="auto-style15"></td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>

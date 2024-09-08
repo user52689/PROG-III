@@ -96,13 +96,13 @@ namespace TP_3._1._0
         protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
 
         /// <summary>
-        /// Control RequiredFieldValidator1.
+        /// Control rfvUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsuario;
 
         /// <summary>
         /// Control txtBoxContraseña1.
@@ -123,6 +123,15 @@ namespace TP_3._1._0
         protected global::System.Web.UI.WebControls.Label lblContraseñaUno;
 
         /// <summary>
+        /// Control rfvContraUno.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraUno;
+
+        /// <summary>
         /// Control txtBoxContraseña2.
         /// </summary>
         /// <remarks>
@@ -141,6 +150,15 @@ namespace TP_3._1._0
         protected global::System.Web.UI.WebControls.Label lblCotraseña;
 
         /// <summary>
+        /// Control rfvContraseñaDos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContraseñaDos;
+
+        /// <summary>
         /// Control txtBoxCorreo.
         /// </summary>
         /// <remarks>
@@ -148,6 +166,15 @@ namespace TP_3._1._0
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBoxCorreo;
+
+        /// <summary>
+        /// Control tfvCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tfvCorreo;
 
         /// <summary>
         /// Control txtCP.
@@ -166,6 +193,15 @@ namespace TP_3._1._0
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator RvCP;
+
+        /// <summary>
+        /// Control rfvCp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCp;
 
         /// <summary>
         /// Control lblLocalidades.
