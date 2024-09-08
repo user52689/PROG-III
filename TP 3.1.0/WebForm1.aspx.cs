@@ -44,20 +44,26 @@ namespace TP_3._1._0
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
-            if(txtBoxContraseña1.Text != txtBoxContraseña2.Text)
+
+            if (txtBoxContraseña1.Text != txtBoxContraseña2.Text)
             {
                 lblCotraseña.Text = "Las contraseñas no coinciden";
                 lblCotraseña.ForeColor = System.Drawing.Color.Red;
 
             }
-            if(txtBoxContraseña1.Text.Length == 0 || txtBoxContraseña2.Text.Length == 0)
+            if (txtBoxContraseña1.Text.Length == 0 || txtBoxContraseña2.Text.Length == 0)
             {
 
                 lblContraseñaUno.Text = "Ingresar una contraseña";
                 lblContraseñaUno.ForeColor = System.Drawing.Color.Red;
             }
 
+        }
+          
 
+        protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
+        {
+            txtLocalidadIngresada.Text = "";
         }
     }
 }

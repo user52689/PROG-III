@@ -118,19 +118,18 @@
         <asp:Label ID="lblNombreLocalidad" runat="server" Text="Nombre de Localidad:"></asp:Label>
                 </td>
                 <td class="auto-style23">
-        <asp:TextBox ID="txtLocalidadIngresada" runat="server" Width="198px"></asp:TextBox>
+        <asp:TextBox ID="txtLocalidadIngresada" runat="server" Width="198px" ValidationGroup="grupo1"></asp:TextBox>
                 </td>
                 <td class="auto-style24">
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtLocalidadIngresada" ID="rfvLocalidades" Text="Ingrese Localidad" EnableClientScript="False"></asp:RequiredFieldValidator>
-                    <br />
-                    <asp:CustomValidator ID="cvLocalidadesDuplicadas" runat="server" ControlToValidate="txtLocalidadIngresada" EnableClientScript="False" OnServerValidate="cvLocalidadesDuplicadas_ServerValidate">Localidad existente!</asp:CustomValidator>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtLocalidadIngresada" ID="rfvLocalidades" Text="Ingrese Localidad" EnableClientScript="False" Display="Dynamic" ValidationGroup="grupo1"></asp:RequiredFieldValidator>
+                    <asp:CustomValidator ID="cvLocalidadesDuplicadas" runat="server" ControlToValidate="txtLocalidadIngresada" EnableClientScript="False" OnServerValidate="cvLocalidadesDuplicadas_ServerValidate" ValidationGroup="grupo1">Localidad existente!</asp:CustomValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style13"></td>
                 <td class="auto-style14">
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" />
+        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" OnClick="btnGuardarLocalidad_Click" ValidationGroup="grupo1" />
                 </td>
                 <td class="auto-style15"></td>
             </tr>
@@ -149,10 +148,10 @@
                     <asp:Label ID="lblNombreUsuario" runat="server" Text="Nombre de usuario:"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="txtNombreUsuario" runat="server" Width="194px"></asp:TextBox>
+                    <asp:TextBox ID="txtNombreUsuario" runat="server" Width="194px" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ClientIDMode="Static" ControlToValidate="txtNombreUsuario" EnableClientScript="False" ErrorMessage="RequiredFieldValidator">Ingrese un usuario</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ClientIDMode="Static" ControlToValidate="txtNombreUsuario" EnableClientScript="False" ErrorMessage="RequiredFieldValidator" ValidationGroup="grupo2">Ingrese un usuario</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -183,10 +182,10 @@
             <tr>
                 <td class="auto-style16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CP:&nbsp;</td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="txtCP" runat="server" Width="194px"></asp:TextBox>
+                    <asp:TextBox ID="txtCP" runat="server" Width="194px" ValidationGroup="grupo2"></asp:TextBox>
                 </td>
                 <td class="auto-style18">
-                    <asp:RangeValidator ID="RvCP" runat="server" ClientIDMode="Static" ControlToValidate="txtCP" EnableClientScript="False" ErrorMessage="RangeValidator" MaximumValue="9999" MinimumValue="1000" Type="Integer" ValidateRequestMode="Disabled">Número Invalido</asp:RangeValidator>
+                    <asp:RangeValidator ID="RvCP" runat="server" ClientIDMode="Static" ControlToValidate="txtCP" EnableClientScript="False" ErrorMessage="RangeValidator" MaximumValue="9999" MinimumValue="1000" Type="Integer" ValidateRequestMode="Disabled" ValidationGroup="grupo2">Número Invalido</asp:RangeValidator>
                 </td>
             </tr>
             <tr>
@@ -201,14 +200,15 @@
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3"> <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" OnClick="btnGuardarUsuario_Click" ValidationGroup="grupo2" />
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" OnClick="btnGuardarUsuario_Click" />
+                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                 </td>
-                <td class="auto-style21"></td>
+                <td class="auto-style21">&nbsp;</td>
             </tr>
         </table>
     </form>
