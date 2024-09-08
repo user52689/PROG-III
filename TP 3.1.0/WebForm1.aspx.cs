@@ -65,5 +65,10 @@ namespace TP_3._1._0
         {
             txtLocalidadIngresada.Text = "";
         }
+
+        protected void btnIrAInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }

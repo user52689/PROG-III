@@ -205,9 +205,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style19">&nbsp;</td>
-                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <td class="auto-style19">&nbsp; 
+                    <asp:Button ID="btnIrAInicio" runat="server" Text=" Ir a inicio.aspx " OnClick="btnIrAInicio_Click" style="margin-left: 100px;" />
                 </td>
+                <td class="auto-style20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td>
                 <td class="auto-style21">&nbsp;</td>
             </tr>
         </table>
