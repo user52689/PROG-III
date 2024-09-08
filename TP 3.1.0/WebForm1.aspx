@@ -89,6 +89,17 @@
         .auto-style24 {
             height: 44px;
         }
+        .auto-style25 {
+            width: 304px;
+            height: 26px;
+        }
+        .auto-style26 {
+            width: 290px;
+            height: 26px;
+        }
+        .auto-style27 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -116,12 +127,12 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">
+                <td class="auto-style13"></td>
+                <td class="auto-style14">
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" />
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style15"></td>
             </tr>
             <tr>
                 <td class="auto-style12"></td>
@@ -140,14 +151,16 @@
                 <td class="auto-style3">
                     <asp:TextBox ID="txtNombreUsuario" runat="server" Width="194px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ClientIDMode="Static" ControlToValidate="txtNombreUsuario" EnableClientScript="False" ErrorMessage="RequiredFieldValidator">Ingrese un usuario</asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Constraseña:</td>
-                <td class="auto-style3">
+                <td class="auto-style25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Constraseña:</td>
+                <td class="auto-style26">
                     <asp:TextBox ID="txtBoxContraseña1" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style27">
                     <asp:Label ID="lblContraseñaUno" runat="server"></asp:Label>
                 </td>
             </tr>
@@ -157,7 +170,7 @@
                     <asp:TextBox ID="txtBoxContraseña2" runat="server" Width="194px" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Label ID="lblCotraseña" runat="server"></asp:Label>
+                    <asp:Label ID="lblCotraseña" runat="server" ClientIDMode="Static"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -172,7 +185,9 @@
                 <td class="auto-style17">
                     <asp:TextBox ID="txtCP" runat="server" Width="194px"></asp:TextBox>
                 </td>
-                <td class="auto-style18"></td>
+                <td class="auto-style18">
+                    <asp:RangeValidator ID="RvCP" runat="server" ClientIDMode="Static" ControlToValidate="txtCP" EnableClientScript="False" ErrorMessage="RangeValidator" MaximumValue="9999" MinimumValue="1000" Type="Integer" ValidateRequestMode="Disabled">Número Invalido</asp:RangeValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -182,7 +197,7 @@
                     <asp:DropDownList ID="ddlLocalidades" runat="server" Width="201px">
                     </asp:DropDownList>
                 </td>
-                <td class="auto-style15"></td>
+                <td class="auto-style15">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style11">&nbsp;</td>
