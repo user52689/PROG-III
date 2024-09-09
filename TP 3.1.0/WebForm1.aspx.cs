@@ -39,36 +39,21 @@ namespace TP_3._1._0
             {
                 ddlLocalidades.Items.Add(new ListItem(localidad));
                 args.IsValid = true;
+                txtLocalidadIngresada.Text = string.Empty;
             }
         }
+
+
+
+        protected void btnIrAInicio_Click(object sender, EventArgs e) => Response.Redirect("Inicio.aspx");
 
         protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
-
-            if (txtBoxContraseña1.Text != txtBoxContraseña2.Text)
-            {
-                lblCotraseña.Text = "Las contraseñas no coinciden";
-                lblCotraseña.ForeColor = System.Drawing.Color.Red;
-
-            }
-
             lblBienvenida.Text = $"Bienvenido {txtNombreUsuario.Text}";
-        }
-          
-
-        protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
-        {
-            txtLocalidadIngresada.Text = "";
-        }
-
-        protected void btnIrAInicio_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Inicio.aspx");
-        }
-
-        protected void txtCP_TextChanged(object sender, EventArgs e)
-        {
-
+            txtNombreUsuario.Text = string.Empty;
+            txtBoxCorreo.Text = string.Empty;
+            txtCP.Text = string.Empty;
+            txtLocalidadIngresada.Text = string.Empty;
         }
     }
 }
