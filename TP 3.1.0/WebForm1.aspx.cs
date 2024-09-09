@@ -51,8 +51,8 @@ namespace TP_3._1._0
                 lblCotraseña.ForeColor = System.Drawing.Color.Red;
 
             }
-         
 
+            lblBienvenida.Text = $"Bienvenido {txtNombreUsuario.Text}";
         }
           
 

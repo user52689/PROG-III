@@ -204,10 +204,12 @@
                 <td class="auto-style15"></td>
             </tr>
             <tr>
-                <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3"> <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" OnClick="btnGuardarUsuario_Click" ValidationGroup="grupo2" />
+                <td class="auto-style12"></td>
+                <td class="auto-style5"> <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" Width="129px" OnClick="btnGuardarUsuario_Click" ValidationGroup="grupo2" />
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style6">
+                    <asp:Label ID="lblBienvenida" runat="server" Width="194px"></asp:Label>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style19">&nbsp; 
