@@ -204,7 +204,7 @@
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style15">
-                    <asp:RequiredFieldValidator ID="rfvSeleccioneLocalidad" runat="server" ControlToValidate="ddlLocalidades" ForeColor="Red" InitialValue="--- Seleccione localidad ---">Seleccione una localidad!</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvSeleccioneLocalidad" runat="server" ControlToValidate="ddlLocalidades" ForeColor="Red" InitialValue="--- Seleccione localidad ---" ValidationGroup="grupo2">Seleccione una localidad!</asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
