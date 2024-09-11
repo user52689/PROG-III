@@ -1,0 +1,472 @@
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.Up2Date
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\lisan\Desktop\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.Up2Date
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.4\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.Up2Date
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\Pedro\Downloads\TP v2.2.6\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.Up2Date
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\alici\Desktop\PRACTICAS\tp002\TP v2.2.6\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.Up2Date
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\Pedro\Downloads\TP v2.2.8\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CopyComplete
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CopyComplete
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\Usuario\Desktop\migrar\EJERCICIO 2\Nueva carpeta\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.pdb
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll.config
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\TP v2.2.1.pdb
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.exe.config
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\csc.rsp
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.exe.config
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\csi.rsp
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.AppContext.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Console.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Http.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.ValueTuple.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.exe.config
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\vbc.rsp
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.AssemblyReference.cache
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.CoreCompileInputs.cache
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.csproj.Up2Date
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.dll
+C:\Users\lisan\Desktop\cosas\TP v2.2.8\TP v2.2.1\obj\Debug\TP v2.2.1.pdb

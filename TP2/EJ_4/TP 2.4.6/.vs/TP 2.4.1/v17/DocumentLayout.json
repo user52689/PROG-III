@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\princ\\OneDrive\\Desktop\\TP 2.4.6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4E25036-9EC6-4520-87FE-108B5B18CF82}|TP 2.4.1\\TP 2.4.1.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\TP 2.4.6\\tp 2.4.1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4E25036-9EC6-4520-87FE-108B5B18CF82}|TP 2.4.1\\TP 2.4.1.csproj|solutionrelative:tp 2.4.1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4E25036-9EC6-4520-87FE-108B5B18CF82}|TP 2.4.1\\TP 2.4.1.csproj|c:\\users\\princ\\onedrive\\desktop\\tp 2.4.6\\tp 2.4.1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4E25036-9EC6-4520-87FE-108B5B18CF82}|TP 2.4.1\\TP 2.4.1.csproj|solutionrelative:tp 2.4.1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 2094,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\TP 2.4.6\\TP 2.4.1\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "TP 2.4.1\\WebForm1.aspx.cs",
+              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\TP 2.4.6\\TP 2.4.1\\WebForm1.aspx.cs",
+              "RelativeToolTip": "TP 2.4.1\\WebForm1.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T02:32:06.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebForm1.aspx",
+              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\TP 2.4.6\\TP 2.4.1\\WebForm1.aspx",
+              "RelativeDocumentMoniker": "TP 2.4.1\\WebForm1.aspx",
+              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\TP 2.4.6\\TP 2.4.1\\WebForm1.aspx",
+              "RelativeToolTip": "TP 2.4.1\\WebForm1.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-01T02:23:47.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 495,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 174,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
