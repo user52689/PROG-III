@@ -6,25 +6,29 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            margin-left: 47px;
-            margin-top: 4px;
-        }
-    </style>
+       <style type="text/css">
+            .auto-style1 {
+                margin-left: 47px;
+                margin-top: 4px;
+            }
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-        <u>    DESTINO INICIO<br /> </u>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblMensajeError" runat="server"></asp:Label>
+        <u>    
+            <br />
+            DESTINO INICIO<br /> </u>
             <br />
             <b>PROVINCIA:</b>&nbsp;
-            <asp:DropDownList ID="DropDownList5" runat="server" CssClass="auto-style1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" height="20px" width="161px">
+            <asp:DropDownList ID="ddlProvinciaInicio" runat="server" CssClass="auto-style1" height="20px" width="161px">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
             <br />
             <asp:Label ID="lblLocalidad" runat="server" Font-Bold="True" Text="LOCALIDAD:"></asp:Label>
-            <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" height="20px" width="161px">
+            &nbsp;<asp:DropDownList ID="ddlLocalidadInicio" runat="server" CssClass="auto-style1" height="20px" width="161px">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
             <br />
@@ -34,12 +38,12 @@
             </u>
             <asp:Label ID="lblLocalidad1" runat="server" Font-Bold="True" Text="PROVINCIA:"></asp:Label>
             &nbsp;
-            <asp:DropDownList ID="DropDownList3" runat="server" CssClass="auto-style1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" height="20px" width="161px">
+            <asp:DropDownList ID="ddlProvinciaFinal" runat="server" CssClass="auto-style1" height="20px" width="161px">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
             <br />
             <asp:Label ID="lblLocalidad0" runat="server" Font-Bold="True" Text="LOCALIDAD:"></asp:Label>
-            &nbsp;<asp:DropDownList ID="DropDownList4" runat="server" CssClass="auto-style1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" height="20px" width="161px">
+            &nbsp;<asp:DropDownList ID="ddlLocalidadFinal" runat="server" CssClass="auto-style1" height="20px" width="161px">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
         </div>
