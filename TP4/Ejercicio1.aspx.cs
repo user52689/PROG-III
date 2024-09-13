@@ -20,14 +20,11 @@ namespace TP4
                 {
                     SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True");
               
-                    cn.Open();               
+                    cn.Open();
 
+                    /// cargar ddlProvinciaInicio
                     SqlDataAdapter adapt = new SqlDataAdapter("SELECT * FROM Provincias", cn);
-
-
-
                     DataSet ds = new DataSet();
-                
                     adapt.Fill(ds, "Provincias");
                
                     foreach(DataRow dr in ds.Tables["Provincias"].Rows)
@@ -35,16 +32,25 @@ namespace TP4
                         ddlProvinciaInicio.Items.Add(dr["IdProvincia"] + "-" + dr["NombreProvincia"]);
                     }
 
+                    ///cargar ddlLocalidades
                     SqlDataAdapter adaptLocalidades = new SqlDataAdapter("SELECT * FROM Localidades",cn);
-
                     DataSet dsLocalidades = new DataSet();
-                    
                     adaptLocalidades.Fill(dsLocalidades, "Localidades");
 
 
                     foreach(DataRow dr in dsLocalidades.Tables["Localidades"].Rows)
                     {
                         ddlLocalidadInicio.Items.Add(dr["IdProvincia"] + "-" + dr["NombreLocalidad"]);
+                    }
+
+                    // cargar ddlProvinciaFinal
+                    SqlDataAdapter adaptFinal = new SqlDataAdapter("SELECT * FROM Provincias", cn);
+                    DataSet dsFinal = new DataSet();
+                    adaptFinal.Fill(dsFinal, "Provincias");
+
+                    foreach (DataRow dr in dsFinal.Tables["Provincias"].Rows)
+                    {
+                        ddlProvinciaFinal.Items.Add(dr["IdProvincia"] + "-" + dr["NombreProvincia"]);
                     }
 
 
