@@ -18,11 +18,13 @@ namespace TP4
             {
                 try
                 {
-                    SqlConnection cn = new SqlConnection("Data Source=SKYNET\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True");
+                    SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True");
               
                     cn.Open();               
 
                     SqlDataAdapter adapt = new SqlDataAdapter("SELECT * FROM Provincias", cn);
+
+
 
                     DataSet ds = new DataSet();
                 
@@ -33,12 +35,34 @@ namespace TP4
                         ddlProvinciaInicio.Items.Add(dr["IdProvincia"] + "-" + dr["NombreProvincia"]);
                     }
 
+                    SqlDataAdapter adaptLocalidades = new SqlDataAdapter("SELECT * FROM Localidades",cn);
+
+                    DataSet dsLocalidades = new DataSet();
+                    
+                    adaptLocalidades.Fill(dsLocalidades, "Localidades");
+
+
+                    foreach(DataRow dr in dsLocalidades.Tables["Localidades"].Rows)
+                    {
+                        ddlLocalidadInicio.Items.Add(dr["IdProvincia"] + "-" + dr["NombreLocalidad"]);
+                    }
+
+
                     cn.Close();
                 }
                 catch (Exception ex)
                 {
                     Response.Write("Error al conectar con la base de datos. Revise el nombre del Data Source en la conexion, debe coincidir con el nombre de su base de datos." + ex.Message);  
                 }
+
+               
+                
+
+
+
+
+
+
             }
         }
 
