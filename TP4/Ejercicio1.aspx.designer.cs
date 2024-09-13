@@ -24,13 +24,22 @@ namespace TP4
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control DropDownList5.
+        /// Control lblMensajeError.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
+        protected global::System.Web.UI.WebControls.Label lblMensajeError;
+
+        /// <summary>
+        /// Control ddlProvinciaInicio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlProvinciaInicio;
 
         /// <summary>
         /// Control lblLocalidad.
@@ -42,13 +51,13 @@ namespace TP4
         protected global::System.Web.UI.WebControls.Label lblLocalidad;
 
         /// <summary>
-        /// Control DropDownList2.
+        /// Control ddlLocalidadInicio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLocalidadInicio;
 
         /// <summary>
         /// Control lblLocalidad1.
@@ -60,13 +69,13 @@ namespace TP4
         protected global::System.Web.UI.WebControls.Label lblLocalidad1;
 
         /// <summary>
-        /// Control DropDownList3.
+        /// Control ddlProvinciaFinal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList ddlProvinciaFinal;
 
         /// <summary>
         /// Control lblLocalidad0.
@@ -78,12 +87,12 @@ namespace TP4
         protected global::System.Web.UI.WebControls.Label lblLocalidad0;
 
         /// <summary>
-        /// Control DropDownList4.
+        /// Control ddlLocalidadFinal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLocalidadFinal;
     }
 }
