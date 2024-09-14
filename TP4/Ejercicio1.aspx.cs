@@ -11,6 +11,7 @@ namespace TP4
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,7 +19,7 @@ namespace TP4
             {
                 try
                 {
-                    SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True");
+                   
               
                     cn.Open();
 
@@ -71,6 +72,28 @@ namespace TP4
 
             }
         }
+        void cargarDDLLocalidad(SqlConnection cn, DropDownList ddl, int IdProvincia)
+        {
+            cn.Open();
+            SqlCommand sc = new SqlCommand("SELECT * FROM Localidades WHERE IdProvincia = '" + IdProvincia + "'", cn);
+            SqlDataReader dr = sc.ExecuteReader();
+            ddl.Items.Clear();
+            ddl.Items.Add("--Seleccione una Localidad--");
 
+            while (dr.Read())
+            {
+                ListItem lt = new ListItem(dr["NombreLocalidad"].ToString(), dr["IdLocalidad"].ToString());
+                ddl.Items.Add(lt);
+            }
+            cn.Close();
+        }
+
+        protected void ddlProvinciaFinal_SelectedIndexChanged(object sender, EventArgs e)
+        {            
+                int id = ddlProvinciaFinal.SelectedIndex;
+                cargarDDLLocalidad(cn, ddlLocalidadFinal, id);
+                ddlLocalidadFinal.Enabled = true;
+            
+        }
     }
 }
