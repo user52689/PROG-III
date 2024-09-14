@@ -9,10 +9,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="margin-bottom: 21px">
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Id producto:
+            Id producto:&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>Igual a:</asp:ListItem>
+                <asp:ListItem>Mayor a:</asp:ListItem>
+                <asp:ListItem>Menor a:</asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+            </asp:DropDownList>
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Id Categorìa:&nbsp;&nbsp;
+            <asp:DropDownList ID="DropDownList2" runat="server" style="margin-top: 6px">
+                <asp:ListItem>Igual a:</asp:ListItem>
+                <asp:ListItem>Mayor a:</asp:ListItem>
+                <asp:ListItem>Menor a:</asp:ListItem>
+            </asp:DropDownList>
         </div>
     </form>
 </body>
