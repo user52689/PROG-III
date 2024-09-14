@@ -19,6 +19,8 @@
                 <asp:ListItem>Menor a:</asp:ListItem>
                 <asp:ListItem></asp:ListItem>
             </asp:DropDownList>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="tbIdProducto" runat="server" Width="209px"></asp:TextBox>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Id Categorìa:&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownList2" runat="server" style="margin-top: 6px">
@@ -26,6 +28,8 @@
                 <asp:ListItem>Mayor a:</asp:ListItem>
                 <asp:ListItem>Menor a:</asp:ListItem>
             </asp:DropDownList>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="tbIdCategoria" runat="server" Width="208px"></asp:TextBox>
         </div>
     </form>
 </body>
