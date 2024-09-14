@@ -19,27 +19,27 @@ namespace TP4
             {
                 try
                 {
-                   
-              
+
+
                     cn.Open();
 
                     /// cargar ddlProvinciaInicio
                     SqlDataAdapter adapt = new SqlDataAdapter("SELECT * FROM Provincias", cn);
                     DataSet ds = new DataSet();
                     adapt.Fill(ds, "Provincias");
-               
-                    foreach(DataRow dr in ds.Tables["Provincias"].Rows)
+
+                    foreach (DataRow dr in ds.Tables["Provincias"].Rows)
                     {
                         ddlProvinciaInicio.Items.Add(dr["IdProvincia"] + "-" + dr["NombreProvincia"]);
                     }
 
                     ///cargar ddlLocalidades
-                    SqlDataAdapter adaptLocalidades = new SqlDataAdapter("SELECT * FROM Localidades",cn);
+                    SqlDataAdapter adaptLocalidades = new SqlDataAdapter("SELECT * FROM Localidades", cn);
                     DataSet dsLocalidades = new DataSet();
                     adaptLocalidades.Fill(dsLocalidades, "Localidades");
 
 
-                    foreach(DataRow dr in dsLocalidades.Tables["Localidades"].Rows)
+                    foreach (DataRow dr in dsLocalidades.Tables["Localidades"].Rows)
                     {
                         ddlLocalidadInicio.Items.Add(dr["IdProvincia"] + "-" + dr["NombreLocalidad"]);
                     }
@@ -59,11 +59,11 @@ namespace TP4
                 }
                 catch (Exception ex)
                 {
-                    Response.Write("Error al conectar con la base de datos. Revise el nombre del Data Source en la conexion, debe coincidir con el nombre de su base de datos." + ex.Message);  
+                    Response.Write("Error al conectar con la base de datos. Revise el nombre del Data Source en la conexion, debe coincidir con el nombre de su base de datos." + ex.Message);
                 }
 
-               
-                
+
+
 
 
 
@@ -89,11 +89,33 @@ namespace TP4
         }
 
         protected void ddlProvinciaFinal_SelectedIndexChanged(object sender, EventArgs e)
-        {            
-                int id = ddlProvinciaFinal.SelectedIndex;
-                cargarDDLLocalidad(cn, ddlLocalidadFinal, id);
-                ddlLocalidadFinal.Enabled = true;
-            
+        {
+            int id = ddlProvinciaFinal.SelectedIndex;
+            cargarDDLLocalidad(cn, ddlLocalidadFinal, id);
+            ddlLocalidadFinal.Enabled = true;
+
         }
+        
+        protected void ddlProvinciaInicio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedValue = ddlProvinciaInicio.SelectedValue;
+            if (!string.IsNullOrEmpty(selectedValue) && selectedValue.Contains("-"))
+            {
+                int id = int.Parse(selectedValue.Split('-')[0]); 
+                cargarDDLLocalidad(cn, ddlLocalidadInicio, id); 
+                ddlLocalidadInicio.Enabled = true; 
+            }
+            else
+            {
+                ddlLocalidadInicio.Items.Clear();
+                ddlLocalidadInicio.Items.Add("--Seleccione una Localidad--");
+                ddlLocalidadInicio.Enabled = false;
+            }
+        }
+
+
+
+
+
     }
 }

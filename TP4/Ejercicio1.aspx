@@ -23,14 +23,15 @@
             DESTINO INICIO<br /> </u>
             <br />
             <b>PROVINCIA:</b>&nbsp;
-            <asp:DropDownList ID="ddlProvinciaInicio" runat="server" CssClass="auto-style1" height="20px" width="161px">
-                <asp:ListItem>-- Seleccione --</asp:ListItem>
-            </asp:DropDownList>
+            <asp:DropDownList ID="ddlProvinciaInicio" runat="server" CssClass="auto-style1" height="20px" width="161px" AutoPostBack="True" OnSelectedIndexChanged="ddlProvinciaInicio_SelectedIndexChanged">
+    <asp:ListItem>-- Seleccione --</asp:ListItem>
+</asp:DropDownList>
             <br />
             <asp:Label ID="lblLocalidad" runat="server" Font-Bold="True" Text="LOCALIDAD:"></asp:Label>
             &nbsp;<asp:DropDownList ID="ddlLocalidadInicio" runat="server" CssClass="auto-style1" height="20px" width="161px">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
+
             <br />
             <br />
         <u>    DESTINO FINAL<br />
@@ -46,6 +47,7 @@
             &nbsp;<asp:DropDownList ID="ddlLocalidadFinal" runat="server" CssClass="auto-style1" height="20px" width="161px">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
+
         </div>
     </form>
 </body>
