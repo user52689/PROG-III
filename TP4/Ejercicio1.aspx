@@ -28,7 +28,7 @@
 </asp:DropDownList>
             <br />
             <asp:Label ID="lblLocalidad" runat="server" Font-Bold="True" Text="LOCALIDAD:"></asp:Label>
-            &nbsp;<asp:DropDownList ID="ddlLocalidadInicio" runat="server" CssClass="auto-style1" height="20px" width="161px">
+            &nbsp;<asp:DropDownList ID="ddlLocalidadInicio" runat="server" CssClass="auto-style1" height="20px" width="161px" AutoPostBack="True">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
 
@@ -44,7 +44,7 @@
             </asp:DropDownList>
             <br />
             <asp:Label ID="lblLocalidad0" runat="server" Font-Bold="True" Text="LOCALIDAD:"></asp:Label>
-            &nbsp;<asp:DropDownList ID="ddlLocalidadFinal" runat="server" CssClass="auto-style1" height="20px" width="161px">
+            &nbsp;<asp:DropDownList ID="ddlLocalidadFinal" runat="server" CssClass="auto-style1" height="20px" width="161px" AutoPostBack="True">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
 

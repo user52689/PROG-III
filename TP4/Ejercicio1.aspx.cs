@@ -111,11 +111,22 @@ namespace TP4
                 ddlLocalidadInicio.Items.Add("--Seleccione una Localidad--");
                 ddlLocalidadInicio.Enabled = false;
             }
+
+            foreach(ListItem items in ddlProvinciaFinal.Items)
+            {
+                if (items.Value.Equals(selectedValue))
+                {
+                    items.Enabled = false;
+                }
+                else
+                {
+                    items.Enabled = true;
+                }
+
+            }
+         
         }
 
-
-
-
-
+      
     }
 }
