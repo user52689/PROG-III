@@ -38,7 +38,7 @@
             </u>
             <asp:Label ID="lblLocalidad1" runat="server" Font-Bold="True" Text="PROVINCIA:"></asp:Label>
             &nbsp;
-            <asp:DropDownList ID="ddlProvinciaFinal" runat="server" CssClass="auto-style1" height="20px" width="161px">
+            <asp:DropDownList ID="ddlProvinciaFinal" runat="server" CssClass="auto-style1" height="20px" width="161px" AutoPostBack="True" OnSelectedIndexChanged="ddlProvinciaFinal_SelectedIndexChanged">
                 <asp:ListItem>-- Seleccione --</asp:ListItem>
             </asp:DropDownList>
             <br />
