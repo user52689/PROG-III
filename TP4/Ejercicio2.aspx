@@ -6,6 +6,25 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 75px;
+            height: 158px;
+        }
+        .auto-style3 {
+            width: 521px;
+            height: 158px;
+        }
+        .auto-style4 {
+            height: 158px;
+        }
+        .auto-style5 {
+            margin-left: 0px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -39,6 +58,19 @@
             <asp:Button ID="btnFiltrar" runat="server" Height="29px" Text="Filtrar" />
         &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" Height="29px" Text="Quitar filtro" />
+            <br />
+&nbsp;
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style3">
+                        <asp:GridView ID="gvGrilla" runat="server" CssClass="auto-style5" Width="480px">
+                        </asp:GridView>
+                    </td>
+                    <td class="auto-style4"></td>
+                </tr>
+            </table>
+&nbsp;&nbsp;
         </div>
     </form>
 </body>

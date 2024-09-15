@@ -18,5 +18,10 @@ namespace TP4
         {
 
         }
+
+        protected void gv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
