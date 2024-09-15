@@ -14,6 +14,9 @@ namespace TP4
 
         }
 
-        
+        protected void txtBoxCategoria_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
