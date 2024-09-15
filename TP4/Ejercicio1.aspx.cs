@@ -14,13 +14,10 @@ namespace TP4
         SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (IsPostBack == false)
             {
                 try
                 {
-
-
                     cn.Open();
 
                     /// cargar ddlProvinciaInicio
@@ -54,22 +51,12 @@ namespace TP4
                         ddlProvinciaFinal.Items.Add(dr["IdProvincia"] + "-" + dr["NombreProvincia"]);
                     }
 
-
                     cn.Close();
                 }
                 catch (Exception ex)
                 {
                     Response.Write("Error al conectar con la base de datos. Revise el nombre del Data Source en la conexion, debe coincidir con el nombre de su base de datos." + ex.Message);
                 }
-
-
-
-
-
-
-
-
-
             }
         }
         void cargarDDLLocalidad(SqlConnection cn, DropDownList ddl, int IdProvincia)
@@ -122,11 +109,7 @@ namespace TP4
                 {
                     items.Enabled = true;
                 }
-
             }
-         
-        }
-
-      
+        }      
     }
 }
