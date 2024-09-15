@@ -11,7 +11,7 @@ namespace TP4
 {
     public partial class Ejercicio2 : System.Web.UI.Page
     {
-        SqlConnection cn = new SqlConnection("Data Source=SKYNET\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True");
+        SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,7 +22,8 @@ namespace TP4
 
                     cn.Open();
 
-                    SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Productos", cn);
+                    SqlDataAdapter adapter = new SqlDataAdapter("SELECT IdProducto, NombreProducto, IdCategoría, CantidadPorUnidad, PrecioUnidad FROM Productos", cn);
+
 
                     DataSet ds = new DataSet();
 
@@ -41,6 +42,42 @@ namespace TP4
                 {
                     Response.Write("Error al conectar con la base de datos: " + ex.ToString());
                 }
+            }
+        }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            try //Sirve por si existe algun error en la conexion con la base de datos la aplicacion no falle por completo
+            {
+                cn.Open();
+
+                string idProducto = txtBoxProducto.Text.Trim();
+
+                string query = "SELECT IdProducto, NombreProducto, IdCategoría, CantidadPorUnidad, PrecioUnidad FROM Productos";
+
+                if (!string.IsNullOrEmpty(idProducto))
+                {
+                    query += " WHERE IdProducto = @IdProducto";
+                }
+
+                SqlDataAdapter adapter = new SqlDataAdapter(query, cn);
+
+                if (!string.IsNullOrEmpty(idProducto))
+                {
+                    adapter.SelectCommand.Parameters.AddWithValue("@IdProducto", idProducto);
+                }
+
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "TablaProductos");
+
+                gvGrilla.DataSource = ds.Tables["TablaProductos"];
+                gvGrilla.DataBind();
+
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("Error al conectar con la base de datos: " + ex.ToString());
             }
         }
     }
