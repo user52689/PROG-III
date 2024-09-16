@@ -14,7 +14,7 @@
             <br />
             <asp:GridView ID="gvLibros" runat="server" AutoGenerateColumns="True"></asp:GridView>
             <br />
-            <asp:LinkButton ID="lkbConsultarOtroTema" runat="server">Consultar Otro Tema</asp:LinkButton>
+            <asp:LinkButton ID="lkbConsultarOtroTema" runat="server" OnClick="lkbConsultarOtroTema_Click">Consultar Otro Tema</asp:LinkButton>
         </div>
     </form>
 </body>

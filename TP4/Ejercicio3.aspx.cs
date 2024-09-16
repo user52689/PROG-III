@@ -14,36 +14,47 @@ namespace TP4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = Libreria; Integrated Security = True");
-
-            if (IsPostBack == false)
+            if (!IsPostBack)
             {
+                // Crear la conexión con la base de datos "Librería"
+                SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True");
+
                 try
                 {
                     cn.Open();
 
-                    SqlDataAdapter adapt = new SqlDataAdapter("SELECT * FROM Temas", cn);
-                    DataSet ds = new DataSet();
-                    adapt.Fill(ds, "Temas");
+                    // Crear el comando SQL para seleccionar los temas
+                    SqlCommand cmd = new SqlCommand("SELECT IdTema, Tema FROM Temas", cn);
 
-                    foreach (DataRow dr in ds.Tables["Temas"].Rows)
+                    // Ejecutar el comando y leer los datos
+                    SqlDataReader dr = cmd.ExecuteReader();
+
+                    // Limpiar el DropDownList antes de cargarlo
+                    ddlTemas.Items.Clear();
+
+                    // Recorrer los resultados y agregarlos al DropDownList
+                    while (dr.Read())
                     {
-                        ddlTemas.Items.Add(dr["Tema"].ToString());
+                        ddlTemas.Items.Add(new ListItem(dr["Tema"].ToString(), dr["IdTema"].ToString()));
                     }
 
+                    dr.Close();
                     cn.Close();
                 }
                 catch (Exception ex)
                 {
-                    Response.Write("Error al conectar con la base de datos. Revise el nombre del Data Source en la conexion, debe coincidir con el nombre de su base de datos." + ex.Message);
+                    Response.Write("Error al conectar con la base de datos: " + ex.ToString());
                 }
             }
         }
 
         protected void lkbVerLibros_Click(object sender, EventArgs e)
         {
-            string temaSeleccionado = ddlTemas.SelectedValue;
-            Response.Redirect($"ListadoLibros.aspx?tema={temaSeleccionado}");
+            // Obtener el IdTema seleccionado
+            string idTemaSeleccionado = ddlTemas.SelectedValue;
+
+            // Redirigir a ListadoLibros.aspx con el IdTema como parámetro
+            Response.Redirect("ListadoLibros.aspx?IdTema=" + idTemaSeleccionado);
         }
     }
 }

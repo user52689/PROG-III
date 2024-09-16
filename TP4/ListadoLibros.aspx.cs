@@ -15,26 +15,43 @@ namespace TP4
         {
             if (!IsPostBack)
             {
-                // Obtener el tema seleccionado pasado desde la página anterior
-                string temaSeleccionado = Request.QueryString["tema"];
-                if (!string.IsNullOrEmpty(temaSeleccionado))
+                // Obtener el IdTema de la URL
+                string idTema = Request.QueryString["IdTema"];
+
+                if (!string.IsNullOrEmpty(idTema))
                 {
-                    lblTitulo.Text = "Listado de Libros para el Tema: " + temaSeleccionado;
+                    // Conexión a la base de datos
+                    SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True");
 
-                    // Conectar a la base de datos y llenar el GridView con los libros de este tema
-                    using (SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True"))
+                    try
                     {
-                        string query = "SELECT * FROM Libros WHERE Tema = @tema";
-                        SqlDataAdapter adapter = new SqlDataAdapter(query, cn);
-                        adapter.SelectCommand.Parameters.AddWithValue("@tema", temaSeleccionado);
+                        cn.Open();
 
-                        DataSet ds = new DataSet();
-                        adapter.Fill(ds, "Libros");
-                        gvLibros.DataSource = ds.Tables["Libros"];
+                        // Consulta para obtener los libros filtrados por el IdTema
+                        string query = "SELECT IdLibro, IdTema, Titulo, Precio, Autor  FROM Libros WHERE IdTema = @IdTema";
+                        SqlCommand cmd = new SqlCommand(query, cn);
+                        cmd.Parameters.AddWithValue("@IdTema", idTema);
+
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        // Llenar el GridView con los datos de los libros
+                        gvLibros.DataSource = dr;
                         gvLibros.DataBind();
+
+                        dr.Close();
+                        cn.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write("Error al conectar con la base de datos: " + ex.ToString());
                     }
                 }
             }
+        }
+
+        protected void lkbConsultarOtroTema_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio3.aspx");
         }
     }
 }
