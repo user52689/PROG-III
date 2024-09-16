@@ -13,6 +13,10 @@
             <asp:Label ID="lbSeleccionarTema" runat="server" Text="Seleccionar Tema: "> 
             </asp:Label>&nbsp;&nbsp;&nbsp;<asp:DropDownList runat="server" ID="ddlTemas"></asp:DropDownList>
         </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>
+            <asp:LinkButton runat="server" ID="lkbVerLibros" OnClick="lkbVerLibros_Click">Ver Libros</asp:LinkButton>&nbsp;</div>
     </form>
 </body>
 </html>
