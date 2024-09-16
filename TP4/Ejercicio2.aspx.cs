@@ -47,17 +47,29 @@ namespace TP4
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            try //Sirve por si existe algun error en la conexion con la base de datos la aplicacion no falle por completo
+            try//en caso de fallo de conexion con la base de datos, Impide el fallo total de la aplicacion
             {
                 cn.Open();
 
                 string idProducto = txtBoxProducto.Text.Trim();
+                string idCategoria = txtBoxCategoria.Text.Trim();
 
                 string query = "SELECT IdProducto, NombreProducto, IdCategoría, CantidadPorUnidad, PrecioUnidad FROM Productos";
+                List<string> condiciones = new List<string>();
 
                 if (!string.IsNullOrEmpty(idProducto))
                 {
-                    query += " WHERE IdProducto = @IdProducto";
+                    condiciones.Add("IdProducto = @IdProducto");
+                }
+
+                if (!string.IsNullOrEmpty(idCategoria))
+                {
+                    condiciones.Add("IdCategoría = @IdCategoria");
+                }
+
+                if (condiciones.Count > 0)
+                {
+                    query += " WHERE " + string.Join(" AND ", condiciones);
                 }
 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, cn);
@@ -65,6 +77,11 @@ namespace TP4
                 if (!string.IsNullOrEmpty(idProducto))
                 {
                     adapter.SelectCommand.Parameters.AddWithValue("@IdProducto", idProducto);
+                }
+
+                if (!string.IsNullOrEmpty(idCategoria))
+                {
+                    adapter.SelectCommand.Parameters.AddWithValue("@IdCategoria", idCategoria);
                 }
 
                 DataSet ds = new DataSet();
