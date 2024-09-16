@@ -16,23 +16,18 @@ namespace TP4
         {
             if (!IsPostBack)
             {
-                // Crear la conexión con la base de datos "Librería"
                 SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True");
 
                 try
                 {
                     cn.Open();
 
-                    // Crear el comando SQL para seleccionar los temas
                     SqlCommand cmd = new SqlCommand("SELECT IdTema, Tema FROM Temas", cn);
 
-                    // Ejecutar el comando y leer los datos
                     SqlDataReader dr = cmd.ExecuteReader();
 
-                    // Limpiar el DropDownList antes de cargarlo
                     ddlTemas.Items.Clear();
 
-                    // Recorrer los resultados y agregarlos al DropDownList
                     while (dr.Read())
                     {
                         ddlTemas.Items.Add(new ListItem(dr["Tema"].ToString(), dr["IdTema"].ToString()));
@@ -50,10 +45,8 @@ namespace TP4
 
         protected void lkbVerLibros_Click(object sender, EventArgs e)
         {
-            // Obtener el IdTema seleccionado
             string idTemaSeleccionado = ddlTemas.SelectedValue;
 
-            // Redirigir a ListadoLibros.aspx con el IdTema como parámetro
             Response.Redirect("ListadoLibros.aspx?IdTema=" + idTemaSeleccionado);
         }
     }

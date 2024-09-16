@@ -15,12 +15,10 @@ namespace TP4
         {
             if (!IsPostBack)
             {
-                // Obtener el IdTema de la URL
                 string idTema = Request.QueryString["IdTema"];
 
                 if (!string.IsNullOrEmpty(idTema))
                 {
-                    // Conexión a la base de datos
                     SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Libreria;Integrated Security=True");
 
                     try
@@ -34,7 +32,6 @@ namespace TP4
 
                         SqlDataReader dr = cmd.ExecuteReader();
 
-                        // Llenar el GridView con los datos de los libros
                         gvLibros.DataSource = dr;
                         gvLibros.DataBind();
 
