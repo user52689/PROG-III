@@ -10,7 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lbSeleccionarTema" runat="server" Text="Seleccionar Tema: "></asp:Label>
+            <asp:Label ID="lbSeleccionarTema" runat="server" Text="Seleccionar Tema: "> 
+            </asp:Label>&nbsp;&nbsp;&nbsp;<asp:DropDownList runat="server" ID="ddlTemas"></asp:DropDownList>
         </div>
     </form>
 </body>
