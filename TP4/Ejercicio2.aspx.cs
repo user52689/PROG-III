@@ -59,12 +59,37 @@ namespace TP4
 
                 if (!string.IsNullOrEmpty(idProducto))
                 {
-                    condiciones.Add("IdProducto = @IdProducto");
+                   
+                    if (DDL1.SelectedValue=="1")
+                    {
+                        condiciones.Add("IdProducto > @IdProducto");
+                    }
+                    else if (DDL1.SelectedValue=="2") 
+                    {
+                        condiciones.Add("IdProducto < @IdProducto");
+                    }
+                    else
+                    {
+                        condiciones.Add("IdProducto = @IdProducto");
+                    }
                 }
 
                 if (!string.IsNullOrEmpty(idCategoria))
                 {
-                    condiciones.Add("IdCategoría = @IdCategoria");
+                   
+                    if (DDL2.SelectedValue == "1")
+                    {
+                        condiciones.Add("IdCategoría > @IdCategoria");
+                    }
+                    else if (DDL2.SelectedValue == "2")
+                    {
+                        condiciones.Add("IdCategoría < @IdCategoria");
+                    }
+                    else
+                    {
+                        condiciones.Add("IdCategoría = @IdCategoria");
+                    }
+
                 }
 
                 if (condiciones.Count > 0)
