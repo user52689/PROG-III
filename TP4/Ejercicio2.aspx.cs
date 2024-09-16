@@ -80,5 +80,39 @@ namespace TP4
                 Response.Write("Error al conectar con la base de datos: " + ex.ToString());
             }
         }
-    }
+
+        protected void btnFiltro_Click(object sender, EventArgs e)
+        {
+            txtBoxCategoria.Text = "";
+            txtBoxProducto.Text = "";
+            DDL1.SelectedIndex = 0;
+            DDL2.SelectedIndex = 0;
+            try
+            {
+
+                cn.Open();
+
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT IdProducto, NombreProducto, IdCategoría, CantidadPorUnidad, PrecioUnidad FROM Productos", cn);
+
+
+                DataSet ds = new DataSet();
+
+                adapter.Fill(ds, "TablaProductos");
+
+
+
+                gvGrilla.DataSource = ds.Tables["TablaProductos"];
+                gvGrilla.DataBind();
+
+
+
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("Error al conectar con la base de datos: " + ex.ToString());
+            }
+        }
+    }D
 }
+  
