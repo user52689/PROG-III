@@ -99,7 +99,7 @@ namespace TP4
 
                 adapter.Fill(ds, "TablaProductos");
 
-
+           
 
                 gvGrilla.DataSource = ds.Tables["TablaProductos"];
                 gvGrilla.DataBind();
@@ -113,6 +113,6 @@ namespace TP4
                 Response.Write("Error al conectar con la base de datos: " + ex.ToString());
             }
         }
-    }D
-}
+    }
+        }
   
