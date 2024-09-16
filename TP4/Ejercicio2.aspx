@@ -34,8 +34,8 @@
             Id producto:&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DDL1" runat="server">
                 <asp:ListItem>Igual a:</asp:ListItem>
-                <asp:ListItem>Mayor a:</asp:ListItem>
-                <asp:ListItem>Menor a:</asp:ListItem>
+                <asp:ListItem Value="1">Mayor a:</asp:ListItem>
+                <asp:ListItem Value="2">Menor a:</asp:ListItem>
                 <asp:ListItem></asp:ListItem>
             </asp:DropDownList>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -45,8 +45,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Id Categorìa:&nbsp;&nbsp;
             <asp:DropDownList ID="DDL2" runat="server" style="margin-top: 6px">
                 <asp:ListItem>Igual a:</asp:ListItem>
-                <asp:ListItem>Mayor a:</asp:ListItem>
-                <asp:ListItem>Menor a:</asp:ListItem>
+                <asp:ListItem Value="1">Mayor a:</asp:ListItem>
+                <asp:ListItem Value="2">Menor a:</asp:ListItem>
             </asp:DropDownList>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtBoxCategoria" runat="server" Width="270px"></asp:TextBox>
