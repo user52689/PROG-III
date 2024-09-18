@@ -24,13 +24,13 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style4">&nbsp;
-                        <asp:HyperLink ID="hlAgregarSucursal" runat="server">Agregar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
                     <td class="auto-style5">
-                        <asp:HyperLink ID="hlListarSucursal" runat="server">Listado de Sucursales</asp:HyperLink>
+                        <asp:HyperLink ID="hlListarSucursal" runat="server" NavigateUrl="ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td>
-                        <asp:HyperLink ID="hlEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
                 </tr>
             </table>
