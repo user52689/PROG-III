@@ -31,15 +31,15 @@ namespace TP_5
                     {
                         using (dr = cmd.ExecuteReader())
                         {
-                            ddlProvincias.Items.Add(new ListItem("--Seleccione--", "0"));
-
                             ddlProvincias.DataSource = dr;
                             ddlProvincias.DataTextField = "DescripcionProvincia";
                             ddlProvincias.DataValueField = "Id_Provincia";
                             ddlProvincias.DataBind();
                         }
                     }
-                }     
+                }
+
+                ddlProvincias.Items.Insert(0, new ListItem("--Seleccione--", "0"));
             }
             catch (SqlException ex)
             {

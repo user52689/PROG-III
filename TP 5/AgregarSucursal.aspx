@@ -26,7 +26,7 @@
                         <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursales</asp:HyperLink>
                     <br />
             <br />
-            <br />
+            <h1 style="margin-left: 20px;">GRUPO N° 4</h1>
 &nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblAgregarSucursal" runat="server" Text="Agregar Sucursal:" Font-Size="XX-Large"></asp:Label>
             <br />
