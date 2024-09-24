@@ -34,9 +34,12 @@
                     <td class="auto-style5">
                         <asp:Button ID="btnEliminar" runat="server" OnClick="btnEliminar_Click" Text="Eliminar" Width="97px" />
                     </td>
+                    <td class="auto-style6">
+                        <asp:RequiredFieldValidator runat="server" ErrorMessage="Debe ingresar un ID de sucursal" ID="rfvIdSucursal" ControlToValidate="txtIdSucursal" ForeColor="Red" EnableClientScript="False"> Debe ingresar un ID de sucursal</asp:RequiredFieldValidator>
+                    </td>
 
                 </tr>
-            </table>
+            </table>            
         </div>
         <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
