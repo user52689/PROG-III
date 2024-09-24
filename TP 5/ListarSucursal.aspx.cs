@@ -33,7 +33,9 @@ namespace TP_5
             {
                 cn.Open();
 
-                string consulta = "SELECT * FROM Sucursal";
+                string consulta = @"SELECT S.Id_Sucursal, S.NombreSucursal AS Nombre, S.DescripcionSucursal AS Descripcion, P.DescripcionProvincia AS Provincia, S.DireccionSucursal As Direccion
+                    FROM Sucursal S 
+                    INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia";
 
                 if (!string.IsNullOrEmpty(idSucursal))
                 {
