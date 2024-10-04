@@ -64,27 +64,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ejercicio1.aspx" />
-    <Content Include="Inicio.aspx" />
+    <Content Include="Vistas\Ejercicio1.aspx" />
+    <Content Include="Vistas\Inicio.aspx" />
     <Content Include="Vistas\Ejercicio2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\AccesoDatos.cs" />
     <Compile Include="Controladores\GestionProductos.cs" />
-    <Compile Include="Ejercicio1.aspx.cs">
+    <Compile Include="Vistas\Ejercicio1.aspx.cs">
       <DependentUpon>Ejercicio1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ejercicio1.aspx.designer.cs">
+    <Compile Include="Vistas\Ejercicio1.aspx.designer.cs">
       <DependentUpon>Ejercicio1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Producto.cs" />
-    <Compile Include="Inicio.aspx.cs">
+    <Compile Include="Vistas\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
+    <Compile Include="Vistas\Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
