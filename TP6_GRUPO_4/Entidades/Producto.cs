@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace TP6.Entidades
+namespace TP6_GRUPO_4.Entidades
 {
     public class Producto
     {

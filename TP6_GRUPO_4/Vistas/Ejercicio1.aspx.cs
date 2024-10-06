@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TP6.Controladores;
-using TP6.Entidades;
+using TP6_GRUPO_4.Controladores;
+using TP6_GRUPO_4.Entidades;
 
-namespace TP6
+namespace TP6_GRUPO_4
 {
     public partial class Ejercicio1 : System.Web.UI.Page
     {

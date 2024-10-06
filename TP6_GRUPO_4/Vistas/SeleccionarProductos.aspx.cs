@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TP6_GRUPO_4
+namespace TP6_GRUPO_4.Vistas
 {
-    public partial class Ejercicio2 : System.Web.UI.Page
+    public partial class SeleccionarProductos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

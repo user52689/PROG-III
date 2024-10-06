@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace TP6
+namespace TP6_GRUPO_4
 {
 
 

@@ -5,12 +5,12 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
-using TP6.Entidades;
-using TP6.Conexion;
+using TP6_GRUPO_4.Entidades;
+using TP6_GRUPO_4.Conexion;
 
 
 
-namespace TP6.Controladores
+namespace TP6_GRUPO_4.Controladores
 {
     public class GestionProductos
     {

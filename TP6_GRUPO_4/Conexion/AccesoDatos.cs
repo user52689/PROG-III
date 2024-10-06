@@ -7,7 +7,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Web;
 
-namespace TP6.Conexion
+namespace TP6_GRUPO_4.Conexion
 {
     public class AccesoDatos
     {

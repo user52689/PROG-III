@@ -67,6 +67,8 @@
     <Content Include="Vistas\Ejercicio1.aspx" />
     <Content Include="Vistas\Inicio.aspx" />
     <Content Include="Vistas\Ejercicio2.aspx" />
+    <Content Include="Vistas\MostrarProductos.aspx" />
+    <Content Include="Vistas\SeleccionarProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +96,20 @@
     </Compile>
     <Compile Include="Vistas\Ejercicio2.aspx.designer.cs">
       <DependentUpon>Ejercicio2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\MostrarProductos.aspx.cs">
+      <DependentUpon>MostrarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\MostrarProductos.aspx.designer.cs">
+      <DependentUpon>MostrarProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\SeleccionarProductos.aspx.cs">
+      <DependentUpon>SeleccionarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\SeleccionarProductos.aspx.designer.cs">
+      <DependentUpon>SeleccionarProductos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
