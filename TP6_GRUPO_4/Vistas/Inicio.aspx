@@ -12,6 +12,14 @@
         <div>
             <br /> 
             <h1>Grupo N°4</h1>
+            <p>&nbsp;</p>
+            <p>
+                <asp:HyperLink ID="hlEjercicio1" runat="server" NavigateUrl="~/Vistas/Ejercicio1.aspx">Ejercicio 1</asp:HyperLink>
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                <asp:HyperLink ID="hlEjercicio2" runat="server" NavigateUrl="~/Vistas/Ejercicio2.aspx">Ejercicio 2</asp:HyperLink>
+            </p>
         </div>
     </form>
 </body>

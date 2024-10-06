@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace TP6_GRUPO_4
+namespace TP6_GRUPO_4.Vistas
 {
 
 
-    public partial class Inicio
+    public partial class MostrarProductos
     {
 
         /// <summary>
