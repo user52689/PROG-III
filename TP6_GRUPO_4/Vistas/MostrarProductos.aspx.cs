@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,25 @@ namespace TP6_GRUPO_4.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(IsPostBack == false)
+            {
+                MostrarProductosSeleccionados();
+            }
+        }
 
+        protected void MostrarProductosSeleccionados()
+        {
+            if (Session["ProductosSeleccionados"] != null)
+            {
+                DataTable dt = (DataTable)Session["ProductosSeleccionados"];
+
+                grdProductosSeleccionados.DataSource = dt;
+                grdProductosSeleccionados.DataBind();
+            }
+            else
+            {
+                lblMensaje.Text = "No hay productos seleccionados.";
+            }
         }
     }
 }

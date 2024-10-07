@@ -35,17 +35,49 @@
 <body>
     <form id="form1" runat="server">
         <div class="auto-style1">
+            <asp:Label ID="lblSeleccionarProductos" runat="server" Font-Size="XX-Large" Text="Seleccionar Productos"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="hlAtras" runat="server" NavigateUrl="~/Vistas/Ejercicio2.aspx">Atras</asp:HyperLink>
+                    <br />
+            <br />
             <table class="auto-style2">
                 <tr>
                     <td class="auto-style4">
-                        <asp:GridView ID="grdSeleccionarProductos" runat="server">
-                        </asp:GridView>
+  <asp:GridView ID="grdProductoSeleccionado" runat="server" AutoGenerateColumns="False" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanging="grdProductoSeleccionado_SelectedIndexChanging" PageSize="14" Width="766px">
+      <Columns>
+          <asp:TemplateField HeaderText="ID Producto">
+              <ItemTemplate>
+                  <asp:Label ID="lbl_it_IDProducto" runat="server" Text='<%# Bind("IdProducto") %>'></asp:Label>
+              </ItemTemplate>
+          </asp:TemplateField>
+          <asp:TemplateField HeaderText="Nombre Producto">
+              <ItemTemplate>
+                  <asp:Label ID="lbl_it_NombreProducto" runat="server" Text='<%# Bind("NombreProducto") %>'></asp:Label>
+              </ItemTemplate>
+          </asp:TemplateField>
+          <asp:TemplateField HeaderText="Cantidad por Unidad">
+              <EditItemTemplate>
+                  <asp:TextBox ID="txt_edit_CantidadPorUnidad" runat="server" Text='<%# Bind("CantidadPorUnidad") %>'></asp:TextBox>
+              </EditItemTemplate>
+              <ItemTemplate>
+                  <asp:Label ID="lbl_it_CantidadPorUnidad" runat="server" Text='<%# Bind("CantidadPorUnidad") %>'></asp:Label>
+              </ItemTemplate>
+          </asp:TemplateField>
+          <asp:TemplateField HeaderText="Precio Unitario">
+              <ItemTemplate>
+                  <asp:Label ID="lbl_it_PrecioUnidad" runat="server" Text='<%# Bind("PrecioUnidad") %>'></asp:Label>
+              </ItemTemplate>
+          </asp:TemplateField>
+      </Columns>
+  </asp:GridView>
                     </td>
                     <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5"></td>
+                    <td class="auto-style5">
+                        <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style7"></td>
                     <td class="auto-style3"></td>
                 </tr>
@@ -54,11 +86,11 @@
                         <asp:Label ID="lblProductosAgregados" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Vistas/Ejercicio2.aspx">Volver al Inicio</asp:HyperLink>
-                    </td>
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
+            <asp:Label ID="lblDetalleProductos" runat="server"></asp:Label>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>

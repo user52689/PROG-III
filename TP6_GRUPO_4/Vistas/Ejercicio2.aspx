@@ -22,7 +22,7 @@
             <asp:HyperLink ID="hlSeleccionarProductos" runat="server" NavigateUrl="~/Vistas/SeleccionarProductos.aspx">Seleccionar Productos</asp:HyperLink>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:LinkButton ID="lbtnEliminarProductosSeleccionados" runat="server">Eliminar productos seleccionados</asp:LinkButton>
+            <asp:LinkButton ID="lbtnEliminarProductosSeleccionados" runat="server" OnClick="lbtnEliminarProductosSeleccionados_Click">Eliminar productos seleccionados</asp:LinkButton>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:HyperLink ID="hlMostrarProductos" runat="server" NavigateUrl="~/Vistas/MostrarProductos.aspx">Mostrar productos</asp:HyperLink>
