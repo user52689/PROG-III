@@ -10,7 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="lblP" runat="server" Font-Bold="True" Font-Size="20pt" Text="Productos seleccionados por el Usuario:"></asp:Label>
         </div>
+        <asp:GridView ID="grdpProductosSeleccionados" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>
