@@ -58,7 +58,15 @@ namespace TP6_GRUPO_4.Vistas
             Session["ProductosSeleccionados"] = dt;
 
             lblMensaje.Text = "Producto/s seleccionado/s :";
+
             lblProductosAgregados.Text += NombreProducto + ", ";
+        }
+
+        protected void grdProductoSeleccionado_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdProductoSeleccionado.PageIndex = e.NewPageIndex;
+
+            CargarProductos();
         }
     }
 }
