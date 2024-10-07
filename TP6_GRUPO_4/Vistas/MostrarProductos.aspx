@@ -14,7 +14,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:HyperLink ID="hlSeleccionarProductos" runat="server" NavigateUrl="~/Vistas/Ejercicio2.aspx">Atras</asp:HyperLink>
         </div>
-       <asp:GridView ID="grdProductosSeleccionados" runat="server" AutoGenerateColumns="False" AllowPaging="True" PageSize="14" Width="766px">
+       <asp:GridView ID="grdProductosSeleccionados" runat="server" AutoGenerateColumns="False" AllowPaging="True" PageSize="14" Width="766px" OnPageIndexChanging="grdProductosSeleccionados_PageIndexChanging">
     <Columns>
         <asp:TemplateField HeaderText="ID Producto">
             <ItemTemplate>

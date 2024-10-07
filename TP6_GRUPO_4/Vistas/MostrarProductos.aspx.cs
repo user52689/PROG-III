@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TP6_GRUPO_4.Controladores;
 
 namespace TP6_GRUPO_4.Vistas
 {
@@ -17,6 +18,7 @@ namespace TP6_GRUPO_4.Vistas
                 MostrarProductosSeleccionados();
             }
         }
+
 
         protected void MostrarProductosSeleccionados()
         {
@@ -31,6 +33,13 @@ namespace TP6_GRUPO_4.Vistas
             {
                 lblMensaje.Text = "No hay productos seleccionados.";
             }
+        }
+
+        protected void grdProductosSeleccionados_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdProductosSeleccionados.PageIndex = e.NewPageIndex;
+
+            MostrarProductosSeleccionados();
         }
     }
 }
