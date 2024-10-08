@@ -74,8 +74,6 @@ namespace TP6_GRUPO_4.Vistas
                 lblProductosAgregados.Text += NombreProducto + ", ";
                 Session["ProductosSeleccionados"] = dt;
 
-                lblMensaje.Text = "Producto/s seleccionado/s :";
-                lblProductosAgregados.Text += NombreProducto + ", ";
 
             }
             else
