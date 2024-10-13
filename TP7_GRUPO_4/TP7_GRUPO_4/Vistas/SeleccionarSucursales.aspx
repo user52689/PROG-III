@@ -6,26 +6,126 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 24px;
+        }
+        .auto-style4 {
+            height: 24px;
+            width: 681px;
+        }
+        .auto-style5 {
+            height: 24px;
+            width: 265px;
+        }
+        .auto-style6 {
+            width: 265px;
+        }
+        .auto-style7 {
+            width: 51px;
+        }
+        .auto-style9 {
+            width: 330px;
+        }
+        .auto-style10 {
+            width: 681px;
+        }
+        .auto-style11 {
+            height: 23px;
+        }
+        .auto-style12 {
+            width: 100%;
+            height: 516px;
+        }
+        .auto-style13 {
+            height: 108px;
+        }
+        .auto-style14 {
+            width: 267px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="hlSeleccionSucursales" runat="server" NavigateUrl="~/Vistas/SeleccionarSucursales.aspx">Seleccion de sucursales</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="hlListadoSucursalesSeleccionadas" runat="server" NavigateUrl="~/Vistas/ListadoSucursalesSeleccionadas.aspx">Listado sucursales seleccionadas</asp:HyperLink>
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="lblListadoSucursales" runat="server" Font-Size="XX-Large" Text="Seleccionar de sucursales"></asp:Label>
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="lblBusquePorNombreSucursal" runat="server" Text="Busqueda por nombre de sucursal"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;<br />
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style4">
+            <asp:HyperLink ID="hlSeleccionSucursales" runat="server" NavigateUrl="~/Vistas/SeleccionarSucursales.aspx">Seleccion de sucursales</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="hlListadoSucursalesSeleccionadas" runat="server" NavigateUrl="~/Vistas/ListadoSucursalesSeleccionadas.aspx">Listado sucursales seleccionadas</asp:HyperLink>
+                    </td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style4">
+            <asp:Label ID="lblListadoSucursales" runat="server" Font-Size="XX-Large" Text="Seleccionar de sucursales"></asp:Label>
+                    </td>
+                    <td class="auto-style2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">&nbsp;</td>
+                    <td class="auto-style10">
+            <asp:Label ID="lblBusquePorNombreSucursal" runat="server" Text="Busqueda por nombre de sucursal"></asp:Label>
+&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtBusquedaPorNombreSucursal" runat="server" Width="135px"></asp:TextBox>
-&nbsp;<asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
-            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style7">
+                        <table class="auto-style12">
+                            <tr>
+                                <td class="auto-style11">
+                                    <asp:Button ID="btnBaires" runat="server" Text="Buenos Aires" Width="206px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style13">
+                                    <asp:Button ID="btnEntrerios" runat="server" Text="Entre Rios" Width="205px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="btnSantafe" runat="server" Text="Santa Fe" Width="206px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="btnLaPampa" runat="server" Text="La Pampa" Width="205px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="btnCordoba" runat="server" Text="Cordobà" Width="207px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="btnMisiones" runat="server" Text="Misiones" Width="210px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="btnChaco" runat="server" Text="Chaco" Width="210px" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="auto-style9">
 
             <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id_Sucursal" DataSourceID="SqlDataSource1" GroupItemCount="3">
                 <AlternatingItemTemplate>
@@ -86,7 +186,7 @@
                         <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
                         <br />&nbsp;<asp:ImageButton ID="imgSucursal" runat="server" Height="200px" ImageUrl='<%# Eval("URL_Imagen_Sucursal") %>' Width="200px" />
                         <br />
-                        <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>'></asp:Label>
+                        <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' Font-Size="10pt"></asp:Label>
                         <br />
                         <asp:Button ID="btnSeleccionar" runat="server" CommandArgument='<%# Eval("NombreSucursal") %>' CommandName="eventoSeleccionar" OnCommand="btnSeleccionar_Command1" Text="Seleccionar" />
                         <br />
@@ -104,7 +204,7 @@
                         </tr>
                         <tr runat="server">
                             <td runat="server" style="text-align: center;background-color: #CCCCCC;font-family: Verdana, Arial, Helvetica, sans-serif;color: #000000;">
-                                <asp:DataPager ID="DataPager1" runat="server" PageSize="12">
+                                <asp:DataPager ID="DataPager1" runat="server" PageSize="6">
                                     <Fields>
                                         <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
                                         <asp:NumericPagerField />
@@ -115,18 +215,30 @@
                         </tr>
                     </table>
                 </LayoutTemplate>
-                <SelectedItemTemplate>
-                    <td runat="server" style="background-color:#008A8C;font-weight: bold;color: #FFFFFF;">Id_Sucursal:
-                        <asp:Label ID="Id_SucursalLabel" runat="server" Text='<%# Eval("Id_Sucursal") %>' />
-                        <br />NombreSucursal:
-                        <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
-                        <br />DescripcionSucursal:
-                        <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
-                        <br />URL_Imagen_Sucursal:
-                        <asp:Label ID="URL_Imagen_SucursalLabel" runat="server" Text='<%# Eval("URL_Imagen_Sucursal") %>' />
-                        <br /></td>
-                </SelectedItemTemplate>
+           <SelectedItemTemplate>
+    <td runat="server" class="centered">
+        Id_Sucursal:
+        <asp:Label ID="Id_SucursalLabel" runat="server" Text='<%# Eval("Id_Sucursal") %>' />
+        <br />NombreSucursal:
+        <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
+        <br />DescripcionSucursal:
+        <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
+        <br />URL_Imagen_Sucursal:
+        <asp:Label ID="URL_Imagen_SucursalLabel" runat="server" Text='<%# Eval("URL_Imagen_Sucursal") %>' />
+        <br />
+    </td>
+</SelectedItemTemplate>
             </asp:ListView>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
             <br />
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BDSucursalesConnectionString %>" SelectCommand="SELECT [Id_Sucursal], [NombreSucursal], [DescripcionSucursal], [URL_Imagen_Sucursal] FROM [Sucursal]"></asp:SqlDataSource>
             <br />

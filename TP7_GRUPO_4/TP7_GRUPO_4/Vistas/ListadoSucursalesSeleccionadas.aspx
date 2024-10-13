@@ -19,8 +19,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblMostrarSucursalesSeleccionadas" runat="server" Font-Size="XX-Large" Text="Mostrar sucursales seleccionadas"></asp:Label>
             <br />
-            &nbsp;&nbsp;
-            <asp:GridView ID="grdSucursales" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:GridView ID="grdSucursales" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="443px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:TemplateField HeaderText="ID_Sucursal">
