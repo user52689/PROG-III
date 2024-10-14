@@ -135,7 +135,7 @@
                         <br />
                         <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>'></asp:Label>
                         <br />
-                        <asp:Button ID="btnSeleccionar" runat="server" CommandArgument='<%# Eval("NombreSucursal") %>' CommandName="eventoSeleccionar" OnCommand="btnSeleccionar_Command2" Text="Seleccionar" />
+                       <asp:Button ID="btnSeleccionar" runat="server" CommandArgument='<%# Eval("Id_Sucursal")+","+Eval("NombreSucursal")+","+Eval("DescripcionSucursal") %>' CommandName="eventoSeleccionar"  OnCommand="btnSeleccionar_Command2" Text="Seleccionar" />
                     </td>
                 </AlternatingItemTemplate>
                 <EditItemTemplate>
@@ -188,7 +188,7 @@
                         <br />
                         <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' Font-Size="10pt"></asp:Label>
                         <br />
-                        <asp:Button ID="btnSeleccionar" runat="server" CommandArgument='<%# Eval("NombreSucursal") %>' CommandName="eventoSeleccionar" OnCommand="btnSeleccionar_Command1" Text="Seleccionar" />
+                        <asp:Button ID="btnSeleccionar" runat="server" CommandArgument='<%# Eval("Id_Sucursal")+","+Eval("NombreSucursal")+","+Eval("DescripcionSucursal") %>' CommandName="eventoSeleccionar"  OnCommand="btnSeleccionar_Command1" Text="Seleccionar" />
                         <br />
                     </td>
                 </ItemTemplate>

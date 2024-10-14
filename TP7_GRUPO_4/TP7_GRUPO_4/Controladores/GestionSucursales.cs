@@ -22,28 +22,27 @@ namespace TP7_GRUPO_4.Controladores
         {
             if (e.CommandArgument == null) return;
 
-            string sucursal = e.CommandArgument.ToString();
+            string[] sucursal = e.CommandArgument.ToString().Split(',');
+            string id = sucursal[0];
+            string nombre = sucursal[1];
+            string descp = sucursal[2];
 
-            // Recuperar el DataTable existente o crear uno nuevo
             DataTable sucursalesSeleccionadas = HttpContext.Current.Session["SucursalesSeleccionadas"] as DataTable;
 
             if (sucursalesSeleccionadas == null)
             {
-                // Si no existe, crear uno nuevo
                 sucursalesSeleccionadas = CrearDataTableSucursales();
             }
 
-            // Verificar si la sucursal ya está seleccionada
-            if (!sucursalesSeleccionadas.AsEnumerable().Any(row => row.Field<string>("NombreSucursal") == sucursal))
+            if (!sucursalesSeleccionadas.AsEnumerable().Any(row => row.Field<string>("NombreSucursal") == nombre))
             {
-                // Agregar la nueva sucursal
                 DataRow dr = sucursalesSeleccionadas.NewRow();
-                dr["SucursalID"] = sucursal; // Asigna el ID de sucursal adecuado aquí
-                dr["NombreSucursal"] = sucursal; // Asigna el nombre de sucursal adecuado aquí
-                dr["DescripcionSucursal"] = sucursal; // Asigna la descripción de sucursal adecuada aquí
+                ///Revisar las proximas 3 asignaciones al datarow
+                dr["SucursalID"] = id;
+                dr["NombreSucursal"] = nombre;
+                dr["DescripcionSucursal"] = descp;
                 sucursalesSeleccionadas.Rows.Add(dr);
 
-                // Actualizar la variable de sesión
                 HttpContext.Current.Session["SucursalesSeleccionadas"] = sucursalesSeleccionadas;
 
                 if (lblSucursalSeleccionada != null)
