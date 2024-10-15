@@ -78,7 +78,8 @@
             <asp:Label ID="lblBusquePorNombreSucursal" runat="server" Text="Busqueda por nombre de sucursal"></asp:Label>
 &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtBusquedaPorNombreSucursal" runat="server" Width="135px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtBusquedaPorNombreSucursal" ErrorMessage="Solo acepta letras" ValidationExpression="^[A-Za-z\s]+$" ValidationGroup="Grupo1"></asp:RegularExpressionValidator>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="Grupo1" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
