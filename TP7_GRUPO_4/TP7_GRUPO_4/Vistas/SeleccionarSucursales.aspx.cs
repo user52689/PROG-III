@@ -15,6 +15,7 @@ namespace TP7_GRUPO_4.Vistas
         {
 
         }
+        
         protected void btnSeleccionar_Command1(object sender, CommandEventArgs e)
         {
             //ItemTemplate
@@ -45,6 +46,16 @@ namespace TP7_GRUPO_4.Vistas
 
             // Asigna la busqueda directamente al SqlDataSource
             SqlDataSource1.SelectCommand = "SELECT * FROM Sucursal WHERE NombreSucursal LIKE '%" + nombreSucursal + "%'";
+        }
+
+        protected void ComandoProvincia(object sender, CommandEventArgs e)
+        {
+            if (e.CommandName == "ComandoBoton")
+            {
+                int id = int.Parse(e.CommandArgument.ToString());
+                SqlDataSource1.SelectCommand = $"select id_sucursal,nombreSucursal,DescripcionSucursal,URL_Imagen_Sucursal from Sucursal where  Id_ProvinciaSucursal = {id}";
+            }
+         
         }
     }
 }   
