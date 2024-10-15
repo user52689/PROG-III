@@ -13,7 +13,7 @@ namespace TP7_GRUPO_4.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
         protected void btnSeleccionar_Command1(object sender, CommandEventArgs e)
         {
