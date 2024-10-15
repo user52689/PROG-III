@@ -46,5 +46,10 @@ namespace TP7_GRUPO_4.Vistas
             // Asigna la busqueda directamente al SqlDataSource
             SqlDataSource1.SelectCommand = "SELECT * FROM Sucursal WHERE NombreSucursal LIKE '%" + nombreSucursal + "%'";
         }
+        protected void btnProvincias_Command(object sender, CommandEventArgs e)
+        {
+            SqlDataSource1.SelectCommand = " SELECT [Id_Sucursal], [NombreSucursal], [DescripcionSucursal], [URL_Imagen_Sucursal] FROM [Sucursal] " +
+                "Where [Id_ProvinciaSucursal] = '" + e.CommandArgument.ToString() + "'";
+        }
     }
 }   

@@ -94,18 +94,18 @@
                             </tr>
                             <tr>
                                 <td class="auto-style13">
-                                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2">
+                                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2" DataKeyField="Id_Provincia">
                                         <ItemTemplate>
-                                            <asp:Button ID="Button1" runat="server" Text='<%# Eval("DescripcionProvincia") %>' />
+                                            <asp:Button ID="btnProvincias" runat="server" CommandArgument='<%# Eval("Id_Provincia") %>' CommandName="FiltrarProvincia" OnCommand="btnProvincias_Command" Text='<%# Eval("DescripcionProvincia") %>' />
                                             <br />
-<br />
+                                            <br />
                                         </ItemTemplate>
                                     </asp:DataList>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:BDSucursalesConnectionString %>" SelectCommand="SELECT [DescripcionProvincia] FROM [Provincia]"></asp:SqlDataSource>
+                                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:BDSucursalesConnectionString %>" SelectCommand="SELECT [Id_Provincia], [DescripcionProvincia] FROM [Provincia]" ProviderName="System.Data.SqlClient"></asp:SqlDataSource>
                                 </td>
                             </tr>
                             <tr>
