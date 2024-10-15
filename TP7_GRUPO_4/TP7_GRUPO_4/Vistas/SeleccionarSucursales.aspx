@@ -78,7 +78,7 @@
             <asp:Label ID="lblBusquePorNombreSucursal" runat="server" Text="Busqueda por nombre de sucursal"></asp:Label>
 &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtBusquedaPorNombreSucursal" runat="server" Width="135px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>

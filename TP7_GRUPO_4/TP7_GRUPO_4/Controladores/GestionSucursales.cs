@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
+using TP7_GRUPO_4.Conexion;
 
 namespace TP7_GRUPO_4.Controladores
 {
@@ -68,6 +70,25 @@ namespace TP7_GRUPO_4.Controladores
                 grdSucursales.DataSource = sucursalesSeleccionadas;
                 grdSucursales.DataBind();
             }
+        }
+
+        public DataTable BuscarSucursalPorNombre(string nombreSucursal)
+        {
+            AccesoDatos ad = new AccesoDatos();
+            string consulta = "SELECT * FROM Sucursal";
+
+            if (!string.IsNullOrEmpty(nombreSucursal))
+            {
+                consulta += " WHERE NombreSucursal LIKE @nombreSucursal";
+            }
+
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, ad.EstablecerConexion());
+            adaptador.SelectCommand.Parameters.AddWithValue("@nombreSucursal", "%" + nombreSucursal + "%");
+
+            DataTable dtSucursales = new DataTable();
+            adaptador.Fill(dtSucursales);
+
+            return dtSucursales;
         }
     }
 }
