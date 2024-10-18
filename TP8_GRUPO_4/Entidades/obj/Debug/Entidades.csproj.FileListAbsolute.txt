@@ -1,0 +1,6 @@
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Entidades\bin\Debug\Entidades.dll
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Entidades\bin\Debug\Entidades.pdb
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.dll
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.pdb
