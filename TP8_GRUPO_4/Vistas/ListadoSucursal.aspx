@@ -42,7 +42,7 @@
                         <asp:TextBox ID="txtBusquedaSucursalID" runat="server" Width="150px"></asp:TextBox>
                     </td>
                     <td class="auto-style4">&nbsp;&nbsp;
-                        <asp:Button ID="btnFiltrarSucursal" runat="server" Text="Filtrar" OnClick="btnFiltrarSucursal_Click" />
+                        <asp:Button ID="btnFiltrarSucursal" runat="server" Text="Filtrar" />
                     </td>
                     <td>
                         <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar todo" />
