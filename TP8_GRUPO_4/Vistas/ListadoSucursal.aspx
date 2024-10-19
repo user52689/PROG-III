@@ -36,7 +36,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="lblBusquedaSucursalID" runat="server" Text="Buesqueda Sucursal ID:"></asp:Label>
+                        <asp:Label ID="lblBusquedaSucursalID" runat="server" Text="Busqueda Sucursal ID:"></asp:Label>
                     </td>
                     <td class="auto-style3">
                         <asp:TextBox ID="txtBusquedaSucursalID" runat="server" Width="150px"></asp:TextBox>
@@ -51,7 +51,7 @@
             </table>
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+            <asp:GridView ID="grdSucursales" runat="server" AutoGenerateColumns="False">
                 <Columns>
                     <asp:TemplateField HeaderText="ID_Sucursal"></asp:TemplateField>
                     <asp:TemplateField HeaderText="Nombre"></asp:TemplateField>

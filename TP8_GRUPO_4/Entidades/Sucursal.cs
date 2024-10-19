@@ -8,6 +8,18 @@ namespace Entidades
 {
     public  class Sucursal
     {
+        private int _id;
+        private string _nombre;
+        private string _descripcion;
+        private string _direccion;
 
+        public Sucursal()
+        {
+        }
+
+        public int Id { get => _id; set => _id = value; }
+        public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
+        public string Direccion { get => _direccion; set => _direccion = value; }
     }
 }
