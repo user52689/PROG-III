@@ -61,3 +61,5 @@ D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Vistas\obj\Debug\Vi
 D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Vistas\obj\Debug\Vistas.csproj.Up2Date
 D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Vistas\obj\Debug\Vistas.dll
 D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Vistas\obj\Debug\Vistas.pdb
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Vistas\bin\Datos.dll
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Vistas\bin\Datos.pdb
