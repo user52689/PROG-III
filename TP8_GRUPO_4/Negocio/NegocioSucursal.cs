@@ -17,6 +17,10 @@ namespace Negocio
         {
             return ds.getTablaSucursal();
         }
+        public DataTable getFiltrarSucursalID(int id)
+        {
+            return ds.FiltrarSucursalID(id);
+        }
 
         public Sucursal getObtenerSucursal(int id)
         {

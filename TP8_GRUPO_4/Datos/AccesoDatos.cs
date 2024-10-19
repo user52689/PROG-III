@@ -35,11 +35,11 @@ namespace Datos
 
         private SqlDataAdapter ObtenerAdaptador(string consulta, SqlConnection cn)
         {
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, cn);
+            SqlDataAdapter adp = new SqlDataAdapter(consulta, cn);
 
             try
             {
-                return adaptador;
+                return adp;
             }
             catch (Exception ex)
             {
@@ -52,6 +52,16 @@ namespace Datos
             DataSet ds = new DataSet();
             SqlConnection conexion = ObtenerConexion();
             SqlDataAdapter adp = ObtenerAdaptador(consulta, conexion);
+            adp.Fill(ds, tabla);
+            conexion.Close();
+            return ds.Tables[tabla];
+        }
+        public DataTable ObtenerTablaConComando(string tabla, SqlCommand cmd)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection conexion = ObtenerConexion();
+            cmd.Connection = conexion;
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
             adp.Fill(ds, tabla);
             conexion.Close();
             return ds.Tables[tabla];
@@ -71,7 +81,7 @@ namespace Datos
             return FilasCambiadas;
         }
 
-        public bool existeRegistro(string consulta)
+        public bool ExisteRegistro(string consulta)
         {
             bool estado = false;
             SqlConnection Conexion = ObtenerConexion();
