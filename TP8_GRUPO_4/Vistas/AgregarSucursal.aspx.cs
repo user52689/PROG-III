@@ -16,5 +16,10 @@ namespace Vistas
         {
            
         }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            lblMensaje.Text = "Se agrego con exito";
+        }
     }
 }
