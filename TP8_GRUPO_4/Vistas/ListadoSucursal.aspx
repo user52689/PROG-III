@@ -42,7 +42,7 @@
                         <asp:TextBox ID="txtBusquedaSucursalID" runat="server" Width="150px"></asp:TextBox>
                     </td>
                     <td class="auto-style4">&nbsp;&nbsp;
-                        <asp:Button ID="btnFiltrarSucursal" runat="server" Text="Filtrar" />
+                        <asp:Button ID="btnFiltrarSucursal" runat="server" Text="Filtrar" OnClick="btnFiltrarSucursal_Click" />
                     </td>
                     <td>
                         <asp:Button ID="btnMostrarTodo" runat="server" Text="Mostrar todo" />
@@ -65,7 +65,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Descripcion">
                         <ItemTemplate>
-                            <asp:Label ID="lbl_it_DescripcionSucursal" runat="server"></asp:Label>
+                            <asp:Label ID="lbl_it_DescripcionSucursal" runat="server" Text='<%# Eval("DescripcionSucursal") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Provincia">

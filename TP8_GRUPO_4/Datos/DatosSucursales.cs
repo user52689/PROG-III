@@ -12,6 +12,8 @@ namespace Datos
     public class DatosSucursales
     {
         AccesoDatos ad = new AccesoDatos();
+        DataTable dt = new DataTable();
+        SqlCommand cmd = new SqlCommand();
         public Sucursal getSucursal(Sucursal sucursal)
         {
             DataTable tabla = ad.ObtenerTabla("Sucursal", "SELECT * FROM Sucursal WHERE Id_Sucursal=" + sucursal.Id);
@@ -24,19 +26,24 @@ namespace Datos
 
         public bool existeSucursal(Sucursal sucursal)
         {
-            String consulta = "SELECT * FROM Sucursal WHERE NombreSucursal='" + sucursal.Nombre + "'";
-            return ad.existeRegistro(consulta);
+            string consulta = "SELECT * FROM Sucursal WHERE NombreSucursal='" + sucursal.Nombre + "'";
+            return ad.ExisteRegistro(consulta);
         }
 
         public DataTable getTablaSucursal()
         {
-            DataTable tabla = ad.ObtenerTabla("Sucursal", "SELECT * FROM Sucursal");
-            return tabla;
+            dt = ad.ObtenerTabla("Sucursal", "SELECT * FROM Sucursal");
+            return dt;
+        }
+        public DataTable FiltrarSucursalID(int id) 
+        {
+            cmd = new SqlCommand("SELECT * FROM Sucursal WHERE Id_Sucursal = @Id_Sucursal");
+            cmd.Parameters.AddWithValue("@Id_Sucursal", id);
+            return ad.ObtenerTablaConComando("Sucursal", cmd);
         }
 
         public int eliminarSucursal(Sucursal sucursal)
         {
-            SqlCommand cmd = new SqlCommand();
             ArmarParametrosSucursalEliminar(ref cmd, sucursal);
             return ad.EjecutarProcedimientoAlmacenado(cmd, "SP_EliminarSucursal");
         }
@@ -45,16 +52,15 @@ namespace Datos
         public int agregarSucursal(Sucursal sucursal)
         {
             sucursal.Id = ad.ObtenerMaximo("SELECT max(Id_Sucursal) FROM Sucursal") + 1;
-            SqlCommand cmd = new SqlCommand();
             ArmarParametrosSucursalAgregar(ref cmd, sucursal);
             return ad.EjecutarProcedimientoAlmacenado(cmd, "SP_AgregarCategoria");
         }
 
         private void ArmarParametrosSucursalEliminar(ref SqlCommand cmd, Sucursal sucursal)
         {
-            SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = cmd.Parameters.Add("@Id_sucursal", SqlDbType.Int);
-            SqlParametros.Value = sucursal.Id;
+            SqlParameter prmt = new SqlParameter();
+            prmt = cmd.Parameters.Add("@Id_sucursal", SqlDbType.Int);
+            prmt.Value = sucursal.Id;
         }
 
         private void ArmarParametrosSucursalAgregar(ref SqlCommand cmd, Sucursal sucursal)

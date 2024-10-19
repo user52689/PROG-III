@@ -36,7 +36,7 @@
                         <asp:TextBox ID="txtEliminarSucursalID" runat="server" Width="145px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="btnEliminarSucursal" runat="server" Text="Eliminar" />
+                        <asp:Button ID="btnEliminarSucursal" runat="server" Text="Eliminar" OnClick="btnEliminarSucursal_Click" />
                     </td>
                 </tr>
                 <tr>
