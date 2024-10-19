@@ -19,7 +19,9 @@
     <form id="form1" runat="server">
         <div>
             <asp:HyperLink ID="hlAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx" Font-Size="Medium">Agregar Sucursal</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:HyperLink ID="hlListadoSucursal" runat="server" NavigateUrl="~/ListadoSucursal.aspx">Listado Sucursal</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:HyperLink ID="hlEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
             <br />
             <br />
@@ -38,7 +40,9 @@
                         <asp:Label ID="lblNombreSucursal" runat="server" Text="Nombre Sucursal:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+                    &nbsp;
+                        <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre">Ingresar Nombre</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +51,9 @@
                         <asp:Label ID="lblDescripcion" runat="server" Text="Descripcion:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtDescripcion" runat="server"></asp:TextBox>
+                    &nbsp;
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion">Ingresar Descripcion</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -56,8 +62,10 @@
                         <asp:Label ID="lblProvincias" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                     <td>
-                        <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:DropDownList ID="ddlProvincias" runat="server" Height="17px" Width="127px">
                         </asp:DropDownList>
+                    &nbsp;
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincias">Seleccionar Provincia</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -66,7 +74,9 @@
                         <asp:Label ID="lblDireccion" runat="server" Text="Direccion:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
+                    &nbsp;
+                        <asp:RequiredFieldValidator ID="rfvDescrip" runat="server" ControlToValidate="txtDireccion">Ingresar Descripcion</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -74,7 +84,7 @@
                         <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                     </td>
                     <td>
-                        <asp:Button ID="btnAgregar" runat="server" Text="Agregar" />
+                        <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
                     </td>
                 </tr>
             </table>

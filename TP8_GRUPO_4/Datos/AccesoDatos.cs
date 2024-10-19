@@ -9,14 +9,9 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    internal class AccesoDatos
+    public class AccesoDatos
     {
         string rutaBDSucursales = "Data Source=localhost\\sqlexpress;Initial Catalog=BDSucursales;Integrated Security=True";
-
-        public AccesoDatos()
-        {
-            // TODO: Agregar aquí la lógica del constructor
-        }
 
         private SqlConnection ObtenerConexion()
         {

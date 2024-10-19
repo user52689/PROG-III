@@ -38,7 +38,7 @@ namespace Negocio
                 return false;
         }
 
-        public bool agregarCategoria(String nombre)
+        public bool agregarSucursal(String nombre)
         {
             int cantFilas = 0;
 
