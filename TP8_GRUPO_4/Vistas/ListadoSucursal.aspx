@@ -53,11 +53,31 @@
             <br />
             <asp:GridView ID="grdSucursales" runat="server" AutoGenerateColumns="False">
                 <Columns>
-                    <asp:TemplateField HeaderText="ID_Sucursal"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Nombre"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Descripcion"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Provincia"></asp:TemplateField>
-                    <asp:TemplateField HeaderText="Direccion"></asp:TemplateField>
+                    <asp:TemplateField HeaderText="ID_Sucursal">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_IdSucursal" runat="server" Text='<%# Eval("Id_Sucursal") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Nombre">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_NombreSucursal" runat="server" Text='<%# Eval("NombreSucursal") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Descripcion">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_DescripcionSucursal" runat="server"></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Provincia">
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_ProvinciaSucursal" runat="server" Text='<%# Eval("Id_ProvinciaSucursal") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Direccion">
+                        <ItemTemplate>
+                            <asp:Label ID="lblDireccionSucursal" runat="server" Text='<%# Eval("DireccionSucursal") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
         </div>
