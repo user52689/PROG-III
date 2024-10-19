@@ -20,32 +20,30 @@ namespace Datos
 
         private SqlConnection ObtenerConexion()
         {
-            using (SqlConnection cn = new SqlConnection(rutaBDSucursales))
+            SqlConnection cn = new SqlConnection(rutaBDSucursales);
+            
+            try
             {
-                try
-                {
-                    cn.Open();
-                    return cn;
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
+                cn.Open();
+                return cn;
             }
+            catch (Exception ex)
+            {
+                return null;
+            }            
         }
 
         private SqlDataAdapter ObtenerAdaptador(string consulta, SqlConnection cn)
-        { 
-            using (SqlDataAdapter adaptador = new SqlDataAdapter(consulta, cn))
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, cn);
+
+            try
             {
-                try
-                {
-                    return adaptador;
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
+                return adaptador;
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
 
