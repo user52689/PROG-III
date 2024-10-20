@@ -25,3 +25,12 @@ C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.C
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb

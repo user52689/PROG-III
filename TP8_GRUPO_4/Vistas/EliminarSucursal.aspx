@@ -1,4 +1,9 @@
-﻿<head runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarSucursal.aspx.cs" Inherits="Vistas.EliminarSucursal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
@@ -36,7 +41,7 @@
                         <asp:TextBox ID="txtEliminarSucursalID" runat="server" Width="145px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="btnEliminarSucursal" runat="server" Text="Eliminar" />
+                        <asp:Button ID="btnEliminarSucursal" runat="server" Text="Eliminar" OnClick="btnEliminarSucursal_Click" />
                     </td>
                 </tr>
                 <tr>

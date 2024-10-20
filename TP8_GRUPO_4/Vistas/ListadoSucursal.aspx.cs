@@ -38,5 +38,18 @@ namespace Vistas
             grdSucursales.DataSource = dt;
             grdSucursales.DataBind();
         }
+
+        protected void btnMostrarTodo_Click(object sender, EventArgs e)
+        {
+            CargarGridSucursales();
+            LimpiarCampos();
+
+        }
+
+        protected void LimpiarCampos()
+        {
+            txtBusquedaSucursalID.Text = string.Empty;
+            
+        }
     }
 }

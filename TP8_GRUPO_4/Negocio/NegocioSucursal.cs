@@ -38,21 +38,18 @@ namespace Negocio
                 return false;
         }
 
-        public bool agregarSucursal(String nombre)
+        public bool agregarSucursal(Sucursal sucursal)
         {
-            int cantFilas = 0;
-
-            sucursal.Nombre = nombre;
-
-            if (ds.existeSucursal(sucursal) == false)
+            if (!ds.existeSucursal(sucursal))
             {
-                cantFilas = ds.agregarSucursal(sucursal);
+                int filasAfectadas = ds.agregarSucursal(sucursal);
+                return filasAfectadas > 0;
             }
-
-            if (cantFilas == 1)
-                return true;
             else
-                return false;
+            {
+                return false; // La sucursal ya existe
+            }
         }
     }
+
 }
