@@ -21,7 +21,7 @@ namespace Datos
             sucursal.Nombre = tabla.Rows[0][1].ToString();
             sucursal.Descripcion = tabla.Rows[0][2].ToString();
             sucursal.IdProvincia = Convert.ToInt32(tabla.Rows[0][3].ToString());
-            sucursal.Direccion = tabla.Rows[0][3].ToString();
+            sucursal.Direccion = tabla.Rows[0][4].ToString();
             return sucursal;
         }
 

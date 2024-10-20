@@ -28,18 +28,27 @@ namespace Vistas
                 {
                     lblMensaje.Text = "La sucursal se ha eliminado con exito.";
                     lblMensaje.ForeColor = System.Drawing.Color.Green;
+                    LimpiarCampos();
                 }
                 else
                 {
                     lblMensaje.Text = "No se encontro la sucursal o no se pudo eliminar.";
                     lblMensaje.ForeColor = System.Drawing.Color.Red;
+                    LimpiarCampos();
                 }
             }
             else
             {
                 lblMensaje.Text = "Por favor, ingrese un ID valido.";
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
+                LimpiarCampos();
             }
+
+        }
+
+        protected void LimpiarCampos()
+        {
+            txtEliminarSucursalID.Text = string.Empty;
 
         }
     }
