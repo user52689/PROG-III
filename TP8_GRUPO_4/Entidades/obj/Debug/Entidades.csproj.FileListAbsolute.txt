@@ -16,3 +16,9 @@ C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.dll
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Entidades\obj\Debug\Entidades.pdb

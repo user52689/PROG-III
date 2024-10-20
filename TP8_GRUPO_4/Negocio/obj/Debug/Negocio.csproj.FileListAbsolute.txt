@@ -31,3 +31,25 @@ C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.cspr
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.dll
 C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Negocio.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Negocio.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Negocio\obj\Debug\Negocio.pdb

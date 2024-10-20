@@ -6,12 +6,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Entidades;
 using Negocio;
 
 namespace Vistas
 {
     public partial class AgregarSucursal : System.Web.UI.Page
     {
+        NegocioSucursal negocioSucursal = new NegocioSucursal();
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         NegocioProvincia np = new NegocioProvincia();
@@ -34,31 +36,30 @@ namespace Vistas
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (Page.IsValid) 
+            if (Page.IsValid)
             {
-                string consulta = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
-                                 "VALUES (@NombreSucursal, @Descripcionsucursal, @Id_Provinciasucursal, @DireccionSucursal)";
-                
-
-                //conexion = new Conexion();
-
-
-                using (cmd = new SqlCommand(consulta))
+                Sucursal sucursal = new Sucursal
                 {
-                    cmd.Parameters.AddWithValue("@NombreSucursal", txtNombre.Text);
-                    cmd.Parameters.AddWithValue("@Descripcionsucursal", txtDescripcion.Text);
-                    cmd.Parameters.AddWithValue("@Id_Provinciasucursal", ddlProvincias.SelectedValue);
-                    cmd.Parameters.AddWithValue("@DireccionSucursal", txtDireccion.Text);
+                    Nombre = txtNombre.Text,
+                    Descripcion = txtDescripcion.Text,
+                    IdProvincia = Convert.ToInt32(ddlProvincias.SelectedValue),
+                    Direccion = txtDireccion.Text
+                };
 
-                  //  int mensaje = conexion.Transaccion(cmd);
+                bool agregado = negocioSucursal.agregarSucursal(sucursal);
 
-                    //if (mensaje == 1)
-                    {
-                        lblMensaje.Text = "Se agrego la sucursal de la BD";
-                    }
+                if (agregado)
+                {
+                    lblMensaje.Text = "Se agregó la sucursal correctamente.";
                 }
+                else
+                {
+                    lblMensaje.Text = "Error: la sucursal ya existe o ocurrió un problema.";
+                }
+
                 limpiarCampos();
             }
+
         }
 
         protected void limpiarCampos()
