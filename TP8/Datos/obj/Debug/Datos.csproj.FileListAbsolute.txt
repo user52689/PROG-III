@@ -1,0 +1,63 @@
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+D:\Osky\UTN\Progra III\Actual 2024 2C\TP´s\TP 8\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+D:\UTN\Prora3\tp8compr\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\git\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ult version osky\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\subir rama\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+C:\Users\Usuario\source\repos\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\juan\PROG-III\TP8_GRUPO_4\Datos\obj\Debug\Datos.pdb
