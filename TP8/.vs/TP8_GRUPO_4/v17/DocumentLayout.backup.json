@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18EE3C01-6AB9-4F1A-AF20-F18CD7A53744}|Vistas\\Vistas.csproj|c:\\users\\abraham\\desktop\\juan\\prog-iii\\tp8_grupo_4\\vistas\\listadosucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18EE3C01-6AB9-4F1A-AF20-F18CD7A53744}|Vistas\\Vistas.csproj|solutionrelative:vistas\\listadosucursal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18EE3C01-6AB9-4F1A-AF20-F18CD7A53744}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\vistas\\listadosucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18EE3C01-6AB9-4F1A-AF20-F18CD7A53744}|Vistas\\Vistas.csproj|solutionrelative:vistas\\listadosucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96316120-7145-428F-A33C-793676D61D4A}|Negocio\\Negocio.csproj|C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\negocio\\negociosucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96316120-7145-428F-A33C-793676D61D4A}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociosucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NegocioSucursal.cs",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\Negocio\\NegocioSucursal.cs",
+              "RelativeDocumentMoniker": "Negocio\\NegocioSucursal.cs",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\Negocio\\NegocioSucursal.cs",
+              "RelativeToolTip": "Negocio\\NegocioSucursal.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T23:39:06.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListadoSucursal.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\Vistas\\ListadoSucursal.aspx",
+              "RelativeDocumentMoniker": "Vistas\\ListadoSucursal.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\Vistas\\ListadoSucursal.aspx",
+              "RelativeToolTip": "Vistas\\ListadoSucursal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-21T23:34:44.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListadoSucursal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\Vistas\\ListadoSucursal.aspx.cs",
+              "RelativeDocumentMoniker": "Vistas\\ListadoSucursal.aspx.cs",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\juan\\PROG-III\\TP8_GRUPO_4\\Vistas\\ListadoSucursal.aspx.cs",
+              "RelativeToolTip": "Vistas\\ListadoSucursal.aspx.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T23:34:51.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
