@@ -81,12 +81,9 @@
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">
                         <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha Nacimiento:"></asp:Label>
-
                     </td>
                     <td class="auto-style7">
-                        <div class="input-box">
-                            <input type="date"/>
-                        </div>
+                        <input type="date"/>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
