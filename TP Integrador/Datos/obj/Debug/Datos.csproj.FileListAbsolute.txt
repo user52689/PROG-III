@@ -25,3 +25,12 @@ C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Dato
 C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
 C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoFinalIntegrador\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
