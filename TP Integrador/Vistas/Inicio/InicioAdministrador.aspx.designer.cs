@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vistas
+namespace Vistas.Inicio
 {
 
 
-    public partial class Inicio
+    public partial class InicioAdministrador
     {
 
         /// <summary>

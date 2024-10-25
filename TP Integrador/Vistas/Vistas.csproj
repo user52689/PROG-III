@@ -69,12 +69,15 @@
   <ItemGroup>
     <Content Include="Administrador\AsignacionTurno.aspx" />
     <Content Include="Administrador\Informes.aspx" />
+    <Content Include="Estilos\Estilos.css" />
+    <Content Include="Inicio\InicioAdministrador.aspx" />
+    <Content Include="Inicio\InicioMedico.aspx" />
+    <Content Include="Inicio\InicioSesion.aspx" />
     <Content Include="Medico\GestionarTurnos.aspx" />
     <Content Include="Administrador\AltaMedico.aspx" />
     <Content Include="Administrador\AltaPaciente.aspx" />
     <Content Include="Administrador\BajaMedico.aspx" />
     <Content Include="Administrador\BajaPaciente.aspx" />
-    <Content Include="Inicio.aspx" />
     <Content Include="Administrador\ListadoMedico.aspx" />
     <Content Include="Administrador\ListadoPaciente.aspx" />
     <Content Include="Administrador\ModificacionMedico.aspx" />
@@ -95,6 +98,27 @@
     </Compile>
     <Compile Include="Administrador\Informes.aspx.designer.cs">
       <DependentUpon>Informes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\InicioAdministrador.aspx.cs">
+      <DependentUpon>InicioAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\InicioAdministrador.aspx.designer.cs">
+      <DependentUpon>InicioAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\InicioMedico.aspx.cs">
+      <DependentUpon>InicioMedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\InicioMedico.aspx.designer.cs">
+      <DependentUpon>InicioMedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\InicioSesion.aspx.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\InicioSesion.aspx.designer.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Medico\GestionarTurnos.aspx.cs">
       <DependentUpon>GestionarTurnos.aspx</DependentUpon>
@@ -130,13 +154,6 @@
     </Compile>
     <Compile Include="Administrador\BajaPaciente.aspx.designer.cs">
       <DependentUpon>BajaPaciente.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrador\ListadoMedico.aspx.cs">
       <DependentUpon>ListadoMedico.aspx</DependentUpon>
