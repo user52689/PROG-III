@@ -1,63 +1,41 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="Vistas.Inicio.InicioSesion" %>
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-    </style>
-    <link href="../Estilos/Estilos.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="../Estilos/Estilos.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Inicio de Sesion"></asp:Label>
-            <br />
-            <table class="auto-style1">
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        <asp:Label ID="lblLegajo" runat="server" Text="Legajo:"></asp:Label>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtLegajo" runat="server"></asp:TextBox>
-                    </td>
-                   
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        <asp:Label ID="Label2" runat="server" Text="Contraseña:"></asp:Label>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        <asp:Label ID="Label3" runat="server" Text="Repita contraseña"></asp:Label>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtRepetirContraseña" runat="server" TextMode="Password"></asp:TextBox>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" />
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
+        <div class="wrapper">
+            <h1>Inicio de Sesion</h1>
+            <div class="input-box">
+                <!-- TextBox para el Nombre de Usuario (ASP.NET) -->
+                <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="input" placeholder="Nombre de Usuario"></asp:TextBox>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <!-- TextBox para la Contraseña (ASP.NET) -->
+                <asp:TextBox ID="txtContraseña" runat="server" CssClass="input" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" />Recordarme</label>
+                <a href="#">¿Olvidaste tu Contraseña?</a>
+            </div>
+            <div>
+                <!-- Botón de Login (ASP.NET) -->
+                <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" CssClass="btn" />
+            </div>
+            <div class="register-link">
+                <p>¿No tienes una cuenta? 
+                    <asp:HyperLink ID="hlRegistroUsuario" runat="server">Registrarse</asp:HyperLink>
+                </p>
+            </div>
         </div>
     </form>
 </body>

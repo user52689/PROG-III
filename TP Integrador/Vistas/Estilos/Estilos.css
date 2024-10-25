@@ -1,88 +1,85 @@
-﻿/* Estilos generales */
-body {
+﻿body {
+    background-image: url('../imagenes/fondopantalla.png');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
     font-family: Arial, sans-serif;
-    background-color: #f0f9f9; /* Color de fondo turquesa claro */
-    margin: 0;
-    padding: 0;
 }
 
-form {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.wrapper {
+    background-color: white;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total */
 }
 
-/* Resto de los estilos */
-header {
+h1 {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
     margin-bottom: 20px;
     color: #333;
 }
 
-.auto-style1 {
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .input-box input {
+        width: 80%;
+        padding: 10px;
+        padding-left: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .input-box i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+    }
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
     width: 100%;
-    border-collapse: collapse;
-}
-
-table tr {
-    height: 40px;
-}
-
-table td {
-    padding: 8px;
-}
-
-label {
-    font-weight: bold;
-    color: #555;
-}
-
-input[type="text"], select, .auto-style7 {
-    width: 90%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.auto-style7 {
-    width: 340px;
-}
-
-asp\:Calendar {
-    display: block;
-    margin: 0 auto;
-}
-
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #ffffff;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
-    button:hover {
+    .btn:hover {
         background-color: #0056b3;
     }
 
-.chlDiasAtencion {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.register-link {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.auto-style5 {
-    text-align: right;
-}
+    .register-link a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
