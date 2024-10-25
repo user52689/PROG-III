@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\",
+  "WorkspaceRootPath": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|d:\\osky\\utn\\progra iii\\actual 2024 2c\\tp integrador final\\programacion iii - integrador\\entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|solutionrelative:entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|solutionrelative:entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|d:\\osky\\utn\\progra iii\\actual 2024 2c\\tp integrador final\\programacion iii - integrador\\entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|solutionrelative:entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF40AB4-F4DE-4A48-9486-08F038518223}|Datos\\Datos.csproj|d:\\osky\\utn\\progra iii\\actual 2024 2c\\tp integrador final\\programacion iii - integrador\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF40AB4-F4DE-4A48-9486-08F038518223}|Datos\\Datos.csproj|solutionrelative:datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|solutionrelative:entidades\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|d:\\osky\\utn\\progra iii\\actual 2024 2c\\tp integrador final\\programacion iii - integrador\\entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{126C8A36-D61B-4424-89B7-95F262BAB02C}|Entidades\\Entidades.csproj|solutionrelative:entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EF40AB4-F4DE-4A48-9486-08F038518223}|Datos\\Datos.csproj|c:\\users\\abraham\\desktop\\osky version tp final\\prog-iii\\tp integrador\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF40AB4-F4DE-4A48-9486-08F038518223}|Datos\\Datos.csproj|solutionrelative:datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Medico.cs",
-              "DocumentMoniker": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Entidades\\Medico.cs",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Entidades\\Medico.cs",
               "RelativeDocumentMoniker": "Entidades\\Medico.cs",
-              "ToolTip": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Entidades\\Medico.cs",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Entidades\\Medico.cs",
               "RelativeToolTip": "Entidades\\Medico.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -49,22 +49,22 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Paciente.cs",
-              "DocumentMoniker": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Entidades\\Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Entidades\\Paciente.cs",
               "RelativeDocumentMoniker": "Entidades\\Paciente.cs",
-              "ToolTip": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Entidades\\Paciente.cs",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Entidades\\Paciente.cs",
               "RelativeToolTip": "Entidades\\Paciente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwBgAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T15:50:47.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Turno.cs",
-              "DocumentMoniker": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Entidades\\Turno.cs",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Entidades\\Turno.cs",
               "RelativeDocumentMoniker": "Entidades\\Turno.cs",
-              "ToolTip": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Entidades\\Turno.cs",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Entidades\\Turno.cs",
               "RelativeToolTip": "Entidades\\Turno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,26 +73,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Datos\\AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Datos\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "Datos\\AccesoDatos.cs",
-              "ToolTip": "D:\\Osky\\UTN\\Progra III\\Actual 2024 2C\\TP Integrador Final\\Programacion III - Integrador\\Datos\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\osky version tp final\\PROG-III\\TP Integrador\\Datos\\AccesoDatos.cs",
               "RelativeToolTip": "Datos\\AccesoDatos.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwFoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T16:08:18.844Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 69,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             }
           ]
         }
