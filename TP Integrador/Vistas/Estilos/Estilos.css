@@ -1,4 +1,6 @@
 ﻿body {
+    margin: 0; /* Asegúrate de que no haya márgenes */
+    padding: 0; /* Asegúrate de que no haya paddings */
     background-image: url('../imagenes/fondopantalla.png');
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
@@ -18,7 +20,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
     width: 100%;
-    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
 
 h1 {
@@ -32,22 +34,22 @@ h1 {
     margin-bottom: 20px;
 }
 
-    .input-box input {
-        width: 80%;
-        padding: 10px;
-        padding-left: 40px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
+.input-box input {
+    width: 80%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
-    .input-box i {
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #666;
-    }
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
 
 .remember-forgot {
     display: flex;
@@ -66,20 +68,21 @@ h1 {
     font-size: 16px;
 }
 
-    .btn:hover {
-        background-color: #0056b3;
-    }
+.btn:hover {
+    background-color: #0056b3;
+}
 
 .register-link {
     text-align: center;
     margin-top: 20px;
 }
 
-    .register-link a {
-        color: #007BFF;
-        text-decoration: none;
-    }
+.register-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
 
-        .register-link a:hover {
-            text-decoration: underline;
-        }
+.register-link a:hover {
+    text-decoration: underline;
+}
+

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Alta Medico</title>
     <link href="../../Estilos/Estilos.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,7 +32,7 @@
                         <asp:Label ID="lblDni" runat="server" Text="DNI:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtDni" runat="server" CssClass="input-box"></asp:TextBox>
+                        <asp:TextBox ID="txtDni" runat="server" CssClass="input-box" placeholder="DNI"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -42,7 +42,7 @@
                         <asp:Label ID="lblNombre" runat="server" Text="Nombre:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtNombre" runat="server" CssClass="input-box"></asp:TextBox>
+                        <asp:TextBox ID="txtNombre" runat="server" CssClass="input-box" placeholder="Nombre"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -52,7 +52,7 @@
                         <asp:Label ID="lblApellido" runat="server" Text="Apellido:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtApellido" runat="server" CssClass="input-box"></asp:TextBox>
+                        <asp:TextBox ID="txtApellido" runat="server" CssClass="input-box" placeholder="Apellido"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -62,7 +62,11 @@
                         <asp:Label ID="lblSexo" runat="server" Text="Sexo:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtSexo" runat="server" CssClass="input-box"></asp:TextBox>
+                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                              <asp:ListItem Value="1">Masculino</asp:ListItem>
+                              <asp:ListItem Value="2">Femenino</asp:ListItem>
+                              <asp:ListItem Value="3">Prefiero no decirlo</asp:ListItem>
+                          </asp:RadioButtonList>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -92,7 +96,9 @@
                     <td class="auto-style3">
                         <asp:Label ID="lblDireccion" runat="server" Text="Direccion:"></asp:Label>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="txtDireccion" runat="server" CssClass="input-box" placeholder="Direccion"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -123,7 +129,7 @@
                         <asp:Label ID="lblEmail" runat="server" Text="E-mail:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtEmail" runat="server" CssClass="input-box"></asp:TextBox>
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="input-box" placeholder="E-mail"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -133,7 +139,7 @@
                         <asp:Label ID="lblTelefono" runat="server" Text="Teléfono:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtTelefono" runat="server" CssClass="input-box"></asp:TextBox>
+                        <asp:TextBox ID="txtTelefono" runat="server" CssClass="input-box" placeholder="Telefono"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
