@@ -1,37 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\",
+  "WorkspaceRootPath": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\listadopaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\listadopaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|c:\\users\\princ\\onedrive\\desktop\\prog-iii\\tp integrador\\vistas\\usuarios\\administrador\\listadomedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\listadomedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\bajapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\bajapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\inicio\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\inicio\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\inicio\\iniciosesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\inicio\\iniciosesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\altamedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\altamedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\altamedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\bajapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\bajapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\inicio\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\inicio\\registrousuario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|c:\\users\\abraham\\desktop\\ultima version\\prog-iii\\tp integrador\\vistas\\estilos\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\estilos\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\inicio\\iniciosesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\inicio\\iniciosesion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|c:\\users\\abraham\\desktop\\ultima version\\prog-iii\\tp integrador\\vistas\\usuarios\\administrador\\listadomedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\listadomedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\bajamedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\listadopaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\listadopaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\vistas\\usuarios\\administrador\\bajamedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{2E490144-330A-4807-B861-77715E5DE245}|Vistas\\Vistas.csproj|solutionrelative:vistas\\usuarios\\administrador\\bajamedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -42,45 +46,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListadoPaciente.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
-              "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
-              "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-26T12:15:49.718Z",
+              "DocumentIndex": 3,
+              "Title": "Estilos.css",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Estilos\\Estilos.css",
+              "RelativeDocumentMoniker": "Vistas\\Estilos\\Estilos.css",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Estilos\\Estilos.css",
+              "RelativeToolTip": "Vistas\\Estilos\\Estilos.css",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowHoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-26T21:27:26.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "ListadoPaciente.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
+              "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
+              "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\ListadoPaciente.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-26T12:15:49.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ListadoMedico.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoMedico.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoMedico.aspx",
               "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\ListadoMedico.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoMedico.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\ListadoMedico.aspx",
               "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\ListadoMedico.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-10-26T12:14:59.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BajaPaciente.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaPaciente.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaPaciente.aspx",
               "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\BajaPaciente.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaPaciente.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaPaciente.aspx",
               "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\BajaPaciente.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -89,11 +105,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RegistroUsuario.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Inicio\\RegistroUsuario.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Inicio\\RegistroUsuario.aspx",
               "RelativeDocumentMoniker": "Vistas\\Inicio\\RegistroUsuario.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Inicio\\RegistroUsuario.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Inicio\\RegistroUsuario.aspx",
               "RelativeToolTip": "Vistas\\Inicio\\RegistroUsuario.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -104,24 +120,24 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "InicioSesion.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Inicio\\InicioSesion.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Inicio\\InicioSesion.aspx",
               "RelativeDocumentMoniker": "Vistas\\Inicio\\InicioSesion.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Inicio\\InicioSesion.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Inicio\\InicioSesion.aspx",
               "RelativeToolTip": "Vistas\\Inicio\\InicioSesion.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-10-25T14:27:06.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AltaMedico.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaMedico.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaMedico.aspx",
               "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\AltaMedico.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaMedico.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaMedico.aspx",
               "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\AltaMedico.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-10-25T11:25:05.525Z",
               "EditorCaption": ""
@@ -130,37 +146,25 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "AltaPaciente.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaPaciente.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaPaciente.aspx",
               "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\AltaPaciente.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaPaciente.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\AltaPaciente.aspx",
               "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\AltaPaciente.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-26T11:41:36.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T11:41:36.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BajaMedico.aspx",
-              "DocumentMoniker": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaMedico.aspx",
+              "DocumentMoniker": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaMedico.aspx",
               "RelativeDocumentMoniker": "Vistas\\Usuarios\\Administrador\\BajaMedico.aspx",
-              "ToolTip": "C:\\Users\\princ\\OneDrive\\Desktop\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaMedico.aspx",
+              "ToolTip": "C:\\Users\\Abraham\\Desktop\\ultima version\\PROG-III\\TP Integrador\\Vistas\\Usuarios\\Administrador\\BajaMedico.aspx",
               "RelativeToolTip": "Vistas\\Usuarios\\Administrador\\BajaMedico.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-26T12:07:39.368Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 221,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+              "WhenOpened": "2024-10-26T12:07:39.368Z"
             }
           ]
         }
