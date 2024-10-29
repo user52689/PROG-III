@@ -33,7 +33,7 @@
             </div>
             <div class="register-link">
                 <p>¿No tienes una cuenta? 
-                    <asp:HyperLink ID="hlRegistroUsuario" runat="server">Registrarse</asp:HyperLink>
+                    <asp:HyperLink ID="hlRegistroUsuario" runat="server" NavigateUrl="~/Inicio/RegistroUsuario.aspx">Registrarse</asp:HyperLink>
                 </p>
             </div>
         </div>
