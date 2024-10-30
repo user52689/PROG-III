@@ -1,0 +1,242 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagenes/fondopantalla.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+header li, header a, header p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.nav-bar {
+    list-style-type: none;
+}
+
+    .nav-bar li {
+        display: inline-block;
+        padding: 0px 0px;
+    }
+
+        .nav-bar li a {
+            transition: 10ms;
+            display: block;
+            padding: .6em 1em;
+        }
+
+            .nav-bar li a:hover {
+                color: aqua;
+            }
+
+
+/* Estilos unico para el formulario de registro */
+.registro-container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+}
+
+.registro-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registro-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.registro-input-box {
+    flex: 1 1 48%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+    .registro-input-box:nth-child(2n + 1) {
+        margin-right: 4px; /* Ajusta este valor para la separación deseada */
+    }
+
+    .registro-input-box label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .registro-input-box .registro-input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        width: 100%;
+    }
+
+.registro-gender-details {
+    margin: 20px 0;
+}
+
+.registro-gender-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.registro-category {
+    display: flex;
+    gap: 20px; /* Espacio entre cada opción */
+}
+
+    .registro-category label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .registro-category label input {
+            margin-right: 10px;
+        }
+
+.registro-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .registro-button .registro-submit {
+        height: 50px;
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        background: #007BFF;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .registro-button .registro-submit:hover {
+            background: #0056b3;
+        }
+
+/*fin del CSS para el registro*/
+

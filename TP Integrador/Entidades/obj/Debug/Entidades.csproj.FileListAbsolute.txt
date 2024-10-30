@@ -1,0 +1,24 @@
+C:\Users\Abraham\Desktop\osky version tp final\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\osky version tp final\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\osky version tp final\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\osky version tp final\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\osky version tp final\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\osky version tp final\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\lisan\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
