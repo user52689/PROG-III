@@ -8,21 +8,6 @@
     <title>Gestion de Turnos</title>
     <link href="../../Estilos/Estilos.css" rel="stylesheet" type="text/css" />
     <style>
-         .btn-cerrar-sesion {
-         background-color: #FF6347; /* Color de fondo rojo suave */
-         color: white; /* Color de texto */
-         padding: 8px 16px; /* Espaciado interno */
-         border: none; /* Sin borde */
-         border-radius: 5px; /* Borde redondeado */
-         font-size: 16px; /* Tamaño de fuente */
-         cursor: pointer; /* Icono de mano al pasar el mouse */
-         transition: background-color 0.3s ease; /* Transición suave */
-         }
-
-         .btn-cerrar-sesion:hover {
-             background-color: #FF4500; /* Color de fondo al pasar el mouse */
-         }
-
      </style>
 </head>
 <body>
@@ -31,10 +16,11 @@
              <p>Clinica Pacheco</p>
              <nav>
                  <ul class="nav-bar">
-                     <li><a href="AltaMedico.aspx">Medicos</a></li>
-                     <li><a href="AltaPaciente.aspx">Pacientes</a></li>
-                     <li><a href="AsignacionTurno.aspx">Turnos</a></li>
-                     <li><a href="Informes.aspx">Informes</a></li>
+                     <li>
+                         <a>
+                            <asp:HyperLink ID="hlInicio" runat="server" NavigateUrl="~/Inicio/InicioMedico.aspx">Inicio</asp:HyperLink>
+                         </a>
+                     </li>
                      <li>
                          <asp:Label ID="Label1" runat="server" Text="Usuario:"></asp:Label>
                          <asp:Label ID="lblUsuarioEnSesion" runat="server" CssClass="auto-style1"></asp:Label>
