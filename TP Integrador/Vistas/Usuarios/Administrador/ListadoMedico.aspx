@@ -24,6 +24,55 @@
              background-color: #FF4500; /* Color de fondo al pasar el mouse */
          }
 
+         .auto-style1 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 1px;
+         }
+         .auto-style2 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 2px;
+         }
+         .auto-style3 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 3px;
+         }
+         .auto-style4 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 4px;
+         }
+         .auto-style5 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 5px;
+         }
+         .auto-style6 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 6px;
+         }
+         .auto-style7 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 7px;
+         }
+         .auto-style8 {
+             position: relative;
+             margin-bottom: 20px;
+             left: 0px;
+             top: 8px;
+         }
+
      </style>
 </head>
 <body>
@@ -48,9 +97,6 @@
           </header>
         <div class="wrapper">
             <h1><asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="Listado Médico"></asp:Label></h1>
-            <asp:Label ID="lblUsuario" runat="server" Text="Usuario: "></asp:Label>
-            <asp:Label ID="lblNombreUsuario" runat="server"></asp:Label>
-            <br />
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style6"></td>
@@ -66,9 +112,11 @@
                         <asp:Label ID="lblBuscarPorLegajo" runat="server" Text="Legajo medico:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtBuscarPorLegajo" runat="server" CssClass="input-box" placeholder="Legajo"></asp:TextBox>
+                        <asp:TextBox ID="txtBuscarPorLegajo" runat="server" CssClass="auto-style8" placeholder="Legajo"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvLegajoMEdico" runat="server" ControlToValidate="txtBuscarPorLegajo">*Completar campo</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style5">&nbsp;</td>
@@ -83,25 +131,32 @@
                 <tr>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3" colspan="2">
-                        <asp:GridView ID="grdListadoMEdico" runat="server" AutoGenerateColumns="False">
-                            <Columns>
-                                <asp:BoundField HeaderText="Legajo" />
-                                <asp:BoundField HeaderText="DNI" />
-                                <asp:BoundField HeaderText="Nombre" />
-                                <asp:BoundField HeaderText="Apellido" />
-                                <asp:BoundField HeaderText="Genero" />
-                                <asp:BoundField HeaderText="Nacionalidad" />
-                                <asp:BoundField HeaderText="Fecha Nacimiento" />
-                                <asp:BoundField HeaderText="Direccion" />
-                                <asp:BoundField HeaderText="Provincia" />
-                                <asp:BoundField HeaderText="Localidad" />
-                                <asp:BoundField HeaderText="E-mail" />
-                                <asp:BoundField HeaderText="Telefono" />
-                                <asp:BoundField HeaderText="Especialidad" />
-                                <asp:BoundField HeaderText="Dia Atencion" />
-                                <asp:BoundField HeaderText="Horario Atencion" />
-                            </Columns>
-                        </asp:GridView>
+                        <asp:GridView ID="grdListadoMedico" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True">
+                         <Columns>
+                             <asp:TemplateField HeaderText="Legajo">
+                                 <EditItemTemplate>
+                                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                 </EditItemTemplate>
+                                 <ItemTemplate>
+                                     <asp:Label ID="Label1" runat="server"></asp:Label>
+                                 </ItemTemplate>
+                             </asp:TemplateField>
+                             <asp:TemplateField HeaderText="DNI"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Nombre"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Apellido"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Genero"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Nacionalidad"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Fecha Nacimiento"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Direccion"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Provincia"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Localidad"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="E-mail"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Telefono"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Especialidad"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Dias Atencion"></asp:TemplateField>
+                             <asp:TemplateField HeaderText="Horario Atencion"></asp:TemplateField>
+                         </Columns>
+                     </asp:GridView>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
