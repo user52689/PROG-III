@@ -8,103 +8,7 @@
     <title>Alta Medico</title>
     <link href="../../Estilos/Estilos.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        .auto-style1 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 0px;
-            top: -37px;
-        }
-        .auto-style2 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 0px;
-            top: -37px;
-            height: 53px;
-        }
-        .auto-style3 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 9px;
-            top: 51px;
-            width: 143px;
-        }
-        .auto-style4 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 8px;
-            top: 51px;
-            width: 143px;
-        }
-        .auto-style7 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 5px;
-            top: 51px;
-        }
-        .auto-style8 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 4px;
-            top: 51px;
-        }
-        .auto-style9 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 0px;
-            top: 6px;
-        }
-        .auto-style10 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 0px;
-            top: 5px;
-        }
-        .auto-style11 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 0px;
-            top: 8px;
-        }
-        .auto-style12 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 0px;
-            top: 7px;
-        }
-        .auto-style13 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 9px;
-            top: 51px;
-            width: 143px;
-            height: 42px;
-            right: 320px;
-        }
-        .auto-style14 {
-            position: relative;
-            margin-bottom: 20px;
-            left: 5px;
-            top: 51px;
-            height: 42px;
-        }
-        .auto-style15 {
-            height: 42px;
-        }
-         .btn-cerrar-sesion {
-         background-color: #FF6347; /* Color de fondo rojo suave */
-         color: white; /* Color de texto */
-         padding: 8px 16px; /* Espaciado interno */
-         border: none; /* Sin borde */
-         border-radius: 5px; /* Borde redondeado */
-         font-size: 16px; /* Tamaño de fuente */
-         cursor: pointer; /* Icono de mano al pasar el mouse */
-         transition: background-color 0.3s ease; /* Transición suave */
-         }
-
-         .btn-cerrar-sesion:hover {
-             background-color: #FF4500; /* Color de fondo al pasar el mouse */
-         }
-
+       
      </style>
 </head>
 <body>
@@ -113,10 +17,11 @@
             <p>Clinica Pacheco</p>
             <nav>
                 <ul class="nav-bar">
-                    <li><a href="AltaMedico.aspx">Medicos</a></li>
-                    <li><a href="AltaPaciente.aspx">Pacientes</a></li>
-                    <li><a href="AsignacionTurno.aspx">Turnos</a></li>
-                    <li><a href="Informes.aspx">Informes</a></li>
+                     <li>
+                         <a>
+                            <asp:HyperLink ID="hlInicio" runat="server" NavigateUrl="~/Inicio/InicioAdministrador.aspx">Inicio</asp:HyperLink>
+                         </a>
+                     </li>
                     <li>
                         <asp:Label ID="lblUsuario" runat="server" Text="Usuario:"></asp:Label>
                         <asp:Label ID="lblUsuarioEnSesion" runat="server" CssClass="auto-style1"></asp:Label>
@@ -127,7 +32,9 @@
                 </ul>
             </nav>
         </header>
+
         <div class="wrapper">
+           
             <h1><asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="Alta Médico"></asp:Label></h1>
             <table class="auto-style1">
                 <tr>
@@ -273,13 +180,49 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        &nbsp;</td>
+                        <asp:Label ID="lblDiaAtencion" runat="server" Text="Dia Atencion:"></asp:Label>
+                    </td>
                     <td class="auto-style7">
-                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn" />
+                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                            <asp:ListItem Value="1">Lunes</asp:ListItem>
+                            <asp:ListItem Value="2">Martes</asp:ListItem>
+                            <asp:ListItem Value="3">Miercoles</asp:ListItem>
+                            <asp:ListItem Value="4">Jueves</asp:ListItem>
+                            <asp:ListItem Value="5">Viernes</asp:ListItem>
+                            <asp:ListItem Value="6">Sabado</asp:ListItem>
+                            <asp:ListItem Value="7">Domingo</asp:ListItem>
+                        </asp:CheckBoxList>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label1" runat="server" Text="Horario Atencion"></asp:Label>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:DropDownList ID="ddlHorarioAtencion" runat="server" Height="16px">
+                            <asp:ListItem Value="1">08:00</asp:ListItem>
+                            <asp:ListItem Value="2">09:00</asp:ListItem>
+                            <asp:ListItem Value="3">10:00</asp:ListItem>
+                            <asp:ListItem Value="4">11:00</asp:ListItem>
+                            <asp:ListItem Value="5">12:00</asp:ListItem>
+                            <asp:ListItem Value="6">13:00</asp:ListItem>
+                            <asp:ListItem Value="7">14:00</asp:ListItem>
+                            <asp:ListItem Value="8">15:00</asp:ListItem>
+                            <asp:ListItem Value="9">16:00</asp:ListItem>
+                            <asp:ListItem Value="10">17:00</asp:ListItem>
+                            <asp:ListItem Value="11">18:00</asp:ListItem>
+                            <asp:ListItem Value="12">19:00</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvHorarioAtencion" runat="server" ControlToValidate="ddlHorarioAtencion">*Completar campo</asp:RequiredFieldValidator>
+                    </td>
+                </tr>
                 </table>
+                <br />
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn" />
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
         </div>
     </form>
 </body>

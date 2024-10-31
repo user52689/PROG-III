@@ -11,29 +11,44 @@
 </head>
 <body>
     <form id="form1" runat="server">
+         <header>
+             <p>Clinica Pacheco</p>
+             <nav>
+                 <ul class="nav-bar">
+                 </ul>
+             </nav>
+         </header>
         <div class="wrapper">
             <h1>Inicio de Sesion</h1>
             <div class="input-box">
-                <!-- TextBox para el Nombre de Usuario (ASP.NET) -->
                 <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="input" placeholder="Nombre de Usuario"></asp:TextBox>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <!-- TextBox para la Contraseña (ASP.NET) -->
                 <asp:TextBox ID="txtContraseña" runat="server" CssClass="input" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
                 <i class='bx bxs-lock-alt'></i>
-            </div>
+            </div>   
+        
+
+
+
+            <%--
+            !Comentado para ver si lo dejamos o lo sacamos
+            
+                
             <div class="remember-forgot">
                 <label><input type="checkbox" />Recordarme</label>
                 <a href="#">¿Olvidaste tu Contraseña?</a>
             </div>
-            <div>
-                <!-- Botón de Login (ASP.NET) -->
+            --%>
+            
+                
+                <div>
                 <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" CssClass="btn" />
             </div>
-            <div class="register-link">
+            <div>
                 <p>¿No tienes una cuenta? 
-                    <asp:HyperLink ID="hlRegistroUsuario" runat="server" NavigateUrl="~/Inicio/RegistroUsuario.aspx">Registrarse</asp:HyperLink>
+                        <asp:HyperLink ID="hlRegistroUsuario" runat="server" NavigateUrl="~/Inicio/RegistroUsuario.aspx">Registrarse</asp:HyperLink>
                 </p>
             </div>
         </div>

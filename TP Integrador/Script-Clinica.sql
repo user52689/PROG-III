@@ -23,6 +23,50 @@ SELECT 7, 'Domingo'
 
 GO
 
+
+------------------------------------------------------------------------Horario
+CREATE TABLE Horarios (
+    Id_h INT IDENTITY(1,1) NOT NULL,
+    Horario_h CHAR(5), 
+	CONSTRAINT IdHorario_h PRIMARY KEY (Id_h),
+);
+
+INSERT INTO Horarios (Horario_h)
+SELECT '08:00' UNION
+SELECT '09:00' UNION
+SELECT '10:00' UNION
+SELECT '11:00' UNION
+SELECT '12:00' UNION
+SELECT '13:00' UNION
+SELECT '14:00' UNION
+SELECT '15:00' UNION
+SELECT '16:00' UNION
+SELECT '17:00' UNION
+SELECT '18:00' UNION
+SELECT '19:00' UNION
+SELECT '20:00'
+
+GO
+
+
+
+-----------------------------------------------------------------------Tabla intermedia MedicosxDias
+CREATE TABLE MedicoXDias (
+    Legajo_med_mxd INT NOT NULL,
+    IdDia_d_mxd INT NOT NULL,
+	IdHorario_h_mxd INT NOT NULL,
+    CONSTRAINT PK_MedicoDias PRIMARY KEY (Legajo_med_mxd, IdDia_d_mxd,IdHorario_h_mxd),
+    CONSTRAINT FK_MedicoDias_Medico FOREIGN KEY (Legajo_med_mxd) REFERENCES Medicos(Legajo_med),
+    CONSTRAINT FK_MedicoDias_Dia FOREIGN KEY (IdDia_d_mxd) REFERENCES Dias(IdDia_d),
+	CONSTRAINT FK_MedicosDias_Horario FOREIGN KEY (IdHorario_h_mxd) REFERENCES Horarios(Id_h)
+)
+GO
+
+
+
+
+
+
 --------------------------------------------------------------------------Especialidad
 CREATE TABLE Especialidades (
     IdEspecialidad_esp INT IDENTITY (1,1) NOT NULL,  
@@ -43,7 +87,7 @@ GO
 
 ---------------------------------------------------------------------------Medico
 CREATE TABLE Medicos (
-    Legajo_med INT IDENTItY(1,1) NOT NULL,
+    Legajo_med INT IDENTITY(1,1) NOT NULL,
     DNI_med CHAR(10) NOT NULL,
     Nombre_med VARCHAR(50) NOT NULL,
     Apellido_med VARCHAR(50) NOT NULL,
@@ -51,14 +95,14 @@ CREATE TABLE Medicos (
     Nacionalidad_med CHAR(50) NOT NULL,
     FechaNacimiento_med DATE NOT NULL,
     Direccion_med VARCHAR(50) NOT NULL,
-    Localidad_medAR CHAR(50) NOT NULL,
-    Provincia_med VARCHAR(50) NOT NULL,
+    Localidad_medAR INT NOT NULL,
+    Provincia_med INT NOT NULL,
     CorreoElectronico_med VARCHAR(50) NOT NULL,
     Telefono_med VARCHAR(15) NOT NULL,
-    Especialidad_med VARCHAR(50) NOT NULL,
-    DiasAtencion_med VARCHAR(10) NOT NULL,
-    HorarioAtencion_med VARCHAR(10) NOT NULL,
+    Especialidad_med INT NOT NULL,
+    HorarioAtencion_med INT NOT NULL,
     CONSTRAINT PK_Medico PRIMARY KEY (Legajo_med),
+	CONSTRAINT UK_DNI_med UNIQUE (DNI_med),
 	CONSTRAINT FK_Medico_Usuario FOREIGN KEY (IdUsuario_med) REFERENCES Usuarios(Id_usr),
     CONSTRAINT FK_Medico_Especialidad FOREIGN KEY (Especialidad_med) REFERENCES Especialidad(IdEspecialidad_esp),
 	CONSTRAINT FK_Medico_Provincia FOREIGN KEY (Provincia_med) REFERENCES Provincias (IdProvincia_prov)
@@ -75,18 +119,8 @@ SELECT '1234567895', 'Pedro', 'García', 'Masculino', 'Argentino', '1988-11-20', 
 SELECT '1234567896', 'Luisa', 'Fernández', 'Femenino', 'Argentina', '1992-04-05', 'Calle 30', 'San Fernando', 'Buenos Aires', 'luisa.fernandez@email.com', '01123456780', 'Ginecología', 'Martes a Viernes', '09:00-18:00' UNION
 SELECT '1234567897', 'Javier', 'Mendoza', 'Masculino', 'Argentino', '1987-08-10', 'Calle 50', 'Lanús', 'Buenos Aires', 'javier.mendoza@email.com', '01123456781', 'Oftalmología', 'Lunes a Sábado', '09:00-17:00';
 
-
------------------------------------------------------------------------Tabla intermedia MedicosxDias
-CREATE TABLE MedicoXDias (
-    Legajo_med_mxd CHAR(5) NOT NULL,
-    IdDia_d_mxd CHAR(1) NOT NULL,
-    CONSTRAINT PK_MedicoDias PRIMARY KEY (Legajo_med_mxd, IdDia_d_mxd),
-    CONSTRAINT FK_MedicoDias_Medico FOREIGN KEY (Legajo_med_mxd) REFERENCES Medicos(Legajo_med),
-    CONSTRAINT FK_MedicoDias_Dia FOREIGN KEY (IdDia_d_mxd) REFERENCES Dias(IdDia_d)
-)
 GO
 
---Falta crear registros
 
 
 
@@ -139,6 +173,7 @@ SELECT '00003', 'Carlos', 'Rodríguez', 'carlos.rodriguez@email.com', '0291456789
 SELECT '00004', 'Ana', 'Martínez', 'ana.martinez@email.com', '01198765432', 'anam', 'zxcvb' UNION
 SELECT '00005', 'Laura', 'López', 'laura.lopez@email.com', '01112345678', 'laural', 'asdfg';
 
+GO
 
 -----------------------------------------------------------------------------Paciente
 CREATE TABLE Pacientes (
@@ -381,7 +416,7 @@ SELECT 'Monteros';
 -------------------------------------------------------------------------EstadosTurnos
 CREATE TABLE EstadoTurnos (
     IdEstadoTurno_et INT IDENTITY(1,1) NOT NULL,
-    Nombre_et CHAR(50) NOT NULL,
+    Nombre_et VARCHAR(50) NOT NULL,
     CONSTRAINT PK_EstadoTurno PRIMARY KEY (IdEstadoTurno_et)
 )
 GO
@@ -400,12 +435,12 @@ GO
 CREATE TABLE Turnos (
     IdTurno_tu INT IDENTITY(1,1) NOT NULL,            
     IdPaciente_tu CHAR(10) NOT NULL,         
-    IdMedico_tu CHAR(10) NOT NULL,           
+    IdMedico_tu INT NOT NULL,           
     FechaTurno_tu DATE NOT NULL,             
-    IdEstadoTurno_tu CHAR(10) NOT NULL,
+    IdEstadoTurno_tu INT NOT NULL,
     CONSTRAINT PK_Turno PRIMARY KEY (IdTurno_tu),
-    CONSTRAINT FK_Turno_Paciente FOREIGN KEY (IdPaciente_tu) REFERENCES Paciente(DNI_pac),
-    CONSTRAINT FK_Turno_Medico FOREIGN KEY (IdMedico_tu) REFERENCES Medico(DNI_med),
-    CONSTRAINT FK_Turno_EstadoTurno FOREIGN KEY (IdEstadoTurno_tu) REFERENCES EstadoTurno(IdEstadoTurno_et)
+    CONSTRAINT FK_Turno_Paciente FOREIGN KEY (IdPaciente_tu) REFERENCES Pacientes(DNI_pac),
+    CONSTRAINT FK_Turno_Medico FOREIGN KEY (IdMedico_tu) REFERENCES Medicos(Legajo_med),
+    CONSTRAINT FK_Turno_EstadoTurno FOREIGN KEY (IdEstadoTurno_tu) REFERENCES EstadoTurnos(IdEstadoTurno_et)
 )
 GO
