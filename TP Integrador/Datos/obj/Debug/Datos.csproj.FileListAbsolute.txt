@@ -52,3 +52,12 @@ C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Datos\obj
 C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
 C:\Users\princ\OneDrive\Desktop\PROG-III\Prueba\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
