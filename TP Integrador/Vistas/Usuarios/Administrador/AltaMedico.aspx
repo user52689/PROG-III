@@ -273,9 +273,60 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
+                        <asp:Label ID="lblDiaAtencion" runat="server" Text="Dia Atencion:"></asp:Label>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                            <asp:ListItem Value="1">Lunes</asp:ListItem>
+                            <asp:ListItem Value="2">Martes</asp:ListItem>
+                            <asp:ListItem Value="3">Miercoles</asp:ListItem>
+                            <asp:ListItem Value="4">Jueves</asp:ListItem>
+                            <asp:ListItem Value="5">Viernes</asp:ListItem>
+                            <asp:ListItem Value="6">Sabado</asp:ListItem>
+                            <asp:ListItem Value="7">Domingo</asp:ListItem>
+                        </asp:CheckBoxList>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label1" runat="server" Text="Horario Atencion"></asp:Label>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:DropDownList ID="ddlHorarioAtencion" runat="server" Height="16px">
+                            <asp:ListItem Value="1">08:00</asp:ListItem>
+                            <asp:ListItem Value="2">09:00</asp:ListItem>
+                            <asp:ListItem Value="3">10:00</asp:ListItem>
+                            <asp:ListItem Value="4">11:00</asp:ListItem>
+                            <asp:ListItem Value="5">12:00</asp:ListItem>
+                            <asp:ListItem Value="6">13:00</asp:ListItem>
+                            <asp:ListItem Value="7">14:00</asp:ListItem>
+                            <asp:ListItem Value="8">15:00</asp:ListItem>
+                            <asp:ListItem Value="9">16:00</asp:ListItem>
+                            <asp:ListItem Value="10">17:00</asp:ListItem>
+                            <asp:ListItem Value="11">18:00</asp:ListItem>
+                            <asp:ListItem Value="12">19:00</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvHorarioAtencion" runat="server" ControlToValidate="ddlHorarioAtencion">*Completar campo</asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
                         &nbsp;</td>
                     <td class="auto-style7">
                         <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn" />
+                    </td>
+                    <td>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        &nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
