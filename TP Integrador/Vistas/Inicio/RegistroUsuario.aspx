@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistroUsuario.aspx.cs" Inherits="Vistas.Inicio.RegistroUsuario" %>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,79 +9,83 @@
     <link rel="stylesheet" href="../Estilos/Estilos.css"/>
 </head>
 <body>
-    <div class="registro-container">
+    <div class="wrapper">
+        <h1>Registro de Usuario</h1>
         <form runat="server">
-            <div class="registro-title">Registro</div>
-            <div class="registro-form-row">
-                <!-- Campo Usuario -->
-                <div class="registro-input-box">
-                    <label for="txtUsuario">Usuario</label>
-                    <asp:TextBox ID="txtUsuario" runat="server" CssClass="registro-input" placeholder="Usuario"></asp:TextBox>
-                </div>
-                <!-- Campo Nombre -->
-                <div class="registro-input-box">
-                    <label for="txtNombre">Nombre</label>
-                    <asp:TextBox ID="txtNombre" runat="server" CssClass="registro-input" placeholder="Nombre"></asp:TextBox>
-                </div>
-                <!-- Campo Apellido -->
-                <div class="registro-input-box">
-                    <label for="txtApellido">Apellido</label>
-                    <asp:TextBox ID="txtApellido" runat="server" CssClass="registro-input" placeholder="Apellido"></asp:TextBox>
-                </div>
-                <!-- Campo DNI -->
-                <div class="registro-input-box">
-                    <label for="txtDNI">DNI</label>
-                    <asp:TextBox ID="txtDNI" runat="server" CssClass="registro-input" placeholder="DNI"></asp:TextBox>
-                </div>
-                <!-- Campo Nacionalidad -->
-                <div class="registro-input-box">
-                    <label for="txtNacionalidad">Nacionalidad</label>
-                    <asp:TextBox ID="txtNacionalidad" runat="server" CssClass="registro-input" placeholder="Nacionalidad"></asp:TextBox>
-                </div>
-                <!-- Campo Dirección -->
-                <div class="registro-input-box">
-                    <label for="txtDireccion">Dirección</label>
-                    <asp:TextBox ID="txtDireccion" runat="server" CssClass="registro-input" placeholder="Dirección"></asp:TextBox>
-                </div>
-                <!-- Campo Email -->
-                <div class="registro-input-box">
-                    <label for="txtEmail">Email</label>
-                    <asp:TextBox ID="txtEmail" runat="server" CssClass="registro-input" placeholder="Email"></asp:TextBox>
-                </div>
-                <!-- Campo Teléfono -->
-                <div class="registro-input-box">
-                    <label for="txtTelefono">Teléfono</label>
-                    <asp:TextBox ID="txtTelefono" runat="server" CssClass="registro-input" placeholder="Teléfono"></asp:TextBox>
-                </div>
-                <!-- Campo Contraseña -->
-                <div class="registro-input-box">
-                    <label for="txtContraseña">Contraseña</label>
-                    <asp:TextBox ID="txtContraseña" runat="server" CssClass="registro-input" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
-                </div>
-                <!-- Campo Confirmar Contraseña -->
-                <div class="registro-input-box">
-                    <label for="txtConfirmarContraseña">Confirmar Contraseña</label>
-                    <asp:TextBox ID="txtConfirmarContraseña" runat="server" CssClass="registro-input" TextMode="Password" placeholder="Confirmar Contraseña"></asp:TextBox>
-                </div>
-                <!-- Campo Fecha de Nacimiento -->
-                <div class="registro-input-box">
-                    <label for="txtFechaNacimiento">Fecha de Nacimiento</label>
-                    <input type="date" class="registro-input">
-                </div>
-            </div>
-           <!-- Selección de Género -->
-            <div class="registro-gender-details">
-             <span class="registro-gender-title">Género</span>
-              <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="registro-category" RepeatLayout="Flow">
-              <asp:ListItem Value="1">Masculino</asp:ListItem>
-              <asp:ListItem Value="2">Femenino</asp:ListItem>
-             <asp:ListItem Value="3">Prefiero no decirlo</asp:ListItem>
-            </asp:RadioButtonList>
-           </div>
-            <!-- Botón Enviar -->
-            <div class="registro-button">
-                <asp:Button ID="btnRegistrar" runat="server" CssClass="registro-submit" Text="Registrarse" />
-            </div>
+            <table>
+                <!-- Usuario -->
+                <tr>
+                    <td><asp:Label ID="lblUsuario" runat="server" Text="Usuario:" AssociatedControlID="txtUsuario" /></td>
+                    <td><asp:TextBox ID="txtUsuario" runat="server" CssClass="registro-input" Placeholder="Ingrese su usuario" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="txtUsuario" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Nombre -->
+                <tr>
+                    <td><asp:Label ID="lblNombre" runat="server" Text="Nombre:" AssociatedControlID="txtNombre" /></td>
+                    <td><asp:TextBox ID="txtNombre" runat="server" CssClass="registro-input" Placeholder="Ingrese su nombre" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Apellido -->
+                <tr>
+                    <td><asp:Label ID="lblApellido" runat="server" Text="Apellido:" AssociatedControlID="txtApellido" /></td>
+                    <td><asp:TextBox ID="txtApellido" runat="server" CssClass="registro-input" Placeholder="Ingrese su apellido" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="txtApellido" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- DNI -->
+                <tr>
+                    <td><asp:Label ID="lblDNI" runat="server" Text="DNI:" AssociatedControlID="txtDNI" /></td>
+                    <td><asp:TextBox ID="txtDNI" runat="server" CssClass="registro-input" Placeholder="Ingrese su DNI" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvDNI" runat="server" ControlToValidate="txtDNI" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Nacionalidad -->
+                <tr>
+                    <td><asp:Label ID="lblNacionalidad" runat="server" Text="Nacionalidad:" AssociatedControlID="txtNacionalidad" /></td>
+                    <td><asp:TextBox ID="txtNacionalidad" runat="server" CssClass="registro-input" Placeholder="Ingrese su nacionalidad" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvNacionalidad" runat="server" ControlToValidate="txtNacionalidad" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Email -->
+                <tr>
+                    <td><asp:Label ID="lblEmail" runat="server" Text="Email:" AssociatedControlID="txtEmail" /></td>
+                    <td><asp:TextBox ID="txtEmail" runat="server" CssClass="registro-input" Placeholder="Ingrese su correo electrónico" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Contraseña -->
+                <tr>
+                    <td><asp:Label ID="lblContraseña" runat="server" Text="Contraseña:" AssociatedControlID="txtContraseña" /></td>
+                    <td><asp:TextBox ID="txtContraseña" runat="server" CssClass="registro-input" TextMode="Password" Placeholder="Ingrese su contraseña" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContraseña" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Confirmar Contraseña -->
+                <tr>
+                    <td><asp:Label ID="lblConfirmarContraseña" runat="server" Text="Confirmar Contraseña:" AssociatedControlID="txtConfirmarContraseña" /></td>
+                    <td><asp:TextBox ID="txtConfirmarContraseña" runat="server" CssClass="registro-input" TextMode="Password" Placeholder="Confirme su contraseña" /></td>
+                    <td><asp:RequiredFieldValidator ID="rfvConfirmarContraseña" runat="server" ControlToValidate="txtConfirmarContraseña" ErrorMessage="*Completar campo"  /></td>
+                </tr>
+                <!-- Fecha de Nacimiento -->
+                <tr>
+                    <td><asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de Nacimiento:" /></td>
+                    <td><input type="date" class="registro-input" /></td>
+                    <td></td>
+                </tr>
+                <!-- Género -->
+                <tr>
+                    <td><asp:Label ID="lblGenero" runat="server" Text="Género:" /></td>
+                    <td>
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="registro-category" RepeatLayout="Flow">
+                            <asp:ListItem Value="1">Masculino</asp:ListItem>
+                            <asp:ListItem Value="2">Femenino</asp:ListItem>
+                            <asp:ListItem Value="3">Prefiero no decirlo</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </td>
+                    <td></td>
+                </tr>
+                <!-- Botón Enviar -->
+                <tr>
+                    <td colspan="3" class="botones-container">
+                        <asp:Button ID="btnRegistrar" runat="server" CssClass="btn" Text="Registrarse" />
+                    </td>
+                </tr>
+            </table>
         </form>
     </div>
 </body>
