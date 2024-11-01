@@ -75,3 +75,14 @@ C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Negocios\obj\De
 C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.csproj.Up2Date
 C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.dll
 C:\Users\Abraham\Desktop\cambios registro\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\bin\Debug\Negocios.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\bin\Debug\Datos.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\bin\Debug\Entidades.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\bin\Debug\Datos.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.csproj.AssemblyReference.cache
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.csproj.Up2Date
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\Nueva carpeta\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.pdb
