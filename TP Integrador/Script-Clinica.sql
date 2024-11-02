@@ -124,31 +124,21 @@ GO
 
 
 
--------------------------------------------------------------------------RolUsuario
-CREATE TABLE RolUsuarios (
-    IdRolUsuario_tu INT NOT NULL,      
-    Descripcion_tu CHAR(13) NOT NULL,
-    CONSTRAINT PK_RolUsuario PRIMARY KEY (IdRolUsuario_tu)
-)
-GO
-
-INSERT INTO RolUsuarios (IdRolUsuario_tu, Descripcion_tu)
-SELECT 1, 'Administrador' UNION
-SELECT 2, 'Medico'
-
-GO
-
 -------------------------------------------------------------------------Usuarios
 CREATE TABLE Usuarios (
     Id_usr INT IDENTITY(1,1) NOT NULL, 
     NombreUsuario_usr VARCHAR(20) NOT NULL,
-    Contraseña_usr VARCHAR(20) NOT NULL,
-    Rol_usr CHAR(10) NOT NULL,  
+    Contraseña_usr nVARCHAR(64) NOT NULL,
+    Rol_usr VARCHAR(15) NOT NULL,  
     CONSTRAINT PK_Usuario PRIMARY KEY (Id_usr)
 )
 GO
 
+INSERT INTO Usuarios (NombreUsuario_usr, Contraseña_usr, Rol_usr)
+SELECT 'admin', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Administrador' UNION
+SELECT 'medico','bcbc6a61932168321c3693b41d7251d7888ead27c66c51150f4feae1d6327642', 'Medico';
 
+GO
 
 --------------------------------------------------------------------------Administrador
 CREATE TABLE Administradores (
