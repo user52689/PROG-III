@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Paciente
+    public class Paciente
     {
         private string _DNI;
         private string _Nombre;
