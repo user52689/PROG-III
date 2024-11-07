@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entidades;
+using Datos;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Negocios
 {
-    internal class NegociosMedico
+    public class NegociosMedico
     {
+      
+
     }
 }

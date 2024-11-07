@@ -89,6 +89,7 @@ GO
 CREATE TABLE Medicos (
     Legajo_med INT IDENTITY(1,1) NOT NULL,
     DNI_med CHAR(10) NOT NULL,
+	IdUsuario_med int NOT NULL,
     Nombre_med VARCHAR(50) NOT NULL,
     Apellido_med VARCHAR(50) NOT NULL,
     Genero_med CHAR(50) NOT NULL,
@@ -104,7 +105,7 @@ CREATE TABLE Medicos (
     CONSTRAINT PK_Medico PRIMARY KEY (Legajo_med),
 	CONSTRAINT UK_DNI_med UNIQUE (DNI_med),
 	CONSTRAINT FK_Medico_Usuario FOREIGN KEY (IdUsuario_med) REFERENCES Usuarios(Id_usr),
-    CONSTRAINT FK_Medico_Especialidad FOREIGN KEY (Especialidad_med) REFERENCES Especialidad(IdEspecialidad_esp),
+    CONSTRAINT FK_Medico_Especialidad FOREIGN KEY (Especialidad_med) REFERENCES Especialidades(IdEspecialidad_esp),
 	CONSTRAINT FK_Medico_Provincia FOREIGN KEY (Provincia_med) REFERENCES Provincias (IdProvincia_prov)
 )
 GO
@@ -143,7 +144,7 @@ GO
 --------------------------------------------------------------------------Administrador
 CREATE TABLE Administradores (
     IdAdministrador_adm INT IDENTITY(1,1) NOT NULL,
-	IdUsuario_adm CHAR (5) NOT NULL,
+	IdUsuario_adm int  NOT NULL,
     Nombre_adm CHAR(20) NOT NULL,
 	Apellido_adm CHAR(20) NOT NULL,
     Email_adm VARCHAR(500) NOT NULL,
@@ -217,36 +218,38 @@ GO
 
 -------------------------------------------------------------------------Provincias
 CREATE TABLE Provincias (
-    IdProvincia_prov INT IDENTITY(1,1) NOT NULL,
-    Nombre_prov CHAR(50) NOT NULL,
+    IdProvincia_prov INT NOT NULL,
+    Nombre_prov VARCHAR(50) NOT NULL,
     CONSTRAINT PK_Provincia PRIMARY KEY (IdProvincia_prov)
 )
 GO
 
-INSERT INTO Provincias (Nombre_prov)
-SELECT 'Buenos Aires' UNION
-SELECT 'Catamarca' UNION
-SELECT 'Chaco' UNION
-SELECT 'Chubut' UNION
-SELECT 'Córdoba' UNION
-SELECT 'Corrientes' UNION
-SELECT 'Entre Ríos' UNION
-SELECT 'Formosa' UNION
-SELECT 'Jujuy' UNION
-SELECT 'La Pampa' UNION
-SELECT 'La Rioja' UNION
-SELECT 'Mendoza' UNION
-SELECT 'Misiones' UNION
-SELECT 'Neuquén' UNION
-SELECT 'Río Negro' UNION
-SELECT 'Salta' UNION
-SELECT 'San Juan' UNION
-SELECT 'San Luis' UNION
-SELECT 'Santa Cruz' UNION
-SELECT 'Santa Fe' UNION
-SELECT 'Santiago del Estero' UNION
-SELECT 'Tierra del Fuego' UNION
-SELECT 'Tucumán';
+INSERT INTO Provincias (IdProvincia_prov, Nombre_prov)
+VALUES
+    (1, 'CABA'),
+    (2, 'Buenos Aires'),
+    (3, 'Catamarca'),
+    (4, 'Chaco'),
+    (5, 'Chubut'),
+    (6, 'Córdoba'),
+    (7, 'Corrientes'),
+    (8, 'Entre Ríos'),
+    (9, 'Formosa'),
+    (10, 'Jujuy'),
+    (11, 'La Pampa'),
+    (12, 'La Rioja'),
+    (13, 'Mendoza'),
+    (14, 'Misiones'),
+    (15, 'Neuquén'),
+    (16, 'Río Negro'),
+    (17, 'Salta'),
+    (18, 'San Juan'),
+    (19, 'San Luis'),
+    (20, 'Santa Cruz'),
+    (21, 'Santa Fe'),
+    (22, 'Santiago del Estero'),
+    (23, 'Tierra del Fuego'),
+    (24, 'Tucumán');
 
 GO
 
@@ -254,153 +257,183 @@ GO
 -------------------------------------------------------------------------Localidades
 CREATE TABLE Localidades (
     IdLocalidad_loc INT IDENTITY(1,1) NOT NULL,
-    Nombre_loc VARCHAR(40) NOT NULL,
+	IdProvincia_prov int NOT NULL,
+    Nombre_loc VARCHAR(50) NOT NULL,
     CONSTRAINT PK_Localidad PRIMARY KEY (IdLocalidad_loc),
 	CONSTRAINT FK_Localidad_Provincia FOREIGN KEY (IdProvincia_prov) REFERENCES Provincias(IdProvincia_prov)
 )
 GO
 
-INSERT INTO Localidades (Nombre_loc)
-SELECT 'La Plata' UNION
-SELECT 'Mar del Plata' UNION
-SELECT 'Bahía Blanca' UNION
-SELECT 'Tandil' UNION
-SELECT 'General Pacheco' UNION
+INSERT INTO Localidades (IdProvincia_prov, Nombre_loc)
+VALUES
+    (1, 'San Telmo'),
+    (1, 'Belgrano'),
+    (1, 'Caballito'),
+    (1, 'San Nicolas'),
+    (1, 'Retiro'),
 
-SELECT 'San Fernando del Valle' UNION
-SELECT 'Belén' UNION
-SELECT 'Tinogasta' UNION
-SELECT 'Andalgalá' UNION
-SELECT 'Santa María' UNION
+    (2, 'La Plata'),
+    (2, 'Mar del Plata'),
+    (2, 'Bahía Blanca'),
+    (2, 'Tandil'),
+    (2, 'General Pacheco'),
 
-SELECT 'Resistencia' UNION
-SELECT 'Presidencia Roque Sáenz Peña' UNION
-SELECT 'Villa Ángela' UNION
-SELECT 'Charata' UNION
-SELECT 'General San Martín' UNION
+    (3, 'San Fernando del Valle'),
+    (3, 'Belén'),
+    (3, 'Tinogasta'),
+    (3, 'Andalgalá'),
+    (3, 'Santa María'),
 
-SELECT 'Rawson' UNION
-SELECT 'Comodoro Rivadavia' UNION
-SELECT 'Trelew' UNION
-SELECT 'Puerto Madryn' UNION
-SELECT 'Esquel' UNION
+    (4, 'Resistencia'),
+    (4, 'Presidencia Roque Sáenz Peña'),
+    (4, 'Villa Ángela'),
+    (4, 'Charata'),
+    (4, 'General San Martín'),
 
-SELECT 'Córdoba' UNION
-SELECT 'Río Cuarto' UNION
-SELECT 'Villa María' UNION
-SELECT 'San Francisco' UNION
-SELECT 'Alta Gracia' UNION
+    (5, 'Rawson'),
+    (5, 'Comodoro Rivadavia'),
+    (5, 'Trelew'),
+    (5, 'Puerto Madryn'),
+    (5, 'Esquel'),
 
-SELECT 'Corrientes' UNION
-SELECT 'Goya' UNION
-SELECT 'Paso de los Libres' UNION
-SELECT 'Mercedes' UNION
-SELECT 'Curuzú Cuatiá' UNION
+    (6, 'Córdoba'),
+    (6, 'Río Cuarto'),
+    (6, 'Villa María'),
+    (6, 'San Francisco'),
+    (6, 'Alta Gracia'),
 
-SELECT 'Paraná' UNION
-SELECT 'Concordia' UNION
-SELECT 'Gualeguaychú' UNION
-SELECT 'Concepción del Uruguay' UNION
-SELECT 'Villaguay' UNION
+    (7, 'Corrientes'),
+    (7, 'Goya'),
+    (7, 'Paso de los Libres'),
+    (7, 'Mercedes'),
+    (7, 'Curuzú Cuatiá'),
 
-SELECT 'Formosa' UNION
-SELECT 'Clorinda' UNION
-SELECT 'Pirané' UNION
-SELECT 'Ingeniero Juárez' UNION
-SELECT 'El Colorado' UNION
+    (8, 'Paraná'),
+    (8, 'Concordia'),
+    (8, 'Gualeguaychú'),
+    (8, 'Concepción del Uruguay'),
+    (8, 'Villaguay'),
 
-SELECT 'San Salvador de Jujuy' UNION
-SELECT 'Palpalá' UNION
-SELECT 'Libertador General San Martín' UNION
-SELECT 'Perico' UNION
-SELECT 'El Carmen' UNION
+    (9, 'Formosa'),
+    (9, 'Clorinda'),
+    (9, 'Pirané'),
+    (9, 'Ingeniero Juárez'),
+    (9, 'El Colorado'),
 
-SELECT 'Santa Rosa' UNION
-SELECT 'General Pico' UNION
-SELECT 'Toay' UNION
-SELECT 'General Acha' UNION
-SELECT '25 de Mayo' UNION
+    (10, 'San Salvador de Jujuy'),
+    (10, 'Palpalá'),
+    (10, 'Libertador General San Martín'),
+    (10, 'Perico'),
+    (10, 'El Carmen'),
 
-SELECT 'La Rioja' UNION
-SELECT 'Chilecito' UNION
-SELECT 'Arauco' UNION
-SELECT 'Chamical' UNION
-SELECT 'Villa Unión' UNION
+    (11, 'Santa Rosa'),
+    (11, 'General Pico'),
+    (11, 'Toay'),
+    (11, 'General Acha'),
+    (11, '25 de Mayo'),
 
-SELECT 'Mendoza' UNION
-SELECT 'San Rafael' UNION
-SELECT 'Godoy Cruz' UNION
-SELECT 'Luján de Cuyo' UNION
-SELECT 'Maipú' UNION
+    (12, 'La Rioja'),
+    (12, 'Chilecito'),
+    (12, 'Arauco'),
+    (12, 'Chamical'),
+    (12, 'Villa Unión'),
 
-SELECT 'Posadas' UNION
-SELECT 'Oberá' UNION
-SELECT 'Eldorado' UNION
-SELECT 'Apóstoles' UNION
-SELECT 'Puerto Iguazú' UNION
+    (13, 'Mendoza'),
+    (13, 'San Rafael'),
+    (13, 'Godoy Cruz'),
+    (13, 'Luján de Cuyo'),
+    (13, 'Maipú'),
 
-SELECT 'Neuquén' UNION
-SELECT 'Plottier' UNION
-SELECT 'Centenario' UNION
-SELECT 'Zapala' UNION
-SELECT 'San Martín de los Andes' UNION
+    (14, 'Posadas'),
+    (14, 'Oberá'),
+    (14, 'Eldorado'),
+    (14, 'Apóstoles'),
+    (14, 'Puerto Iguazú'),
 
-SELECT 'Viedma' UNION
-SELECT 'San Carlos de Bariloche' UNION
-SELECT 'General Roca' UNION
-SELECT 'Cipolletti' UNION
-SELECT 'Villa Regina' UNION
+    (15, 'Neuquén'),
+    (15, 'Plottier'),
+    (15, 'Centenario'),
+    (15, 'Zapala'),
+    (15, 'San Martín de los Andes'),
 
-SELECT 'Salta' UNION
-SELECT 'San Ramón de la Nueva Orán' UNION
-SELECT 'Tartagal' UNION
-SELECT 'General Güemes' UNION
-SELECT 'Metán' UNION
+    (16, 'Viedma'),
+    (16, 'San Carlos de Bariloche'),
+    (16, 'General Roca'),
+    (16, 'Cipolletti'),
+    (16, 'Villa Regina'),
 
-SELECT 'San Juan' UNION
-SELECT 'Rawson' UNION
-SELECT 'Chimbas' UNION
-SELECT 'Rivadavia' UNION
-SELECT 'Caucete' UNION
+    (17, 'Salta'),
+    (17, 'San Ramón de la Nueva Orán'),
+    (17, 'Tartagal'),
+    (17, 'General Güemes'),
+    (17, 'Metán'),
 
-SELECT 'San Luis' UNION
-SELECT 'Villa Mercedes' UNION
-SELECT 'Merlo' UNION
-SELECT 'La Punta' UNION
-SELECT 'Justo Daract' UNION
+    (18, 'San Juan'),
+    (18, 'Rawson'),
+    (18, 'Chimbas'),
+    (18, 'Rivadavia'),
+    (18, 'Caucete'),
 
-SELECT 'Río Gallegos' UNION
-SELECT 'Caleta Olivia' UNION
-SELECT 'Pico Truncado' UNION
-SELECT 'Puerto Deseado' UNION
-SELECT 'Las Heras' UNION
+    (19, 'San Luis'),
+    (19, 'Villa Mercedes'),
+    (19, 'Merlo'),
+    (19, 'La Punta'),
+    (19, 'Justo Daract'),
 
-SELECT 'Santa Fe' UNION
-SELECT 'Rosario' UNION
-SELECT 'Rafaela' UNION
-SELECT 'Venado Tuerto' UNION
-SELECT 'Reconquista' UNION
+    (20, 'Río Gallegos'),
+    (20, 'Caleta Olivia'),
+    (20, 'Pico Truncado'),
+    (20, 'Puerto Deseado'),
+    (20, 'Las Heras'),
 
-SELECT 'Santiago del Estero' UNION
-SELECT 'La Banda' UNION
-SELECT 'Añatuya' UNION
-SELECT 'Termas de Río Hondo' UNION
-SELECT 'Fernández' UNION
+    (21, 'Santa Fe'),
+    (21, 'Rosario'),
+    (21, 'Rafaela'),
+    (21, 'Venado Tuerto'),
+    (21, 'Reconquista'),
 
-SELECT 'Ushuaia' UNION
-SELECT 'Río Grande' UNION
-SELECT 'Tolhuin' UNION
-SELECT 'Puerto Almanza' UNION
-SELECT 'Cerro Sombrero' UNION
+    (22, 'Santiago del Estero'),
+    (22, 'La Banda'),
+    (22, 'Añatuya'),
+    (22, 'Termas de Río Hondo'),
+    (22, 'Fernández'),
 
-SELECT 'San Miguel de Tucumán' UNION
-SELECT 'Tafí Viejo' UNION
-SELECT 'Concepción' UNION
-SELECT 'Yerba Buena' UNION
-SELECT 'Monteros';
+    (23, 'Ushuaia'),
+    (23, 'Río Grande'),
+    (23, 'Tolhuin'),
+    (23, 'Puerto Almanza'),
+    (23, 'Cerro Sombrero'),
 
+    (24, 'San Miguel de Tucumán'),
+    (24, 'Tafí Viejo'),
+    (24, 'Concepción'),
+    (24, 'Yerba Buena'),
+    (24, 'Monteros');
 
+---------------------------------------------------- Paises
 
+CREATE TABLE Paises (
+    IdPais INT NOT NULL,
+    Nombre_pais VARCHAR(50) NOT NULL,
+    CONSTRAINT PK_Pais PRIMARY KEY (IdPais)
+)
+GO
+
+INSERT INTO Paises (IdPais, Nombre_pais)
+VALUES
+    (1, 'Argentina'),
+    (2, 'Bolivia'),
+    (3, 'Brasil'),
+    (4, 'Chile'),
+    (5, 'Colombia'),
+    (6, 'Ecuador'),
+    (7, 'Guyana'),
+    (8, 'Paraguay'),
+    (9, 'Perú'),
+    (10, 'Surinam'),
+    (11, 'Uruguay'),
+    (12, 'Venezuela')
+GO
 
 
 -------------------------------------------------------------------------EstadosTurnos
@@ -434,3 +467,7 @@ CREATE TABLE Turnos (
     CONSTRAINT FK_Turno_EstadoTurno FOREIGN KEY (IdEstadoTurno_tu) REFERENCES EstadoTurnos(IdEstadoTurno_et)
 )
 GO
+
+----------------------------------------------------------------------- Stored Procedures
+
+

@@ -11,7 +11,7 @@ namespace Datos
 {
     public class AccesoDatos
     {
-        string rutaBDSucursales = "";
+        string rutaBDSucursales = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Clinica;Integrated Security=True";
 
         public SqlConnection ObtenerConexion()
         {

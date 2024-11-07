@@ -40,4 +40,6 @@ namespace Entidades
         public string DiasAtencion { get => _DiasAtencion; set => _DiasAtencion = value; }
         public string HorarioAtencion { get => _HorarioAtencion; set => _HorarioAtencion = value; }
     }
+
+
 }

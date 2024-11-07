@@ -137,8 +137,8 @@
                         <asp:Label ID="lblProvincia" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:DropDownList ID="ddlProvincia" runat="server">
-                        </asp:DropDownList>
+                        <asp:DropDownList ID="ddlProvincia" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged">
+                            </asp:DropDownList>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia">*Completar campo</asp:RequiredFieldValidator>
