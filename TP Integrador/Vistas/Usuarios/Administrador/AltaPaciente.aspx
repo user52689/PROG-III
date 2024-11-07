@@ -9,6 +9,12 @@
 
    <link href="../../Estilos/Estilos.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
+        .auto-style1 {
+            position: relative;
+            margin-bottom: 20px;
+            left: -1px;
+            top: 0px;
+        }
     </style>
     </head>
 <body>
@@ -119,7 +125,7 @@
                         <asp:Label ID="lblProvinciaPaciente" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:DropDownList ID="ddlProvincia" runat="server" CssClass="input-box">
+                        <asp:DropDownList ID="ddlProvincia" runat="server" CssClass="auto-style1" AutoPostBack="True" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged1">
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style2">
