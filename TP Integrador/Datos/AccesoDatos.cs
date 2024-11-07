@@ -13,7 +13,7 @@ namespace Datos
     {
         string rutaBDSucursales = "";
 
-        private SqlConnection ObtenerConexion()
+        public SqlConnection ObtenerConexion()
         {
             SqlConnection cn = new SqlConnection(rutaBDSucursales);
 
