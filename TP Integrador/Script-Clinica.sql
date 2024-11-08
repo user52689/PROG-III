@@ -136,8 +136,13 @@ CREATE TABLE Usuarios (
 GO
 
 INSERT INTO Usuarios (NombreUsuario_usr, Contraseña_usr, Rol_usr)
-SELECT 'admin', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Administrador' UNION
-SELECT 'medico','bcbc6a61932168321c3693b41d7251d7888ead27c66c51150f4feae1d6327642', 'Medico';
+SELECT 'Isaias', '8ac157d90ca277975dbf675fe7bbadf66ce06cc359ca79cb997e9a70cf7be6af', 'Administrador' UNION
+SELECT 'Lisandro', '7862b9fc4016a0ba1393e275d07148678eff2f2b16a8a248c1071f83b5f6dcc5', 'Administrador' UNION
+SELECT 'Abraham', '0d2404e1b787edbeef129585e848c36769214ed96d0a912dc266db5420cd553a', 'Administrador' UNION
+SELECT 'Pedro', 'b28f22bf170d6ae5bbd74ae65f32181ed171b6dbc91edfafb841b17e96f0e669', 'Administrador' UNION
+SELECT 'Oscar', '7db45f4d9c557bf99e070b412e6ede1fcb2266af1f291c17d64fce9e54fdabbf', 'Administrador' UNION
+SELECT 'Juan', '17d2b68b8b7293b2d6ea3226ca734546f0c42cf056c6a6d2aaeee7fe9b06cdc7', 'Administrador' UNION
+SELECT 'Medico3','51337028c8b236deb3a0e12c0d901fd24e95b43630df8346aba2abebea80ab5b', 'Medico';
 
 GO
 

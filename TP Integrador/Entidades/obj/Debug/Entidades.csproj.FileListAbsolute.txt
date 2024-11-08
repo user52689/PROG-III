@@ -40,3 +40,9 @@ C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP 
 C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
 C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\integro 2\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\integro 2\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\integro 2\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\integro 2\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\integro 2\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\integro 2\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb

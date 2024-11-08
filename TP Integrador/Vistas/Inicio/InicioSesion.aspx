@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="Vistas.Inicio.InicioSesion" %>
+<%@ Import Namespace="Entidades" %>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -29,6 +30,9 @@
                 <i class='bx bxs-lock-alt'></i>
             </div>   
         
+            <div class="mensaje-box">
+                <asp:Label ID="lblMensaje" runat="server" CssClass="mensaje" Text=""></asp:Label>
+            </div>
 
 
 
@@ -44,7 +48,7 @@
             
                 
                 <div>
-                <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" CssClass="btn" />
+                <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" CssClass="btn" OnClick="btnLogin_Click" />
             </div>
             <div>
                 <p>¿No tienes una cuenta? 
