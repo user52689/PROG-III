@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,44 +9,19 @@ namespace Entidades
 {
     public class Usuario
     {
-        private int _id;
-        private string _nombreUsuario;
-        private string _contraseña;
-        private string _rol;  // "Administrador" o "Medico"
+        public int Id { get; set; }
+        public string NombreUsuario { get; set; }
+        public string Contraseña { get; set; }
+        public string Rol { get; set; }
 
-        public Usuario(int id, string nombreUsuario, string contraseña, string rol)
+        public bool EsAdministrador()
         {
-            _id = id;
-            _nombreUsuario = nombreUsuario;
-            _contraseña = contraseña;
-            _rol = rol;
+            return Rol.Trim().Equals("Administrador", StringComparison.OrdinalIgnoreCase);
         }
 
-        public int Id
+        public bool EsMedico()
         {
-            get => _id;
-            set => _id = value;
+            return Rol.Trim().Equals("Medico", StringComparison.OrdinalIgnoreCase);
         }
-
-        public string NombreUsuario
-        {
-            get => _nombreUsuario;
-            set => _nombreUsuario = value;
-        }
-
-        public string Contraseña
-        {
-            get => _contraseña;
-            set => _contraseña = value;
-        }
-
-        public string Rol
-        {
-            get => _rol;
-            set => _rol = value;
-        }
-
-        public bool EsAdministrador() => _rol == "Administrador";
-        public bool EsMedico() => _rol == "Medico";
     }
 }

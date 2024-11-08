@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioAdministrador.aspx.cs" Inherits="Vistas.Inicio.InicioAdministrador" %>
+<%@ Import Namespace="Entidades" %>
 
 <!DOCTYPE html>
 
@@ -21,14 +22,14 @@
                           <asp:Label ID="lblUsuarioEnSesion" runat="server" CssClass="auto-style1"></asp:Label>
                       </li>
                       <li>
-                          <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesion" CssClass="btn-cerrar-sesion" />
+                          <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesion" CssClass="btn-cerrar-sesion" OnClick="btnCerrarSesion_Click" />
                       </li>
                   </ul>
               </nav>
           </header>
         <div class="wrapper">
-              <h1><asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="Bienvenid@">
-              <asp:Label ID="lblNombreAdministrador" runat="server"></asp:Label> "Nombre administrador"</asp:Label></h1>
+              <h1><asp:Label ID="Label3" runat="server" Font-Size="XX-Large"></asp:Label></h1>
+             <h1>Bienvenido <%= ((Usuario)Session["UsuarioLogueado"]).NombreUsuario %></h1>
               <table class="auto-style1">
               <tr>
                   <td>&nbsp;</td>

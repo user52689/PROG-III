@@ -11,21 +11,25 @@ namespace Negocios
 {
     public class NegocioUsuario
     {
-        DatosUsuario datosUsuario = new DatosUsuario();
+        private DatosUsuario datosUsuario = new DatosUsuario();
 
-        public Usuario AutenticarUsuario(string nombreUsuario, string contraseña)
+        public Usuario Login(string nombreUsuario, string contraseña)
         {
-            return datosUsuario.ObtenerUsuario(nombreUsuario, contraseña);
+            return datosUsuario.ObtenerUsuarioPorCredenciales(nombreUsuario, contraseña);
+        }
+
+        public bool RegistrarUsuario(Usuario usuario)
+        {
+            // Verificar si el usuario ya existe en la base de datos para evitar duplicados
+            Usuario usuarioExistente = datosUsuario.ObtenerUsuarioPorNombre(usuario.NombreUsuario);
+            if (usuarioExistente != null)
+            {
+                return false; // Usuario ya existe
+            }
+
+            // Registrar el usuario con la contraseña hasheada
+            return datosUsuario.RegistrarUsuario(usuario);
         }
     }
 }
 
-//public class AutenticacionUsuario /////De esta forma podemos hacer la autenticacion
-//{
-//    NegocioUsuario negocioUsuario = new NegocioUsuario();
-
-//    public Usuario Login(string nombreUsuario, string contraseña)
-//    {
-//        return negocioUsuario.AutenticarUsuario(nombreUsuario, contraseña);
-//    }
-//}

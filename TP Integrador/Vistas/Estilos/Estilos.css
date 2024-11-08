@@ -234,3 +234,9 @@ header {
             color: aqua;
         }
 /*Fin Estilo para el encabezado*/
+
+.mensaje {
+    font-size: 1rem; /* Ajusta el tamaño según el estilo que prefieras */
+    color: red; /* Cambia a otro color según prefieras */
+    margin-top: 10px;
+}
