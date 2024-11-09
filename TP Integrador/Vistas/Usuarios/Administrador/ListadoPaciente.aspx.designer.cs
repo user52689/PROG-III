@@ -96,13 +96,13 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDniPaciente;
 
         /// <summary>
-        /// Control btnGuardar.
+        /// Control btnDni.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGuardar;
+        protected global::System.Web.UI.WebControls.Button btnDni;
 
         /// <summary>
         /// Control btnMostrarTodo.
@@ -114,12 +114,21 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.Button btnMostrarTodo;
 
         /// <summary>
-        /// Control grdListadoPacietne.
+        /// Control grvPacientes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdListadoPacietne;
+        protected global::System.Web.UI.WebControls.GridView grvPacientes;
+
+        /// <summary>
+        /// Control SqlDataSource1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

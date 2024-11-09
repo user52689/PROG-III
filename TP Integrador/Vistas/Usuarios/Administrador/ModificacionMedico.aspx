@@ -54,7 +54,7 @@
      
               <tr>
                   <td class="auto-style9" colspan="2">
-                      <asp:GridView ID="grdModificacionMedico" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True">
+                      <asp:GridView ID="grdModificacionMedico" runat="server" >
                           <Columns>
                               <asp:TemplateField HeaderText="DNI"></asp:TemplateField>
                               <asp:TemplateField HeaderText="Nombre"></asp:TemplateField>

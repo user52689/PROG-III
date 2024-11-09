@@ -11,7 +11,11 @@ namespace Datos
 {
     public class AccesoDatos
     {
+<<<<<<< HEAD
+        string rutaBDSucursales = "Data Source=localhost\\sqlexpress;Initial Catalog=Clinica;Integrated Security=True;Encrypt=False";
+=======
         string rutaBDSucursales = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Clinica;Integrated Security=True";
+>>>>>>> 4a518080fed9724957f8e9ca3204c90a38621f45
 
         public SqlConnection ObtenerConexion()
         {
@@ -100,5 +104,40 @@ namespace Datos
             }
             return max;
         }
+
+
+        public DataTable filtrarDni(string dni)
+        {
+            DataTable filtro = new DataTable("Pacientes");
+            try
+            {
+                SqlConnection conexion = ObtenerConexion();
+                if (conexion == null)
+                {
+                    throw new Exception("No se pudo establecer la conexión con la base de datos.");
+                }
+              
+                SqlCommand cmd = new SqlCommand("filtrar_tipo_dni", conexion)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@texto", dni);
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                adp.Fill(filtro);
+
+           
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al filtrar el DNI: " + ex.Message);
+            }
+
+            return filtro;
+        }
+
+
+
     }
 }

@@ -11,7 +11,7 @@ namespace Entidades
         private string _DNI;
         private string _Nombre;
         private string _Apellido;
-        private string _Sexo;
+        private string _Genero;
         private string _Nacionalidad;
         private DateTime _FechaNacimiento;
         private string _Direccion;
@@ -23,7 +23,7 @@ namespace Entidades
         public string DNI { get => _DNI; set => _DNI = value; }
         public string Nombre { get => _Nombre; set => _Nombre = value; }
         public string Apellido { get => _Apellido; set => _Apellido = value; }
-        public string Sexo { get => _Sexo; set => _Sexo = value; }
+        public string Genero { get => _Genero; set => _Genero = value; }
         public string Nacionalidad { get => _Nacionalidad; set => _Nacionalidad = value; }
         public DateTime FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
         public string Direccion { get => _Direccion; set => _Direccion = value; }
