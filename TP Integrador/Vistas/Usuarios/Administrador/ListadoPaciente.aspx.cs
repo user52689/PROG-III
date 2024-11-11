@@ -37,7 +37,7 @@ namespace Vistas
             string dni = txtBuscarPorDNI.Text;
 
 
-            Paciente paciente = negocio.ObtenerPacientePorDNI(dni);
+            Paciente paciente = negocio.FiltrarPacientePorDni(dni);
 
             if (paciente != null)
             {

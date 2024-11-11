@@ -174,7 +174,7 @@ BEGIN
 
         UPDATE Pacientes
         SET DNI_pac = @DNI_pac,
-            Nombre_pac = @Nombre_pac,
+			Nombre_pac = @Nombre_pac,
             Apellido_pac = @Apellido_pac,
             Genero_pac = @Genero_pac,
             Nacionalidad_pac = @Nacionalidad_pac,
@@ -208,15 +208,12 @@ BEGIN
     BEGIN TRY
         BEGIN TRANSACTION;
 
-		-- Eliminar los turnos asociados al paciente
         DELETE FROM Turnos
         WHERE IdPaciente_tu = @DNI_pac;
 
-		-- Eliminar los informes asociados al paciente
         DELETE FROM Informes
         WHERE IdPaciente_inf = @DNI_pac;
 
-        -- Elimina el paciente
         DELETE FROM Pacientes 
         WHERE DNI_pac = @DNI_pac;
 
@@ -229,5 +226,7 @@ BEGIN
     END CATCH
 END
 GO
+
+
 
 
