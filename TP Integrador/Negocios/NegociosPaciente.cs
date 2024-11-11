@@ -15,6 +15,7 @@ namespace Negocios
         private readonly AccesoDatos accesoDatos = new AccesoDatos();
         readonly Paciente paciente = new Paciente();
         readonly DatosPaciente datosP = new DatosPaciente();
+        DataTable dt = new DataTable();
 
         public List<Paciente> ObtenerListaPacientes()
         {
@@ -29,7 +30,7 @@ namespace Negocios
                     DNI = row["DNI_pac"].ToString(),
                     Nombre = row["Nombre_pac"].ToString(),
                     Apellido = row["Apellido_pac"].ToString(),
-                    Genero = row["Genero_pac"].ToString(),
+                    Genero = Convert.ToInt32(row["Genero_pac"]),
                     Nacionalidad = Convert.ToInt32(row["Nacionalidad_pac"]),
                     FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_pac"]),
                     Direccion = row["Direccion_pac"].ToString(),
@@ -46,15 +47,14 @@ namespace Negocios
 
 
 
-        //-------------------------------------------------------------------Obtener todos los pacientes, y paciente filtrado por dni
+        //-----------------------------------------------------------------------------------------------------------------------------Obtener todos los pacientes, y paciente filtrado por dni
         public DataTable GetTablaPacienteNegocios()
         {
             return datosP.GetTablaPacientesDatos();
-  
         }
 
 
-        public Paciente ObtenerPacientePorDNI(string dni)
+        public Paciente FiltrarPacientePorDni(string dni)//Muestra todos los campos para el Listado 
         {
             DataTable dt = accesoDatos.FiltrarPacientePorDni(dni);
 
@@ -66,7 +66,7 @@ namespace Negocios
                     DNI = row["DNI_pac"].ToString(),
                     Nombre = row["Nombre_pac"].ToString(),
                     Apellido = row["Apellido_pac"].ToString(),
-                    Genero = row["Genero_pac"].ToString(),
+                    Genero = Convert.ToInt32(row["Genero_pac"]),
                     Nacionalidad = Convert.ToInt32(row["Nacionalidad_pac"]),
                     FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_pac"]),
                     Direccion = row["Direccion_pac"].ToString(),
@@ -79,11 +79,14 @@ namespace Negocios
             return null;
         }
 
-        public DataTable FiltrarPacienteDNINegocios(string DNI)
+        public DataTable FiltrarPacienteDNIBajaNegocios(string DNI)//Muestra los campos seleccionados para la Baja
         {
-            return datosP.FiltrarPacienteDNIDatos(DNI);
+            return datosP.FiltrarPacienteDNIBajaDatos(DNI);
         }
-
+        public DataTable FiltrarPacienteDNIModificacionNegocios(string DNI)//Muestra los campos seleccionados para la Modificacion
+        {
+            return datosP.FiltrarPacienteDNIModificacionDatos(DNI);
+        }
 
         public int EliminarPacienteNegocio(string DNI)
         {
@@ -91,14 +94,48 @@ namespace Negocios
             int estado = datosP.EliminarPacienteDatos(paciente);
             if (estado >= 1)
             {
-                return estado; 
+                return estado;
             }
             else
             {
-                return estado; 
+                return estado;
             }
+        }
+        
+        //------------------------------------------------------------------------------------------------------------------------------Cargas de los ddl 
+
+        //------------------------------------------------Carga de Generos
+        public DataTable CargarGenerosNegocio()
+        {            
+            return dt = datosP.ObtenerGeneros();
+        }
+        //------------------------------------------------Carga de Nacionalidades
+        public DataTable CargarNacionalidadesNegocio()
+        {
+            return dt = datosP.ObtenerNacionalidades();
+        }
+        //------------------------------------------------Carga de Provincias
+        public DataTable CargarProvinciasNegocio()
+        {
+            return dt = datosP.ObtenerProvincias(); 
         }
 
 
+
+        //------------------------------------------------Carga de Localidades
+        public DataTable CargarLocalidadesNegocio()
+        {
+            return dt = datosP.ObtenerLocalidades();
+        }
+        public DataTable CargarLocalidadesPorProvinciaNegocio(int IdProvincia)
+        {
+            return dt = datosP.ObtenerLocalidadesPorProvincia(IdProvincia);
+        }
+
+        //-----------------------------------------------------------------------------------------------------------------------------Actualizar paciente
+        public DataTable ModificarPacienteNegocio(Paciente paciente)
+        {
+            return dt = datosP.ModificarPaciente(paciente);
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace Vistas
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
 
-            dt = negocioP.FiltrarPacienteDNINegocios(txtBuscarPorDNI.Text);
+            dt = negocioP.FiltrarPacienteDNIBajaNegocios(txtBuscarPorDNI.Text);
 
             if (dt.Rows.Count > 0)
             {

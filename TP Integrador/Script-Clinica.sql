@@ -64,6 +64,21 @@ SELECT 'Medicina General'
 
 GO
 
+---------------------------------------------------------------------------Genero
+CREATE TABLE Generos (
+    IdGenero_g INT IDENTITY (1,1) NOT NULL,  
+    Descripcion_g VARCHAR(50) NOT NULL,
+    CONSTRAINT PK_Genero PRIMARY KEY (IdGenero_g)
+)
+GO
+
+INSERT INTO Generos (Descripcion_g)
+SELECT 'Masculino' UNION
+SELECT 'Femenino' UNION
+SELECT 'Reservado' 
+
+GO
+
 
 -------------------------------------------------------------------------Usuarios Ok
 CREATE TABLE Usuarios (
@@ -114,7 +129,7 @@ GO
 -------------------------------------------------------------------------Provincias Ok
 CREATE TABLE Provincias (
     IdProvincia_prov INT NOT NULL,
-    Nombre_prov VARCHAR(50) NOT NULL,
+    Nombre_prov CHAR(20) NOT NULL,
     CONSTRAINT PK_Provincia PRIMARY KEY (IdProvincia_prov)
 )
 GO
@@ -151,7 +166,7 @@ GO
 CREATE TABLE Localidades (
     IdLocalidad_loc INT IDENTITY(1,1) NOT NULL,
 	IdProvincia_loc INT NOT NULL,
-    Nombre_loc VARCHAR(50) NOT NULL,
+    Nombre_loc CHAR(50) NOT NULL,
     CONSTRAINT PK_Localidad PRIMARY KEY (IdLocalidad_loc),
 	CONSTRAINT FK_Localidad_Provincia FOREIGN KEY (IdProvincia_loc) REFERENCES Provincias(IdProvincia_prov)
 )
@@ -284,14 +299,14 @@ GO
 
 CREATE TABLE Paises (
     IdPais_p INT IDENTITY (1,1) NOT NULL,
-    Nombre_pais VARCHAR(50) NOT NULL,
+    Nombre_pais CHAR(10) NOT NULL,
     CONSTRAINT PK_Pais PRIMARY KEY (IdPais_p)
 )
 GO
 
 INSERT INTO Paises (Nombre_pais)
 SELECT 'Argentina' UNION 
-SELECT 'Bolivia' UNION 
+SELECT 'Venezuela' UNION 
 SELECT 'Brasil' UNION 
 SELECT 'Chile' UNION 
 SELECT 'Colombia' UNION 
@@ -301,13 +316,13 @@ SELECT 'Paraguay' UNION
 SELECT 'Perú' UNION 
 SELECT 'Surinam' UNION 
 SELECT 'Uruguay' UNION 
-SELECT 'Venezuela';
+SELECT 'Bolivia';
 GO
 
 -------------------------------------------------------------------------EstadosTurnos Ok
 CREATE TABLE EstadoTurnos (
     IdEstadoTurno_et INT IDENTITY(1,1) NOT NULL,
-    Nombre_et VARCHAR(50) NOT NULL,
+    Nombre_et CHAR(15) NOT NULL,
     CONSTRAINT PK_EstadoTurno PRIMARY KEY (IdEstadoTurno_et)
 )
 GO
@@ -326,9 +341,9 @@ CREATE TABLE Medicos (
 	IdUsuario_med INT NOT NULL,
     Nombre_med VARCHAR(50) NOT NULL,
     Apellido_med VARCHAR(50) NOT NULL,
-    Genero_med CHAR(50) NOT NULL,
+    Genero_med INT NOT NULL,
     Nacionalidad_med INT NOT NULL,
-    FechaNacimiento_med DATE NOT NULL,
+    FechaNacimiento_med DATETIME NOT NULL,
     Direccion_med VARCHAR(50) NOT NULL,
     Localidad_med INT NOT NULL,
     Provincia_med INT NOT NULL,
@@ -336,54 +351,56 @@ CREATE TABLE Medicos (
     Telefono_med VARCHAR(15) NOT NULL,
     Especialidad_med INT NOT NULL,
     CONSTRAINT PK_Medico PRIMARY KEY (Legajo_med),
-	CONSTRAINT UK_DNI_med UNIQUE (DNI_med),
-    CONSTRAINT FK_Medico_Especialidad FOREIGN KEY (Especialidad_med) REFERENCES Especialidades(IdEspecialidad_esp)
+	CONSTRAINT UK_Medico_DNI_med UNIQUE (DNI_med),
+    CONSTRAINT FK_Medico_Especialidad FOREIGN KEY (Especialidad_med) REFERENCES Especialidades(IdEspecialidad_esp),
+	CONSTRAINT FK_Medico_Genero FOREIGN KEY (Genero_med) REFERENCES Generos(IdGenero_g)
 )
 GO
 
---DBCC CHECKIDENT ('Medicos', RESEED, 0); --Resetea a 0 el autoincremental
-
 INSERT INTO Medicos (DNI_med, IdUsuario_med, Nombre_med, Apellido_med, Genero_med, Nacionalidad_med, FechaNacimiento_med, Direccion_med, Localidad_med, Provincia_med, CorreoElectronico_med, Telefono_med, Especialidad_med)
-SELECT '1234567890', 1, 'Juan', 'Pérez', 'Masculino', 1, '1980-05-20', 'Calle Falsa 123', 1, 1, 'juan.perez@email.com', '01123456789', 1 UNION
-SELECT '1234567891', 2, 'María', 'Gómez', 'Femenino', 1, '1985-03-15', 'Avenida Siempre Viva 456', 2, 1, 'maria.gomez@email.com', '02234567890', 2 UNION
-SELECT '1234567892', 3, 'Carlos', 'Rodríguez', 'Masculino', 1, '1990-07-30', 'Ruta 1 Km 10', 3, 1, 'carlos.rodriguez@email.com', '02914567891', 3 UNION
-SELECT '1234567893', 4, 'Ana', 'Martínez', 'Femenino', 1, '1982-12-01', 'Calle 10', 4, 1, 'ana.martinez@email.com', '01198765432', 4 UNION
-SELECT '1234567894', 5, 'Laura', 'López', 'Femenino', 1, '1995-09-25', 'Calle 20', 5, 1, 'laura.lopez@email.com', '01112345678', 5 UNION
-SELECT '1234567895', 6, 'Pedro', 'García', 'Masculino',  1, '1988-11-20', 'Avenida Libertador 789', 6, 2, 'pedro.garcia@email.com', '03514567892', 5 UNION
-SELECT '1234567896', 7, 'Luisa', 'Fernández', 'Femenino', 1, '1992-04-05', 'Calle 30', 7, 1, 'luisa.fernandez@email.com', '01123456780', 2 UNION
-SELECT '1234567897', 8, 'Javier', 'Mendoza', 'Masculino', 1, '1987-08-10', 'Calle 50', 8, 1, 'javier.mendoza@email.com', '01123456781', 5;
+SELECT '1234567890', 1, 'Juan', 'Pérez', 1, 1, '1980-05-20', 'Calle Falsa 123', 1, 1, 'juan.perez@email.com', '01123456789', 1 UNION
+SELECT '1234567891', 2, 'María', 'Gómez', 2, 1, '1985-03-15', 'Avenida Siempre Viva 456', 2, 1, 'maria.gomez@email.com', '02234567890', 2 UNION
+SELECT '1234567892', 3, 'Carlos', 'Rodríguez', 1, 1, '1990-07-30', 'Ruta 1 Km 10', 3, 1, 'carlos.rodriguez@email.com', '02914567891', 3 UNION
+SELECT '1234567893', 4, 'Ana', 'Martínez', 2, 1, '1982-12-01', 'Calle 10', 4, 1, 'ana.martinez@email.com', '01198765432', 4 UNION
+SELECT '1234567894', 5, 'Laura', 'López', 3, 1, '1995-09-25', 'Calle 20', 5, 1, 'laura.lopez@email.com', '01112345678', 5 UNION
+SELECT '1234567895', 6, 'Pedro', 'García', 1,  1, '1988-11-20', 'Avenida Libertador 789', 6, 2, 'pedro.garcia@email.com', '03514567892', 5 UNION
+SELECT '1234567896', 7, 'Luisa', 'Fernández', 2, 1, '1992-04-05', 'Calle 30', 7, 1, 'luisa.fernandez@email.com', '01123456780', 2 UNION
+SELECT '1234567897', 8, 'Javier', 'Mendoza', 1, 1, '1987-08-10', 'Calle 50', 8, 1, 'javier.mendoza@email.com', '01123456781', 5;
 GO
+
+
 -----------------------------------------------------------------------------Paciente  Ok
 CREATE TABLE Pacientes (
     DNI_pac CHAR(10) NOT NULL,
     Nombre_pac CHAR(50) NOT NULL,
     Apellido_pac CHAR(50) NOT NULL,
-    Genero_pac CHAR(10) NOT NULL,
+    Genero_pac INT NOT NULL,
     Nacionalidad_pac INT NOT NULL,
-    FechaNacimiento_pac DATE NOT NULL,
+    FechaNacimiento_pac DATETIME NOT NULL,
     Direccion_pac CHAR(100) NOT NULL,
-    Localidad_pac INT NOT NULL,
     Provincia_pac INT NOT NULL,
+    Localidad_pac INT NOT NULL,
     CorreoElectronico_pac CHAR(100) NOT NULL,
     Telefono_pac CHAR(15) NOT NULL,
     CONSTRAINT PK_Paciente PRIMARY KEY (DNI_pac),
-	CONSTRAINT FK_IdProvincia FOREIGN KEY (Provincia_pac) REFERENCES Provincias(IdProvincia_prov),
-	CONSTRAINT FK_IdLocalidad FOREIGN KEY (Localidad_pac) REFERENCES Localidades (IdLocalidad_loc),
-	CONSTRAINT FK_IdNacionalidad FOREIGN KEY (Nacionalidad_pac) REFERENCES Paises (IdPais_p)
+	CONSTRAINT FK_Paciente_IdProvincia FOREIGN KEY (Provincia_pac) REFERENCES Provincias(IdProvincia_prov),
+	CONSTRAINT FK_Paciente_IdLocalidad FOREIGN KEY (Localidad_pac) REFERENCES Localidades (IdLocalidad_loc),
+	CONSTRAINT FK_Paciente_IdNacionalidad FOREIGN KEY (Nacionalidad_pac) REFERENCES Paises (IdPais_p),
+	CONSTRAINT FK_Paciente_Paciente_Genero FOREIGN KEY (Genero_pac) REFERENCES Generos(IdGenero_g)
 )
 GO
 
-INSERT INTO Pacientes (DNI_pac, Nombre_pac, Apellido_pac, Genero_pac, Nacionalidad_pac, FechaNacimiento_pac, Direccion_pac, Localidad_pac, Provincia_pac, CorreoElectronico_pac, Telefono_pac)
-SELECT '1234567890', 'Juan', 'Perez', 'Masculino', 1, '1980-05-20', 'Av. Siempre Viva 123', 1, 1, 'juan.perez@mail.com', '123456789' UNION
-SELECT '2345678901', 'Maria', 'Gomez', 'Femenino', 1, '1992-08-15', 'Calle Falsa 456', 2, 1, 'maria.gomez@mail.com', '234567890' UNION
-SELECT '3456789012', 'Carlos', 'Lopez', 'Masculino', 1, '1985-02-10', 'Av. Belgrano 789', 3, 1, 'carlos.lopez@mail.com', '345678901' UNION
-SELECT '4567890123', 'Ana', 'Martinez', 'Femenino', 1, '1978-11-25', 'San Martin 321', 4, 1, 'ana.martinez@mail.com', '456789012' UNION
-SELECT '5678901234', 'Jose', 'Fernandez', 'Masculino', 1, '1990-04-18', 'Rivadavia 654', 5, 1, 'jose.fernandez@mail.com', '567890123' UNION
-SELECT '6789012345', 'Laura', 'Diaz', 'Femenino', 1, '1987-07-07', 'Mitre 987', 6, 2, 'laura.diaz@mail.com', '678901234' UNION
-SELECT '7890123456', 'Miguel', 'Garcia', 'Masculino', 1, '1995-10-12', 'Sarmiento 1234', 7, 2, 'miguel.garcia@mail.com', '789012345' UNION
-SELECT '8901234567', 'Lucia', 'Ruiz', 'Femenino', 1, '1991-03-28', 'Urquiza 567', 8, 2, 'lucia.ruiz@mail.com', '890123456' UNION
-SELECT '9012345678', 'Diego', 'Sanchez', 'Masculino', 1, '1983-12-17', 'Independencia 890', 9, 2, 'diego.sanchez@mail.com', '901234567' UNION
-SELECT '0123456789', 'Marta', 'Benitez', 'Femenino', 1, '1975-01-05', 'Av. Libertador 1357', 10, 2, 'marta.benitez@mail.com', '012345678';
+INSERT INTO Pacientes (DNI_pac, Nombre_pac, Apellido_pac, Genero_pac, Nacionalidad_pac, FechaNacimiento_pac, Direccion_pac, Provincia_pac, Localidad_pac, CorreoElectronico_pac, Telefono_pac)
+SELECT '1234567890', 'Juan', 'Perez', 1, 2, '1980-05-20', 'Av. Siempre Viva 123', 1, 1, 'juan.perez@mail.com', '123456789' UNION
+SELECT '2345678901', 'Maria', 'Gomez', 2, 1, '1992-08-15', 'Calle Falsa 456', 1, 2, 'maria.gomez@mail.com', '234567890' UNION
+SELECT '3456789012', 'Carlos', 'Lopez', 1, 3, '1985-02-10', 'Av. Belgrano 789', 1, 3, 'carlos.lopez@mail.com', '345678901' UNION
+SELECT '4567890123', 'Ana', 'Martinez', 3, 1, '1978-11-25', 'San Martin 321', 1, 4, 'ana.martinez@mail.com', '456789012' UNION
+SELECT '5678901234', 'Jose', 'Fernandez', 1, 2, '1990-04-18', 'Rivadavia 654', 1, 5, 'jose.fernandez@mail.com', '567890123' UNION
+SELECT '6789012345', 'Laura', 'Diaz', 3, 1, '1987-07-07', 'Mitre 987', 2, 6, 'laura.diaz@mail.com', '678901234' UNION
+SELECT '7890123456', 'Miguel', 'Garcia', 1, 4, '1995-10-12', 'Sarmiento 1234', 2, 7, 'miguel.garcia@mail.com', '789012345' UNION
+SELECT '8901234567', 'Lucia', 'Ruiz', 2, 1, '1991-03-28', 'Urquiza 567', 2, 8, 'lucia.ruiz@mail.com', '890123456' UNION
+SELECT '9012345678', 'Diego', 'Sanchez', 3, 6, '1983-12-17', 'Independencia 890', 2, 9, 'diego.sanchez@mail.com', '901234567' UNION
+SELECT '0123456789', 'Marta', 'Benitez', 2, 1, '1975-01-05', 'Av. Libertador 1357', 2, 10, 'marta.benitez@mail.com', '012345678';
 
 GO
 
