@@ -27,35 +27,17 @@
             </div>
             <div class="input-box">
                 <asp:TextBox ID="txtContraseña" runat="server" CssClass="input" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
-                <i class='bx bxs-lock-alt'></i>
+               <i class='bx bxs-lock-alt'></i>
             </div>   
         
             <div class="mensaje-box">
                 <asp:Label ID="lblMensaje" runat="server" CssClass="mensaje" Text=""></asp:Label>
             </div>
-
-
-
-            <%--
-            !Comentado para ver si lo dejamos o lo sacamos
-            
-                
-            <div class="remember-forgot">
-                <label><input type="checkbox" />Recordarme</label>
-                <a href="#">¿Olvidaste tu Contraseña?</a>
-            </div>
-            --%>
-            
-                
-                <div>
+            <br>
+            <div>
                 <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" CssClass="btn" OnClick="btnLogin_Click" />
             </div>
-            <div>
-                <p>¿No tienes una cuenta? 
-                        <asp:HyperLink ID="hlRegistroUsuario" runat="server" NavigateUrl="~/Inicio/RegistroUsuario.aspx">Registrarse</asp:HyperLink>
-                </p>
-            </div>
-        </div>
+      </div>
     </form>
 </body>
 </html>

@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Inicio\AccesoDenegado.aspx" />
-    <Content Include="Inicio\RegistroUsuario.aspx" />
     <Content Include="Usuarios\Administrador\AsignacionTurno.aspx" />
     <Content Include="Usuarios\Administrador\Informes.aspx" />
     <Content Include="Estilos\Estilos.css" />
@@ -76,6 +75,8 @@
     <Content Include="Inicio\InicioAdministrador.aspx" />
     <Content Include="Inicio\InicioMedico.aspx" />
     <Content Include="Inicio\InicioSesion.aspx" />
+    <Content Include="Usuarios\Administrador\ModificacionUsuario.aspx" />
+    <Content Include="Usuarios\Administrador\RegistroUsuario.aspx" />
     <Content Include="Usuarios\Medico\GestionarTurnos.aspx" />
     <Content Include="Usuarios\Administrador\AltaMedico.aspx" />
     <Content Include="Usuarios\Administrador\AltaPaciente.aspx" />
@@ -94,13 +95,6 @@
     </Compile>
     <Compile Include="Inicio\AccesoDenegado.aspx.designer.cs">
       <DependentUpon>AccesoDenegado.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Inicio\RegistroUsuario.aspx.cs">
-      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Inicio\RegistroUsuario.aspx.designer.cs">
-      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuarios\Administrador\AsignacionTurno.aspx.cs">
       <DependentUpon>AsignacionTurno.aspx</DependentUpon>
@@ -136,6 +130,20 @@
     </Compile>
     <Compile Include="Inicio\InicioSesion.aspx.designer.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Administrador\ModificacionUsuario.aspx.cs">
+      <DependentUpon>ModificacionUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Administrador\ModificacionUsuario.aspx.designer.cs">
+      <DependentUpon>ModificacionUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\Administrador\RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios\Administrador\RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuarios\Medico\GestionarTurnos.aspx.cs">
       <DependentUpon>GestionarTurnos.aspx</DependentUpon>

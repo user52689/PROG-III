@@ -20,6 +20,15 @@ namespace Vistas.Inicio
             {
                 Response.Redirect("AccesoDenegado.aspx");
             }
+            else
+            {
+                Usuario usuarioLogueado = Session["UsuarioLogueado"] as Usuario;
+                if (usuarioLogueado != null)
+                {
+                    // Muestra el nombre de usuario en la etiqueta de la barra de navegacion
+                    lblUsuarioEnSesion.Text = usuarioLogueado.NombreUsuario;
+                }
+            }
 
         }
         protected void btnCerrarSesion_Click(object sender, EventArgs e)
