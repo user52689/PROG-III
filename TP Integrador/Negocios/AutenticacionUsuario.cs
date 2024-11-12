@@ -28,5 +28,45 @@ namespace Negocios
 
             return datosUsuario.RegistrarUsuario(usuario);
         }
+
+        ///FUNCIONES DE MODIFICACION DE USUARIO
+        public List<Usuario> ObtenerUsuarios()
+        {
+            return datosUsuario.ListarUsuarios();
+        }
+
+        public bool ActualizarUsuario(Usuario usuario)
+        {
+            return datosUsuario.ModificarUsuario(usuario);
+        }
+
+        public bool NombreUsuarioExistente(string nombreUsuario, int userId)
+        {
+            return datosUsuario.VerificarNombreUsuarioExistente(nombreUsuario, userId);
+        }
+
+        // Este método maneja la validación de existencia y la actualización
+        public bool ActualizarUsuarioConValidacion(int id, string nombreUsuario, string contraseña, string rol)
+        {
+            // Verificar si el nombre de usuario ya existe en la capa de datos
+            bool nombreUsuarioExistente = datosUsuario.VerificarNombreUsuarioExistente(nombreUsuario, id);
+            if (nombreUsuarioExistente)
+            {
+                return false; // El nombre de usuario ya está en uso
+            }
+
+            Usuario usuario = new Usuario
+            {
+                Id = id,
+                NombreUsuario = nombreUsuario,
+                Contraseña = contraseña,
+                Rol = rol
+            };
+
+            // Llamar a la capa de datos para actualizar el usuario
+            return datosUsuario.ModificarUsuario(usuario);
+        }
     }
+
+
 }

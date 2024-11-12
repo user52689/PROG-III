@@ -111,6 +111,29 @@
               <tr>
                   <td>&nbsp;</td>
                   <td>
+                      <asp:Label ID="Label4" runat="server" Font-Size="X-Large" Text="Acciones Usuarios:"></asp:Label>
+                  </td>
+                  <td>&nbsp;</td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <asp:HyperLink ID="hlRegistrarUsuario" runat="server" NavigateUrl="~/Usuarios/Administrador/RegistroUsuario.aspx">Registrar Usuario</asp:HyperLink>
+                  </td>
+                  <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                   <td>&nbsp;</td>
+                    <td>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="hlModificacionUsuario" runat="server" NavigateUrl="~/Usuarios/Administrador/ModificacionUsuario.aspx">Modificar</asp:HyperLink>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td>
                       <asp:Label ID="Label2" runat="server" Font-Size="X-Large" Text="Informes:"></asp:Label>
                   </td>
                   <td>&nbsp;</td>
