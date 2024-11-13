@@ -55,6 +55,7 @@ CREATE TABLE Especialidades (
 )
 GO
 
+
 INSERT INTO Especialidades (Nombre_esp)
 SELECT 'Pediatría' UNION
 SELECT 'Cardiología' UNION
@@ -525,3 +526,26 @@ CREATE TABLE Informes (
     CONSTRAINT FK_Informe_Medico FOREIGN KEY (IdMedico_inf) REFERENCES Medicos(Legajo_med)
 )
 GO
+
+  SELECT m.Legajo_med, 
+         m.DNI_med, 
+                 m.Nombre_med, 
+         m.Apellido_med, 
+         g.Descripcion_g , 
+        n.Nombre_pais , 
+         m.FechaNacimiento_med, 
+         m.Direccion_med, 
+        pr.Nombre_prov, 
+		l.Nombre_loc , 
+         m.CorreoElectronico_med, 
+        m.Telefono_med, 
+       es.Nombre_esp
+      FROM Medicos AS m
+      INNER JOIN GENEROS AS g ON m.Genero_med = g.IdGenero_g
+      INNER JOIN Paises AS n ON m.Nacionalidad_med = n.IdPais_p
+      INNER JOIN Localidades AS l ON m.Localidad_med = l.IdLocalidad_loc
+      INNER JOIN Provincias AS pr ON m.Provincia_med = pr.IdProvincia_prov
+      INNER JOIN Especialidades as es ON m.Especialidad_med = es.IdEspecialidad_esp
+      WHERE m.Legajo_med = 1;
+	  go
+ 

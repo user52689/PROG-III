@@ -149,3 +149,5 @@ C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Negocios\ob
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.csproj.Up2Date
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.dll
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Negocios\bin\Debug\Seguridad.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Negocios\bin\Debug\Seguridad.pdb

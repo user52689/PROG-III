@@ -123,3 +123,5 @@ C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Datos\obj\D
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
