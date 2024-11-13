@@ -22,12 +22,17 @@ namespace Vistas
 
         }
 
-        void CargarGridPacientes()
+        void CargarGridPacientes() //Para vista del grid en el estado de edicion
         {
             dt = negocioP.FiltrarPacienteDNIModificacionNegocios(txtBuscarPorDNI.Text);
+            CargarGridPacientes(dt)
+;        }
+        void CargarGridPacientes(DataTable dt) //Para la vista del grid
+        {
             grdModificacionPacietne.DataSource = dt;
             grdModificacionPacietne.DataBind();
         }
+
 
         //----------------------------------------------------------------------------------------------------------------------Eventos de botones
 
@@ -35,17 +40,16 @@ namespace Vistas
         {
             dt = negocioP.FiltrarPacienteDNIModificacionNegocios(txtBuscarPorDNI.Text);
 
-            if (dt.Rows.Count > 0)
+            if (dt != null)
             {
-
-                grdModificacionPacietne.DataSource = dt;
-                grdModificacionPacietne.DataBind();
+                CargarGridPacientes(dt);
                 lblMensaje.Text = string.Empty;
+                //txtBuscarPorDNI.Text = string.Empty; como ahce una variable global para almacenar
             }
             else
             {
-                grdModificacionPacietne.DataSource = null;
-                grdModificacionPacietne.DataBind();
+                CargarGridPacientes(dt);
+                txtBuscarPorDNI.Text = string.Empty;
                 lblMensaje.Text = "No se encontró el paciente.";
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
             }
@@ -55,32 +59,31 @@ namespace Vistas
         protected void grdModificacionPacietne_RowEditing(object sender, GridViewEditEventArgs e) 
         {
             grdModificacionPacietne.EditIndex = e.NewEditIndex;
-
             CargarGridPacientes();
+            
+            GridViewRow row = grdModificacionPacietne.Rows[e.NewEditIndex];
 
-        GridViewRow row = grdModificacionPacietne.Rows[e.NewEditIndex];
+            DropDownList ddlGenero = (DropDownList)row.FindControl("ddlGeneroPaciente");
+            DropDownList ddlNacionalidad = (DropDownList)row.FindControl("ddlNacionalidadPaciente");
+            DropDownList ddlProvincia = (DropDownList)row.FindControl("ddlProvinciaPaciente");
+            DropDownList ddlLocalidad = (DropDownList)row.FindControl("ddlLocalidadPaciente");
 
-        DropDownList ddlGenero = (DropDownList)row.FindControl("ddlGeneroPaciente");
-        DropDownList ddlNacionalidad = (DropDownList)row.FindControl("ddlNacionalidadPaciente");
-        DropDownList ddlProvincia = (DropDownList)row.FindControl("ddlProvinciaPaciente");
-        DropDownList ddlLocalidad = (DropDownList)row.FindControl("ddlLocalidadPaciente");
-
-        if (ddlGenero != null)
-        {
-            CargarGeneros(ddlGenero);
-        }
-        if (ddlNacionalidad != null)
-        {
-            CargarNacionalidades(ddlNacionalidad);
-        }
-        if (ddlProvincia != null)
-        {
-            CargarProvincias(ddlProvincia);
-        }
-        if (ddlLocalidad != null)
-        {
-            CargarLocalidades(ddlLocalidad);
-        }
+            if (ddlGenero != null)
+            {
+                CargarGeneros(ddlGenero);
+            }
+            if (ddlNacionalidad != null)
+            {
+                CargarNacionalidades(ddlNacionalidad);
+            }
+            if (ddlProvincia != null)
+            {
+                CargarProvincias(ddlProvincia);
+            }
+            if (ddlLocalidad != null)
+            {
+                CargarLocalidades(ddlLocalidad);
+            }
         }
 
 
@@ -118,10 +121,25 @@ namespace Vistas
             };
 
             negocioP.ModificarPacienteNegocio(paciente);
-            
-            grdModificacionPacietne.EditIndex = -1;
 
-            CargarGridPacientes();
+            if (negocioP != null)
+            {
+                grdModificacionPacietne.EditIndex = -1;
+
+                CargarGridPacientes();
+
+                txtBuscarPorDNI.Text = string.Empty;
+                lblMensaje.Text = "Paciente modificado con éxito.";
+                lblMensaje.ForeColor = System.Drawing.Color.Green;
+                
+            }
+            else
+            {
+                txtBuscarPorDNI.Text = string.Empty;
+                lblMensaje.Text = "No se pudo modificar el paciente";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+            }
+
         }
 
 
@@ -176,13 +194,10 @@ namespace Vistas
 
         protected void ddlProvinciaPaciente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Obtén el objeto DropDownList de provincias
             DropDownList ddlProvincia = (DropDownList)sender;
 
-            // Obtén la fila del GridView donde se activó el evento
             GridViewRow row = (GridViewRow)ddlProvincia.NamingContainer;
 
-            // Encuentra el DropDownList de localidades en la misma fila
             DropDownList ddlLocalidad = (DropDownList)row.FindControl("ddlLocalidadPaciente");
 
             if (ddlLocalidad != null)
