@@ -121,10 +121,25 @@ namespace Vistas
             };
 
             negocioP.ModificarPacienteNegocio(paciente);
-            
-            grdModificacionPacietne.EditIndex = -1;
 
-            CargarGridPacientes();
+            if (negocioP != null)
+            {
+                grdModificacionPacietne.EditIndex = -1;
+
+                CargarGridPacientes();
+
+                txtBuscarPorDNI.Text = string.Empty;
+                lblMensaje.Text = "Paciente modificado con éxito.";
+                lblMensaje.ForeColor = System.Drawing.Color.Green;
+                
+            }
+            else
+            {
+                txtBuscarPorDNI.Text = string.Empty;
+                lblMensaje.Text = "No se pudo modificar el paciente";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+            }
+
         }
 
 
