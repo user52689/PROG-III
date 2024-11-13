@@ -55,7 +55,7 @@
                 <tr>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3" colspan="2">
-                        <asp:GridView ID="grdModificacionPacietne" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" OnRowCancelingEdit="grdModificacionPacietne_RowCancelingEdit" OnRowEditing="grdModificacionPacietne_RowEditing" OnRowUpdating="grdModificacionPacietne_RowUpdating">
+                        <asp:GridView ID="grdModificacionPacietne"  runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" OnRowCancelingEdit="grdModificacionPacietne_RowCancelingEdit" OnRowEditing="grdModificacionPacietne_RowEditing" OnRowUpdating="grdModificacionPacietne_RowUpdating">
                             <Columns>
                                 <asp:TemplateField HeaderText="DNI">
                                     <ItemTemplate>

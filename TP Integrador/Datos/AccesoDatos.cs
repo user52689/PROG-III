@@ -90,6 +90,21 @@ namespace Datos
             }
             return estado;
         }
+        public bool ExisteRegistroConComando(SqlCommand cmd)
+        {
+            bool estado = false;
+            using (SqlConnection conexion = ObtenerConexion())
+            {
+                cmd.Connection = conexion;
+                SqlDataReader datos = cmd.ExecuteReader();
+                if (datos.Read())
+                {
+                    estado = true;
+                }
+            }
+
+            return estado;
+        }
         public int ObtenerMaximo(String consulta)
         {
             int max = 0;

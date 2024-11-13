@@ -125,14 +125,16 @@ namespace Datos
         {
             string consulta = "SELECT * " +
                               "FROM Pacientes";
+
             return ad.ObtenerTabla("Pacientes", consulta);
+
         }
-        public DataTable FiltrarPacienteDNIBajaDatos(string DNI) //Muestra un paciente y solo los campos para la Baja
+        public DataTable FiltrarPacienteDNIBajaDatos(string DNI)                 //Muestra un paciente y solo los campos para la Baja
         {
             string consulta = "SELECT DNI_pac, Nombre_pac, Apellido_pac " +
                               "FROM Pacientes " +
                               "WHERE DNI_pac = @DNI";
-            SqlCommand cmd = new SqlCommand(consulta);
+            cmd = new SqlCommand(consulta);
             cmd.Parameters.AddWithValue("@DNI", DNI);
             return ad.ObtenerTablaConComando("Pacientes", cmd);
         }
@@ -171,7 +173,12 @@ namespace Datos
             SqlCommand cmd = new SqlCommand(consulta);
             cmd.Parameters.AddWithValue("@DNI", DNI);
 
-            return ad.ObtenerTablaConComando("Pacientes", cmd);
+            if (ad.ExisteRegistroConComando(cmd))
+            {
+                return ad.ObtenerTablaConComando("Pacientes", cmd);
+            }
+            return null;
+
         }
 
         //------------------------------------------------------------------------------------------------Obtener Genero de los pacientes
@@ -266,8 +273,8 @@ namespace Datos
         }
 
 
-        //----------------------------------------------------------------------------------------------------------------------------------------------------------Actualizar Paciente
-        public DataTable ModificarPaciente(Paciente paciente)
+        //-----------------------------------------------------------------------------------------------Actualizar Paciente
+        public DataTable ModificarPacienteDatos(Paciente paciente)
         {
             conexion = ad.ObtenerConexion();
 
@@ -288,12 +295,12 @@ namespace Datos
             cmd.Parameters.AddWithValue("@CorreoElectronico_pac", paciente.CorreoElectronico);
             cmd.Parameters.AddWithValue("@Telefono_pac", paciente.Telefono);
 
-            adapter = new SqlDataAdapter(cmd);
-            adapter.Fill(ds, "Pacientes");
-
-            int filasCambiadas = ad.EjecutarProcedimientoAlmacenado(cmd, "SP_ModificarPaciente");
-
-            return dt;
+            ad.EjecutarProcedimientoAlmacenado(cmd, "SP_ModificarPaciente");
+            if(ad != null)
+            {
+                return dt;
+            }
+            return null;
         }
 
     }

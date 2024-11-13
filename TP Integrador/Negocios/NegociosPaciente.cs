@@ -78,12 +78,14 @@ namespace Negocios
             }
             return null;
         }
+        
+        //--------------------------------------------------------------------------------------Baja Paciente
 
-        public DataTable FiltrarPacienteDNIBajaNegocios(string DNI)//Muestra los campos seleccionados para la Baja
+        public DataTable FiltrarPacienteDNIBajaNegocios(string DNI)  //Muestra los campos seleccionados para la Baja
         {
             return datosP.FiltrarPacienteDNIBajaDatos(DNI);
         }
-        public DataTable FiltrarPacienteDNIModificacionNegocios(string DNI)//Muestra los campos seleccionados para la Modificacion
+        public DataTable FiltrarPacienteDNIModificacionNegocios(string DNI)     //Muestra los campos seleccionados para la Modificacion
         {
             return datosP.FiltrarPacienteDNIModificacionDatos(DNI);
         }
@@ -91,18 +93,15 @@ namespace Negocios
         public int EliminarPacienteNegocio(string DNI)
         {
             paciente.DNI = DNI;
-            int estado = datosP.EliminarPacienteDatos(paciente);
-            if (estado >= 1)
-            {
-                return estado;
-            }
-            else
-            {
-                return estado;
-            }
+
+            int estado = 0;
+
+            estado = datosP.EliminarPacienteDatos(paciente);
+
+            return estado;
         }
         
-        //------------------------------------------------------------------------------------------------------------------------------Cargas de los ddl 
+        //---------------------------------------------------------------------------------------Cargas de los ddl 
 
         //------------------------------------------------Carga de Generos
         public DataTable CargarGenerosNegocio()
@@ -117,10 +116,8 @@ namespace Negocios
         //------------------------------------------------Carga de Provincias
         public DataTable CargarProvinciasNegocio()
         {
-            return dt = datosP.ObtenerProvincias(); 
+            return dt = datosP.ObtenerProvincias();         
         }
-
-
 
         //------------------------------------------------Carga de Localidades
         public DataTable CargarLocalidadesNegocio()
@@ -132,10 +129,10 @@ namespace Negocios
             return dt = datosP.ObtenerLocalidadesPorProvincia(IdProvincia);
         }
 
-        //-----------------------------------------------------------------------------------------------------------------------------Actualizar paciente
+        //------------------------------------------------------------------------Actualizar paciente
         public DataTable ModificarPacienteNegocio(Paciente paciente)
         {
-            return dt = datosP.ModificarPaciente(paciente);
+            return dt = datosP.ModificarPacienteDatos(paciente);
         }
     }
 }
