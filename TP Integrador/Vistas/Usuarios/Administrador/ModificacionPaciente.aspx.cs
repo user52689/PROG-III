@@ -25,8 +25,7 @@ namespace Vistas
         void CargarGridPacientes() //Para vista del grid en el estado de edicion
         {
             dt = negocioP.FiltrarPacienteDNIModificacionNegocios(txtBuscarPorDNI.Text);
-            CargarGridPacientes(dt)
-;        }
+            CargarGridPacientes(dt);        }
         void CargarGridPacientes(DataTable dt) //Para la vista del grid
         {
             grdModificacionPacietne.DataSource = dt;

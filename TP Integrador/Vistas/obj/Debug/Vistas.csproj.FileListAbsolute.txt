@@ -851,3 +851,5 @@ C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Vistas\obj\
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Vistas\obj\Debug\Vistas.csproj.Up2Date
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Vistas\obj\Debug\Vistas.dll
 C:\Users\Abraham\Desktop\Integracion a master\PROG-III\TP Integrador\Vistas\obj\Debug\Vistas.pdb
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Vistas\bin\Seguridad.dll
+C:\Users\Pedro\OneDrive\Escritorio\Prog 3\TrabajoPracticoIntegrador\PROG-III\TP Integrador\Vistas\bin\Seguridad.pdb

@@ -39,7 +39,7 @@ namespace Vistas
             var dtNacionalidad = _NegociosUbicacion.ObtenerPaises();
             ddlNacionalidad.DataSource = dtNacionalidad;
             ddlNacionalidad.DataTextField = "nombre_pais";
-            ddlNacionalidad.DataValueField = "idPais";
+            ddlNacionalidad.DataValueField = "idPais_p";
             ddlNacionalidad.DataBind();
 
 
