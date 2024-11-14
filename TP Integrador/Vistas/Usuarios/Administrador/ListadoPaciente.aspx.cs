@@ -1,4 +1,4 @@
-﻿using Entidades;
+using Entidades;
 using Negocios;
 using System;
 using System.Collections.Generic;
@@ -11,46 +11,34 @@ namespace Vistas
 {
     public partial class ListadoPaciente : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        private NegociosPaciente negociosPaciente = new NegociosPaciente();
 
+     
+
+        void mostrarTodos()
+        {
+            var listaPacientes = negociosPaciente.ObtenerTodosLosPacientes();
+           grdListadoPaciente.DataSource = listaPacientes;
+            grdListadoPaciente.DataBind();
         }
 
-        readonly NegociosPaciente negocioPaciente = new NegociosPaciente();
-        public void Cargargrv()
+        void mostrarDniPaciente()
         {
-            NegociosPaciente ngp = new NegociosPaciente();
-            grvPacientes.DataSource = ngp.ObtenerListaPacientes();
-            grvPacientes.DataBind();       
-
-        }
-
-        protected void btnMostrarTodo_Click(object sender, EventArgs e)
-        {
-            grvPacientes.Visible = true;
-            Cargargrv();
-        }
-
-        protected void btnDni_Click(object sender, EventArgs e)
-        {
-            NegociosPaciente negocio = new NegociosPaciente();
             string dni = txtBuscarPorDNI.Text;
+            var listaPacientes = negociosPaciente.ObtenerPacientesPorDNI(dni);
+            grdListadoPaciente.DataSource = listaPacientes;
+            grdListadoPaciente.DataBind();
+        }
 
+        protected void btnBuscarPaciente_Click(object sender, EventArgs e)
+        {
+            mostrarDniPaciente();
+        }
 
-            Paciente paciente = negocio.FiltrarPacientePorDni(dni);
-
-            if (paciente != null)
-            {
-                grvPacientes.Visible = true;
-                grvPacientes.DataSource = new List<Paciente> { paciente };
-                grvPacientes.DataBind();
-            }
-            else
-            {
-
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Paciente no encontrado');", true);
-            }
-            txtBuscarPorDNI.Text = "";
+        protected void btnMostrarTodos_Click(object sender, EventArgs e)
+        {
+            mostrarTodos();
         }
     }
+
 }
