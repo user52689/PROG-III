@@ -18,108 +18,139 @@ namespace Datos
         SqlConnection conexion = new SqlConnection();
         SqlDataAdapter adapter = new SqlDataAdapter();
 
-        public Paciente ObtenerPacientes(int dni)
-        {
-            string consulta = "SELECT * FROM Pacientes WHERE DNI_pac = @DNI";
-            SqlCommand cmd = new SqlCommand(consulta);
-            cmd.Parameters.AddWithValue("@DNI", dni);
+      public List<Paciente> FiltrarPacientesPorDNI(string dni)
+  {
+      DataTable dt = ad.FiltrarDni(dni); 
+      List<Paciente> listaPacientes = new List<Paciente>();
 
-            using (SqlConnection conexion = ad.ObtenerConexion())
-            {
-                if (conexion == null)
-                {
-                    Console.WriteLine("No conectado");
-                    return null;
-                }
+      foreach (DataRow row in dt.Rows)
+      {
+          Paciente paciente = new Paciente
+          {
 
-                cmd.Connection = conexion;
+              DNI = row["DNI_pac"].ToString(),
+              Nombre = row["Nombre_pac"].ToString(),
+              Apellido = row["Apellido_pac"].ToString(),
+              Genero = row["Genero_pac"].ToString(),
+              Nacionalidad = int.TryParse(row["Nacionalidad_pac"].ToString(), out int nacionalidad) ? nacionalidad : 0,
+              FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"].ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
+              Direccion = row["Direccion_pac"].ToString(),
+              Localidad = int.TryParse(row["Localidad_pac"].ToString(), out int localidad) ? localidad : 0,
+              Provincia = int.TryParse(row["Provincia_pac"].ToString(), out int provincia) ? provincia : 0,
+              CorreoElectronico = row["CorreoElectronico_pac"].ToString(),
+              Telefono = row["Telefono_pac"].ToString()
+          };
+          listaPacientes.Add(paciente);
+      }
 
-                try
-                {
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            Paciente paciente = new Paciente
-                            {
-                                DNI = reader["DNI_pac"].ToString(),
-                                Nombre = reader["Nombre_pac"].ToString(),
-                                Apellido = reader["Apellido_pac"].ToString(),
-                                Genero = Convert.ToInt32(reader["Genero_pac"]),
-                                Nacionalidad = Convert.ToInt32(reader["Nacionalidad_pac"]),
-                                FechaNacimiento = Convert.ToDateTime(reader["FechaNacimiento_pac"]),
-                                Direccion = reader["Direccion_pac"].ToString(),
-                                Localidad = Convert.ToInt32(reader["Localidad_pac"]),
-                                Provincia = Convert.ToInt32(reader["Provincia_pac"]),
-                                CorreoElectronico = reader["CorreoElectronico_pac"].ToString(),
-                                Telefono = reader["Telefono_pac"]?.ToString()
-                            };
-                            return paciente;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error al obtener el paciente: " + ex.Message);
-                }
-                finally
-                {
-                    conexion.Close();
-                }
-            }
-
-            return null;
-        }
-
-        public Paciente ObtenerPacientesPorDni(int dni)
-        {
-            throw new NotImplementedException();
-        }
+      return listaPacientes;
+  }
 
 
+  public List<Paciente> ObtenerListaPacientes()
+  {
+      string consulta = "SELECT * FROM Pacientes";
+      DataTable dt = ad.ObtenerTabla("Pacientes", consulta);
 
+      List<Paciente> listaPaciente = new List<Paciente>();
 
-        public List<Paciente> ObtenerTodosLosPacientes()
-        {
-            List<Paciente> listaPacientes = new List<Paciente>();
-            string consulta = "SELECT * FROM Pacientes";
+      foreach (DataRow row in dt.Rows)
+      {
+          Paciente paciente = new Paciente
+          {
 
-            using (SqlConnection conexion = ad.ObtenerConexion())
-            using (SqlCommand cmd = new SqlCommand(consulta, conexion))
-            {
-                try
-                {
-                    conexion.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            Paciente paciente = new Paciente
-                            {
-                                DNI = reader["DNI_pac"].ToString(),
-                                Nombre = reader["Nombre_pac"].ToString(),
-                                Apellido = reader["Apellido_pac"].ToString(),
-                                Genero = Convert.ToInt32(reader["Genero_pac"]),
-                                Nacionalidad = Convert.ToInt32(reader["Nacionalidad_pac"]),
-                                FechaNacimiento = Convert.ToDateTime(reader["FechaNacimiento_pac"]),
-                                Direccion = reader["Direccion_pac"].ToString(),
-                                Localidad = Convert.ToInt32(reader["Localidad_pac"]),
-                                Provincia = Convert.ToInt32(reader["Provincia_pac"]),
-                                CorreoElectronico = reader["CorreoElectronico_pac"].ToString(),
-                                Telefono = reader["Telefono_pac"]?.ToString()
-                            };
-                            listaPacientes.Add(paciente);
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error al obtener la lista de pacientes: " + ex.Message);
-                }
-            }
+              DNI = row["DNI_pac"].ToString(),
+              Nombre = row["Nombre_pac"].ToString(),
+              Apellido = row["Apellido_pac"].ToString(),
+              Genero = row["Genero_pac"].ToString(),
+              Nacionalidad = int.TryParse(row["Nacionalidad_pac"].ToString(), out int nacionalidad) ? nacionalidad : 0,
+              FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"].ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
+              Direccion = row["Direccion_pac"].ToString(),
+              Localidad = int.TryParse(row["Localidad_pac"].ToString(), out int localidad) ? localidad : 0,
+              Provincia = int.TryParse(row["Provincia_pac"].ToString(), out int provincia) ? provincia : 0,
+              CorreoElectronico = row["CorreoElectronico_pac"].ToString(),
+              Telefono = row["Telefono_pac"].ToString()
+          };
+          listaPaciente.Add(paciente);
+      }
 
-            return listaPacientes;
-        }
+      return listaPaciente;
+  }
+
+   
+  public bool AgregarPaciente(Paciente paciente)
+  {
+      try
+      {
+          using (SqlConnection conexion = ad.ObtenerConexion())
+          {
+              if (conexion == null) throw new Exception("No se pudo establecer la conexión con la base de datos.");
+
+              SqlCommand cmd = new SqlCommand("SP_AgregarPaciente", conexion)
+              {
+                  CommandType = CommandType.StoredProcedure
+              };
+
+              // Agregar parámetros del procedimiento almacenado
+              cmd.Parameters.AddWithValue("@DNI_pac", paciente.DNI);
+              cmd.Parameters.AddWithValue("@Nombre_pac", paciente.Nombre);
+              cmd.Parameters.AddWithValue("@Apellido_pac", paciente.Apellido);
+              cmd.Parameters.AddWithValue("@Genero_pac", paciente.Genero);
+              cmd.Parameters.AddWithValue("@Nacionalidad_pac", paciente.Nacionalidad);
+              cmd.Parameters.AddWithValue("@FechaNacimiento_pac", paciente.FechaNacimiento);
+              cmd.Parameters.AddWithValue("@Direccion_pac", paciente.Direccion);
+              cmd.Parameters.AddWithValue("@Localidad_pac", paciente.Localidad);
+              cmd.Parameters.AddWithValue("@Provincia_pac", paciente.Provincia);
+              cmd.Parameters.AddWithValue("@CorreoElectronico_pac", paciente.CorreoElectronico);
+              cmd.Parameters.AddWithValue("@Telefono_pac", paciente.Telefono);
+
+              // Ejecutar el comando
+              int filasAfectadas = cmd.ExecuteNonQuery();
+              return filasAfectadas > 0;
+          }
+      }
+      catch (Exception ex)
+      {
+          Console.WriteLine("Error al agregar el paciente: " + ex.Message);
+          return false;
+      }
+  }
+
+  public bool ExistePaciente(string dni)
+  {
+      string consulta = "SELECT * FROM Pacientes WHERE DNI_pac = @DNI";
+      SqlCommand cmd = new SqlCommand(consulta);
+      cmd.Parameters.AddWithValue("@DNI", dni);
+
+      using (SqlConnection conexion = ad.ObtenerConexion())
+      {
+          if (conexion == null)
+          {
+              Console.WriteLine("No conectado");
+              return false;
+          }
+
+          cmd.Connection = conexion;
+
+          try
+          {
+              conexion.Open();
+              using (SqlDataReader reader = cmd.ExecuteReader())
+              {
+                  return reader.HasRows; 
+              }
+          }
+          catch (Exception ex)
+          {
+              Console.WriteLine("Error al verificar la existencia del paciente: " + ex.Message);
+              return false;
+          }
+          finally
+          {
+              conexion.Close();
+          }
+      }
+  }
         //----------------------------------------------------------------------------------------------------------------------------------------------------------Obtener paciente
         public DataTable GetTablaPacientesDatos() //Muestra todos los pacientes con todos los campos
         {
