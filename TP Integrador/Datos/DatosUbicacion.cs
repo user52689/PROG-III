@@ -28,5 +28,23 @@ namespace Datos
       
             return ad.ObtenerTabla("Localidades",consulta);
         }
+
+  public int ObtenerIdProvinciaPorNombre(int nombreProvincia)
+        {
+            int provinciaId = -1;
+
+            string consulta = $"SELECT IdProvincia_prov FROM Provincias WHERE Nombre_prov = '{nombreProvincia}'";
+
+            DataTable dt = ad.ObtenerTabla("Provincias", consulta);  
+            if (dt.Rows.Count > 0)
+            {
+
+                provinciaId = Convert.ToInt32(dt.Rows[0]["IdProvincia_prov"]);
+            }
+
+            return provinciaId;
+        }
+
+        
     }
 }
