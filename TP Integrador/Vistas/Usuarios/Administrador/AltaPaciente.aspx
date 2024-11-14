@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AltaPaciente.aspx.cs" Inherits="Vistas.AltaPaciente" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AltaPaciente.aspx.cs" Inherits="Vistas.AltaPaciente" %>
 
 <!DOCTYPE html>
 
@@ -80,9 +80,9 @@
                     </td>
                     <td class="auto-style7">
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                            <asp:ListItem Value="1">Masculino</asp:ListItem>
-                            <asp:ListItem Value="2">Femenino</asp:ListItem>
-                            <asp:ListItem Value="3">Prefiero no decirlo</asp:ListItem>
+                            <asp:ListItem Value="Masculino">Masculino</asp:ListItem>
+                            <asp:ListItem Value="Femenino">Femenino</asp:ListItem>
+                            <asp:ListItem Value="No binario">Prefiero no decirlo</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
                     <td class="auto-style2">
@@ -106,7 +106,7 @@
 
                     </td>
                     <td class="auto-style7">
-                            <input type="date"/></td>
+                            <input type="date" id="txtFechaNacimiento" runat="server"/></td>
                     <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
@@ -125,11 +125,12 @@
                         <asp:Label ID="lblProvinciaPaciente" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:DropDownList ID="ddlProvincia" runat="server" CssClass="auto-style1" AutoPostBack="True" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged1">
-                        </asp:DropDownList>
+                       <asp:DropDownList ID="ddlProvincia"  AutoPostBack="true" runat="server"  OnSelectedIndexChanged="provinciaSeleccionada">
+                    </asp:DropDownList>
+
                     </td>
                     <td class="auto-style2">
-                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" ErrorMessage="RequiredFieldValidator">*Completar campo</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" ErrorMessage="RequiredFieldValidator" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -141,8 +142,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style2">
-                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="ddlLocalidad" ErrorMessage="RequiredFieldValidator">*Completar campo</asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style4">
@@ -168,8 +168,12 @@
                 </tr>
                 </table>
                 <br />
-                <asp:Button ID="btnGuardarPaciente" runat="server" Text="Guardar" CssClass="btn" />
+            
+
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                <asp:Button ID="btnGuardarPaciente" runat="server" Text="Guardar" CssClass="btn" OnClick="btnGuardarPaciente_Click" />
         </div>
     </form>
 </body>
 </html>
+
