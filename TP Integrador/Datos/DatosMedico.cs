@@ -172,5 +172,90 @@ namespace Datos
             }
             return null;
         }
+
+public List<Medico> ObtenerListaMedicos()
+        {
+            string consulta = "SELECT * FROM Medicos";
+            DataTable dt = ad.ObtenerTabla("Medicos", consulta);
+
+
+            if (dt.Rows.Count == 0)
+            {
+                Console.WriteLine("No se encontraron registros en la tabla Medicos.");
+            }
+
+            List<Medico> listaMedicos = new List<Medico>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                Medico medico = new Medico
+                {
+                    Legajo = row["Legajo_med"].ToString(),
+                    DNI = row["DNI_med"].ToString(),
+                    Nombre = row["Nombre_med"].ToString(),
+                    Apellido = row["Apellido_med"].ToString(),
+                    Genero = row["Genero_med"].ToString(),
+                    Nacionalidad = Convert.ToInt32(row["Nacionalidad_med"]),
+                    FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_med"]),
+                    Direccion = row["Direccion_med"].ToString(),
+                    Localidad = Convert.ToInt32(row["Localidad_med"]),
+                    Provincia = Convert.ToInt32(row["Provincia_med"]),
+                    CorreoElectronico = row["CorreoElectronico_med"].ToString(),
+                    Telefono = row["Telefono_med"]?.ToString(),
+                    Especialidad = Convert.ToInt32(row["Especialidad_med"])
+                };
+                listaMedicos.Add(medico);
+            }
+
+            return listaMedicos;
+        }
+
+
+
+
+
+        public List<Medico> FiltrarMedicosPorLegajo(string legajo)
+        {
+
+            DataTable dt = ad.filtrarLegajo(legajo);
+
+
+            List<Medico> listaMedicos = new List<Medico>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                Medico medico = new Medico
+                {
+                    Legajo = row["Legajo_med"].ToString(),
+                    DNI = row["DNI_med"].ToString(),
+                    Nombre = row["Nombre_med"].ToString(),
+                    Apellido = row["Apellido_med"].ToString(),
+                    Genero = row["Genero_med"].ToString(),
+                    Nacionalidad = Convert.ToInt32(row["Nacionalidad_med"]),
+                    FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_med"]),
+                    Direccion = row["Direccion_med"].ToString(),
+                    Localidad = Convert.ToInt32(row["Localidad_med"]),
+                    Provincia = Convert.ToInt32(row["Provincia_med"]),
+                    CorreoElectronico = row["CorreoElectronico_med"].ToString(),
+                    Telefono = row["Telefono_med"].ToString(),
+                    Especialidad = Convert.ToInt32(row["Especialidad_med"])
+                };
+                listaMedicos.Add(medico);
+            }
+
+            return listaMedicos;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
     }
 }
