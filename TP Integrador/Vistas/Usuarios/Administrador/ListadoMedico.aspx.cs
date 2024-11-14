@@ -1,4 +1,5 @@
-﻿using System;
+using Negocios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,38 @@ namespace Vistas
 {
     public partial class ListadoMedico : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
+        NegociosMedico negociosMedico = new NegociosMedico();
+      
+        protected void btnMostrarTodo_Click(object sender, EventArgs e)
+        {
+            mostrarTodos();
+           
+        }
+
+        void mostrarTodos()
+        {
+            NegociosMedico negociosMedico = new NegociosMedico();
+            var listaMedicos = negociosMedico.obtenerListaMedicos();
+            grdListadoMedico.DataSource = listaMedicos;
+            grdListadoMedico.DataBind();
+        }
+
+      
+
+        void mostrarLegajoMedico()
+        {
+            string legajo = txtBuscarPorLegajo.Text;
+            NegociosMedico negociosMedico = new NegociosMedico();          
+            var listaMedicos = negociosMedico.ObtenerMedicosPorLegajo(legajo);
+            grdListadoMedico.DataSource = listaMedicos;
+            grdListadoMedico.DataBind();
+
+        }
+
+        protected void btnBuscarMedico_Click(object sender, EventArgs e)
+        {
+            mostrarLegajoMedico();
         }
     }
 }
