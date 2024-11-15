@@ -18,7 +18,7 @@ namespace Vistas
         void mostrarTodos()
         {
             var listaPacientes = negociosPaciente.ObtenerTodosLosPacientes();
-           grdListadoPaciente.DataSource = listaPacientes;
+            grdListadoPaciente.DataSource = listaPacientes;
             grdListadoPaciente.DataBind();
         }
 

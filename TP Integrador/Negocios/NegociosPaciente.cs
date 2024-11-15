@@ -20,20 +20,20 @@ namespace Negocios
     
         public List<Paciente> ObtenerTodosLosPacientes()
     {
-       return datoPacient.ObtenerListaPacientes();
+       return datosP.ObtenerListaPacientes();
     }
 
 
     public List<Paciente> ObtenerPacientesPorDNI(string dni)
     {
-        return datoPacient.FiltrarPacientesPorDNI(dni);
+        return datosP.FiltrarPacientesPorDNI(dni);
     }
 
 
     public bool agregarPaciente(Paciente NuevoPaciente)
     {
     
-        return datoPacient.AgregarPaciente(NuevoPaciente);
+        return datosP.AgregarPaciente(NuevoPaciente);
 
     }
 
@@ -41,7 +41,7 @@ namespace Negocios
     public bool ExistePaciente(string dni)
     {
 
-        return datoPacient.ExistePaciente(dni);
+        return datosP.ExistePaciente(dni);
 
     }
 

@@ -50,13 +50,13 @@ namespace Negocios
         //---------------------------------------------------------------------------------------
          public List<Medico> obtenerListaMedicos()
    {
-       return datosMedico.ObtenerListaMedicos();
+            return datosM.ObtenerListaMedicos();
    }
 
 
-   public List<Medico> ObtenerMedicosPorLegajo(string legajo)
+   public List<Medico> ObtenerMedicosPorLegajo(int legajo)
    {
-       return datosMedico.FiltrarMedicosPorLegajo(legajo);
+       return datosM.FiltrarMedicosPorLegajo(legajo);
    }
 
         public DataTable ModificarMedicoNegocio(Medico medico)

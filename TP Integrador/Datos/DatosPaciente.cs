@@ -20,7 +20,7 @@ namespace Datos
 
       public List<Paciente> FiltrarPacientesPorDNI(string dni)
   {
-      DataTable dt = ad.FiltrarDni(dni); 
+      DataTable dt = ad.FiltrarPacientePorDni(dni); 
       List<Paciente> listaPacientes = new List<Paciente>();
 
       foreach (DataRow row in dt.Rows)
@@ -31,7 +31,7 @@ namespace Datos
               DNI = row["DNI_pac"].ToString(),
               Nombre = row["Nombre_pac"].ToString(),
               Apellido = row["Apellido_pac"].ToString(),
-              Genero = row["Genero_pac"].ToString(),
+              Genero = Convert.ToInt32(row["Genero_pac"]),
               Nacionalidad = int.TryParse(row["Nacionalidad_pac"].ToString(), out int nacionalidad) ? nacionalidad : 0,
               FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"].ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
               Direccion = row["Direccion_pac"].ToString(),
@@ -62,7 +62,7 @@ namespace Datos
               DNI = row["DNI_pac"].ToString(),
               Nombre = row["Nombre_pac"].ToString(),
               Apellido = row["Apellido_pac"].ToString(),
-              Genero = row["Genero_pac"].ToString(),
+              Genero = Convert.ToInt32(row["Genero_pac"]),
               Nacionalidad = int.TryParse(row["Nacionalidad_pac"].ToString(), out int nacionalidad) ? nacionalidad : 0,
               FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"].ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
               Direccion = row["Direccion_pac"].ToString(),
@@ -255,42 +255,6 @@ namespace Datos
         }
 
 
-        //-------------------------------------------------------------------------------------------------------------------------------------------------------Agregar Pacientes
-        public bool AgregarPaciente(Paciente nuevoPaciente)
-        {
-            string consulta = @"INSERT INTO PACIENTES (DNI_Pac, Nombre_pac, Apellido_pac, Sexo_pac, Nacionalidad_pac, 
-                      FechaNacimiento_pac, Direccion_pac, Localidad_pac, Provincia_pac, CorreoElectronico_pac, Telefono_pac)
-                      VALUES (@DNI, @Nombre, @Apellido, @Sexo, @Nacionalidad, @FechaNacimiento, @Direccion, 
-                      @Localidad, @Provincia, @CorreoElectronico, @Telefono)";
-
-            using (SqlConnection conexion = ad.ObtenerConexion())
-            using (SqlCommand cmd = new SqlCommand(consulta, conexion))
-            {
-                cmd.Parameters.AddWithValue("@DNI", nuevoPaciente.DNI);
-                cmd.Parameters.AddWithValue("@Nombre", nuevoPaciente.Nombre);
-                cmd.Parameters.AddWithValue("@Apellido", nuevoPaciente.Apellido);
-                cmd.Parameters.AddWithValue("@Sexo", nuevoPaciente.Genero);
-                cmd.Parameters.AddWithValue("@Nacionalidad", nuevoPaciente.Nacionalidad);
-                cmd.Parameters.AddWithValue("@FechaNacimiento", nuevoPaciente.FechaNacimiento);
-                cmd.Parameters.AddWithValue("@Direccion", nuevoPaciente.Direccion);
-                cmd.Parameters.AddWithValue("@Localidad", nuevoPaciente.Localidad);
-                cmd.Parameters.AddWithValue("@Provincia", nuevoPaciente.Provincia);
-                cmd.Parameters.AddWithValue("@CorreoElectronico", nuevoPaciente.CorreoElectronico);
-                cmd.Parameters.AddWithValue("@Telefono", nuevoPaciente.Telefono);
-
-                try
-                {
-                    conexion.Open();
-                    int filasAfectadas = cmd.ExecuteNonQuery();
-                    return filasAfectadas > 0;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error al agregar el paciente: " + ex.Message);
-                    return false;
-                }
-            }
-        }
         
         //------------------------------------------------------------------------------------------------------------------------------------------------------Eliminar Paciente
 

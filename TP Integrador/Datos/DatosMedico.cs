@@ -190,11 +190,11 @@ public List<Medico> ObtenerListaMedicos()
             {
                 Medico medico = new Medico
                 {
-                    Legajo = row["Legajo_med"].ToString(),
+                    Legajo = Convert.ToInt32(row["Legajo_med"]),
                     DNI = row["DNI_med"].ToString(),
                     Nombre = row["Nombre_med"].ToString(),
                     Apellido = row["Apellido_med"].ToString(),
-                    Genero = row["Genero_med"].ToString(),
+                    Genero = Convert.ToInt32(row["Genero_med"]),
                     Nacionalidad = Convert.ToInt32(row["Nacionalidad_med"]),
                     FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_med"]),
                     Direccion = row["Direccion_med"].ToString(),
@@ -214,10 +214,10 @@ public List<Medico> ObtenerListaMedicos()
 
 
 
-        public List<Medico> FiltrarMedicosPorLegajo(string legajo)
+        public List<Medico> FiltrarMedicosPorLegajo(int legajo)
         {
 
-            DataTable dt = ad.filtrarLegajo(legajo);
+            DataTable dt = ad.FiltrarMedicoPorLegajo(legajo);
 
 
             List<Medico> listaMedicos = new List<Medico>();
@@ -226,11 +226,11 @@ public List<Medico> ObtenerListaMedicos()
             {
                 Medico medico = new Medico
                 {
-                    Legajo = row["Legajo_med"].ToString(),
+                    Legajo = Convert.ToInt32(row["Legajo_med"]),
                     DNI = row["DNI_med"].ToString(),
                     Nombre = row["Nombre_med"].ToString(),
                     Apellido = row["Apellido_med"].ToString(),
-                    Genero = row["Genero_med"].ToString(),
+                    Genero = Convert.ToInt32(row["Genero_med"]),
                     Nacionalidad = Convert.ToInt32(row["Nacionalidad_med"]),
                     FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_med"]),
                     Direccion = row["Direccion_med"].ToString(),

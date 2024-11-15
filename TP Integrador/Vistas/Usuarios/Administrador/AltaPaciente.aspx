@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AltaPaciente.aspx.cs" Inherits="Vistas.AltaPaciente" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AltaPaciente.aspx.cs" Inherits="Vistas.AltaPaciente" %>
 
 <!DOCTYPE html>
 
@@ -14,6 +14,7 @@
             margin-bottom: 20px;
             left: -1px;
             top: 0px;
+
         }
     </style>
     </head>
@@ -80,9 +81,9 @@
                     </td>
                     <td class="auto-style7">
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                            <asp:ListItem Value="Masculino">Masculino</asp:ListItem>
-                            <asp:ListItem Value="Femenino">Femenino</asp:ListItem>
-                            <asp:ListItem Value="No binario">Prefiero no decirlo</asp:ListItem>
+                            <asp:ListItem Value="1">Masculino</asp:ListItem>
+                            <asp:ListItem Value="2">Femenino</asp:ListItem>
+                            <asp:ListItem Value="3">Prefiero no decirlo</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
                     <td class="auto-style2">

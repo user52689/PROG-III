@@ -27,11 +27,11 @@ namespace Negocios
         {
             return du.ObtenerDatos("paises");
         }
-  public int ObtenerIdProvinciaNombre(int nombreProvinia)
-        {
-            return du.ObtenerIdProvinciaPorNombre(nombreProvinia);
+  //public int ObtenerIdProvinciaNombre(int nombreProvinia)
+  //      {
+  //          return du.ObtenerIdProvinciaPorNombre(nombreProvinia);
 
-        }
+  //      }
 
     }
 }

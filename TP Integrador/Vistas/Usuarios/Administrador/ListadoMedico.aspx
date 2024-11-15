@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoMedico.aspx.cs" Inherits="Vistas.ListadoMedico" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoMedico.aspx.cs" Inherits="Vistas.ListadoMedico" %>
 
 
 <head runat="server">
@@ -15,6 +15,7 @@
     border-radius: 5px;
     max-width: 100%; /* Asegura que el contenedor no se desborde */
 }
+
 
      </style>
 </head>

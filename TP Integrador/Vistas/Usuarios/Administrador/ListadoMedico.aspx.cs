@@ -31,7 +31,7 @@ namespace Vistas
 
         void mostrarLegajoMedico()
         {
-            string legajo = txtBuscarPorLegajo.Text;
+            int legajo = Convert.ToInt32(txtBuscarPorLegajo);
             NegociosMedico negociosMedico = new NegociosMedico();          
             var listaMedicos = negociosMedico.ObtenerMedicosPorLegajo(legajo);
             grdListadoMedico.DataSource = listaMedicos;

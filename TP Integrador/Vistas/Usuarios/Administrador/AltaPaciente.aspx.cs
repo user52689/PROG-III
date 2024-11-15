@@ -1,4 +1,5 @@
 ﻿using Negocios;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,7 +59,7 @@ namespace Vistas
                 DNI = txtDni.Text,
                 Nombre = txtNombre.Text,
                 Apellido = txtApellido.Text,
-                Genero = RadioButtonList1.SelectedItem.Text,
+                Genero = int.Parse(RadioButtonList1.SelectedValue),
                 Nacionalidad = ddlNacionalidad.SelectedIndex,
                 FechaNacimiento = fechaNacimiento,
                 Direccion = txtDireccion.Text,
@@ -94,7 +95,7 @@ namespace Vistas
         var dtNacionalidad = _NegociosUbicacion.ObtenerPaises();
         ddlNacionalidad.DataSource = dtNacionalidad;
         ddlNacionalidad.DataTextField = "nombre_pais";
-        ddlNacionalidad.DataValueField = "idPais";
+        ddlNacionalidad.DataValueField = "IdPais_p";
         ddlNacionalidad.DataBind();
 
         ddlNacionalidad.Items.Insert(0, new ListItem("--SELECCIONAR PAIS--", "0"));
