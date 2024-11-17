@@ -231,11 +231,11 @@
                             
                          <asp:DropDownList ID="ddlEspecialidad" runat="server">
                              <asp:ListItem>--Seleccionar Especialidad--</asp:ListItem>
-                             <asp:ListItem>Cardiología</asp:ListItem>
-                             <asp:ListItem>Dermatología</asp:ListItem>
-                             <asp:ListItem>Medicina general</asp:ListItem>
-                             <asp:ListItem>Pediatría</asp:ListItem>
-                             <asp:ListItem>Traumatología</asp:ListItem>
+                             <asp:ListItem Value="1">Pediatría</asp:ListItem>
+                             <asp:ListItem Value="2">Cardiología</asp:ListItem>
+                             <asp:ListItem Value="3">Dermatología</asp:ListItem>
+                             <asp:ListItem Value="4">Traumatología</asp:ListItem>
+                             <asp:ListItem Value="5">Medicina general</asp:ListItem>
                          </asp:DropDownList>
                          
                             

@@ -41,10 +41,10 @@ GO
 CREATE OR ALTER PROCEDURE SP_ModificarMedico
 (	
 	@Legajo_med INT,
-    @DNI_med CHAR(10),
+	@DNI_med char(10),
     @Nombre_med VARCHAR(50),
     @Apellido_med VARCHAR(50),
-    @Genero_med CHAR(50),
+    @Genero_med int,
     @Nacionalidad_med INT,
     @FechaNacimiento_med DATE,
     @Direccion_med VARCHAR(50),
@@ -60,7 +60,7 @@ BEGIN
         BEGIN TRANSACTION;
 
         UPDATE Medicos
-        SET DNI_med = @DNI_med,
+        SET
             Nombre_med = @Nombre_med,
             Apellido_med = @Apellido_med,
             Genero_med = @Genero_med,
@@ -83,6 +83,21 @@ BEGIN
     END CATCH
 END
 GO
+
+EXEC SP_ModificarMedico
+    @Legajo_med = 6,
+    @DNI_med = '1234567895',
+    @Nombre_med = 'Peedro', -- Cambiamos el nombre de Pedro a Pep
+    @Apellido_med = 'García',
+    @Genero_med = 1,
+    @Nacionalidad_med = 1,
+    @FechaNacimiento_med = '1988-11-20',
+    @Direccion_med = 'Avenida Libertador 789',
+    @Localidad_med = 6,
+    @Provincia_med = 2,
+    @CorreoElectronico_med = 'pedro.garcia@email.com',
+    @Telefono_med = '03514567892',
+    @Especialidad_med = 5;
 
 
 
@@ -118,12 +133,12 @@ END
 GO
 
 
-CREATE PROCEDURE SP_AgregarPaciente
+CREATE OR ALTER PROCEDURE SP_AgregarPaciente
 (
     @DNI_pac CHAR(10),
     @Nombre_pac CHAR(50),
     @Apellido_pac CHAR(50),
-    @Genero_pac CHAR(10),
+    @Genero_pac int,
     @Nacionalidad_pac INT,
     @FechaNacimiento_pac DATE,
     @Direccion_pac CHAR(100),
@@ -152,12 +167,12 @@ GO
 
 
 
-CREATE PROCEDURE SP_ModificarPaciente
+CREATE OR ALTER PROCEDURE SP_ModificarPaciente
 (
     @DNI_pac CHAR(10),
     @Nombre_pac CHAR(50),
     @Apellido_pac CHAR(50),
-    @Genero_pac CHAR(10),
+    @Genero_pac int,
     @Nacionalidad_pac INT,
     @FechaNacimiento_pac DATE,
     @Direccion_pac CHAR(100),
@@ -172,7 +187,7 @@ BEGIN
         BEGIN TRANSACTION;
 
         UPDATE Pacientes
-        SET DNI_pac = @DNI_pac,
+        SET
 			Nombre_pac = @Nombre_pac,
             Apellido_pac = @Apellido_pac,
             Genero_pac = @Genero_pac,

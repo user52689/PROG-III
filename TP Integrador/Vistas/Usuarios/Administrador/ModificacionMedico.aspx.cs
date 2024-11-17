@@ -89,6 +89,8 @@ namespace Vistas
 
         protected void grdModificacionMedico_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
+            int legajo = Convert.ToInt32(txtBuscarPorLegajo.Text);
+
             string _DNI_med = ((Label)grdModificacionMedico.Rows[e.RowIndex].FindControl("lblDniMedico")).Text;
             string _Nombre_med = ((TextBox)grdModificacionMedico.Rows[e.RowIndex].FindControl("txt_it_NombreMedico")).Text;
             string _Apellido_med = ((TextBox)grdModificacionMedico.Rows[e.RowIndex].FindControl("txt_it_ApellidoMedico")).Text;
@@ -107,6 +109,7 @@ namespace Vistas
 
             Medico medico = new Medico
             {
+                Legajo = legajo,
                 DNI = _DNI_med,
                 Nombre = _Nombre_med,
                 Apellido = _Apellido_med,

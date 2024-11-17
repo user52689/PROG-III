@@ -100,6 +100,7 @@ namespace Vistas
                     Provincia = int.Parse(ddlProvincia.SelectedValue),
                     CorreoElectronico = txtEmail.Text,
                     Telefono = txtTelefono.Text
+                    
                 };
 
                 bool resultado = _NegocioMedico.agregarMedico(nuevoMedico);

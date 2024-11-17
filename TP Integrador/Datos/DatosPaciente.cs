@@ -186,7 +186,7 @@ namespace Datos
             string consulta = @"SELECT p.DNI_pac, 
                                        p.Nombre_pac,
                                        p.Apellido_pac, 
-                                       g.Descripcion_g,
+                                       g.Descripcion_g , 
                                        n.Nombre_pais,
                                        p.FechaNacimiento_pac,
                                        p.Direccion_pac, 

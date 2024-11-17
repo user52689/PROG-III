@@ -339,7 +339,7 @@ GO
 CREATE TABLE Medicos (
     Legajo_med INT IDENTITY(1,1) NOT NULL,
     DNI_med CHAR(10) NOT NULL,
-	IdUsuario_med INT  NOT NULL,
+	IdUsuario_med INT  NULL, --LO DEJO EN NULL POR AHORA
     Nombre_med VARCHAR(50) NOT NULL,
     Apellido_med VARCHAR(50) NOT NULL,
     Genero_med INT NOT NULL,
@@ -357,6 +357,10 @@ CREATE TABLE Medicos (
 	CONSTRAINT FK_Medico_Genero FOREIGN KEY (Genero_med) REFERENCES Generos(IdGenero_g)
 )
 GO
+
+ALTER TABLE Medicos
+ALTER COLUMN IdUsuario_med INT NULL;
+go
 
 INSERT INTO Medicos (DNI_med, IdUsuario_med, Nombre_med, Apellido_med, Genero_med, Nacionalidad_med, FechaNacimiento_med, Direccion_med, Localidad_med, Provincia_med, CorreoElectronico_med, Telefono_med, Especialidad_med)
 SELECT '1234567890', 1, 'Juan', 'Pérez', 1, 1, '1980-05-20', 'Calle Falsa 123', 1, 1, 'juan.perez@email.com', '01123456789', 1 UNION
