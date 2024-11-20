@@ -29,15 +29,18 @@ namespace Vistas
 
       
 
-        void mostrarLegajoMedico()
-        {
-            int legajo = Convert.ToInt32(txtBuscarPorLegajo);
-            NegociosMedico negociosMedico = new NegociosMedico();          
-            var listaMedicos = negociosMedico.ObtenerMedicosPorLegajo(legajo);
-            grdListadoMedico.DataSource = listaMedicos;
-            grdListadoMedico.DataBind();
+          void mostrarLegajoMedico()
+     {
+         int legajo;
+         if (int.TryParse(txtBuscarPorLegajo.Text, out legajo))
+         {
+             NegociosMedico negociosMedico = new NegociosMedico();
+             var listaMedicos = negociosMedico.ObtenerMedicosPorLegajo(legajo);
+             grdListadoMedico.DataSource = listaMedicos;
+             grdListadoMedico.DataBind();
+         }
 
-        }
+     }
 
         protected void btnBuscarMedico_Click(object sender, EventArgs e)
         {
