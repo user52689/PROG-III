@@ -149,34 +149,47 @@ namespace Datos
         }
 
         public DataTable FiltrarMedicoPorLegajo(int legajo)
-        {
-            DataTable filtro = new DataTable("Medicos");
-            try
-            {
-                SqlConnection conexion = ObtenerConexion();
-                if (conexion == null)
-                {
-                    throw new Exception("No se pudo establecer la conexión con la base de datos.");
-                }
+      {
 
-                SqlCommand cmd = new SqlCommand("filtrar_medico_legajo", conexion)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
+      /*
+     - Ejecuten el proc -
+      CREATE PROCEDURE SP_filtrarLegajoMedico
+       @legajo INT
+      AS
+      BEGIN
+      SELECT * 
+      FROM Medicos
+      WHERE Medicos.Legajo_med = @legajo;
+      END
+      GO   
+      */
+      DataTable filtro = new DataTable("Medicos");
+      try
+      {
+          SqlConnection conexion = ObtenerConexion();
+          if (conexion == null)
+          {
+              throw new Exception("No se pudo establecer la conexión con la base de datos.");
+          }
 
-                cmd.Parameters.AddWithValue("@legajo", legajo);
-                SqlDataAdapter adp = new SqlDataAdapter(cmd);
-                adp.Fill(filtro);
+          SqlCommand cmd = new SqlCommand("SP_filtrarLegajoMedico", conexion)
+          {
+              CommandType = CommandType.StoredProcedure
+          };
 
-                conexion.Close();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error al filtrar el legajo del médico: " + ex.Message);
-            }
+          cmd.Parameters.AddWithValue("@legajo", legajo);
+          SqlDataAdapter adp = new SqlDataAdapter(cmd);
+          adp.Fill(filtro);
 
-            return filtro;
-        }
+          conexion.Close();
+      }
+      catch (Exception ex)
+      {
+          Console.WriteLine("Error al filtrar el legajo del médico: " + ex.Message);
+      }
+
+      return filtro;
+  }
 
     }
 }
