@@ -251,77 +251,91 @@ namespace Datos
         }
 
 public List<Medico> ObtenerListaMedicos()
+{
+    string consulta = "SELECT * FROM Medicos";
+    DataTable dt = ad.ObtenerTabla("Medicos", consulta);
+
+    if (dt.Rows.Count == 0)
+    {
+        Console.WriteLine("No se encontraron registros en la tabla Medicos.");
+    }
+
+    List<Medico> listaMedicos = new List<Medico>();
+
+    foreach (DataRow row in dt.Rows)
+    {
+        try
         {
-            string consulta = "SELECT * FROM Medicos";
-            DataTable dt = ad.ObtenerTabla("Medicos", consulta);
+            Medico medico = new Medico();
 
+            medico.Legajo = int.TryParse(row["Legajo_med"]?.ToString(), out int legajo) ? legajo : 0;
+            medico.DNI = row["DNI_med"]?.ToString() ?? string.Empty;
+            medico.Nombre = row["Nombre_med"]?.ToString() ?? string.Empty;
+            medico.Apellido = row["Apellido_med"]?.ToString() ?? string.Empty;
+            medico.Genero = int.TryParse(row["Genero_med"]?.ToString(), out int genero) ? genero : 0;
+            medico.Nacionalidad = int.TryParse(row["Nacionalidad_med"]?.ToString(), out int nacionalidad) ? nacionalidad : 0;
+            medico.FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_med"]?.ToString(), out DateTime fecha) ? fecha : DateTime.MinValue;
+            medico.Direccion = row["Direccion_med"]?.ToString() ?? string.Empty;
+            medico.Localidad = int.TryParse(row["Localidad_med"]?.ToString(), out int localidad) ? localidad : 0;
+            medico.Provincia = int.TryParse(row["Provincia_med"]?.ToString(), out int provincia) ? provincia : 0;
+            medico.CorreoElectronico = row["CorreoElectronico_med"]?.ToString() ?? string.Empty;
+            medico.Telefono = row["Telefono_med"]?.ToString() ?? string.Empty;
+            medico.Especialidad = int.TryParse(row["Especialidad_med"]?.ToString(), out int especialidad) ? especialidad : 0;
 
-            if (dt.Rows.Count == 0)
-            {
-                Console.WriteLine("No se encontraron registros en la tabla Medicos.");
-            }
-
-            List<Medico> listaMedicos = new List<Medico>();
-
-            foreach (DataRow row in dt.Rows)
-            {
-                Medico medico = new Medico
-                {
-                    Legajo = Convert.ToInt32(row["Legajo_med"]),
-                    DNI = row["DNI_med"].ToString(),
-                    Nombre = row["Nombre_med"].ToString(),
-                    Apellido = row["Apellido_med"].ToString(),
-                    Genero = Convert.ToInt32(row["Genero_med"]),
-                    Nacionalidad = Convert.ToInt32(row["Nacionalidad_med"]),
-                    FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_med"]),
-                    Direccion = row["Direccion_med"].ToString(),
-                    Localidad = Convert.ToInt32(row["Localidad_med"]),
-                    Provincia = Convert.ToInt32(row["Provincia_med"]),
-                    CorreoElectronico = row["CorreoElectronico_med"].ToString(),
-                    Telefono = row["Telefono_med"]?.ToString(),
-                    Especialidad = Convert.ToInt32(row["Especialidad_med"])
-                };
-                listaMedicos.Add(medico);
-            }
-
-            return listaMedicos;
+            listaMedicos.Add(medico);
         }
-
-
-
-
-
-        public List<Medico> FiltrarMedicosPorLegajo(int legajo)
+        catch (Exception ex)
         {
-
-            DataTable dt = ad.FiltrarMedicoPorLegajo(legajo);
-
-
-            List<Medico> listaMedicos = new List<Medico>();
-
-            foreach (DataRow row in dt.Rows)
-            {
-                Medico medico = new Medico
-                {
-                    Legajo = Convert.ToInt32(row["Legajo_med"]),
-                    DNI = row["DNI_med"].ToString(),
-                    Nombre = row["Nombre_med"].ToString(),
-                    Apellido = row["Apellido_med"].ToString(),
-                    Genero = Convert.ToInt32(row["Genero_med"]),
-                    Nacionalidad = Convert.ToInt32(row["Nacionalidad_med"]),
-                    FechaNacimiento = Convert.ToDateTime(row["FechaNacimiento_med"]),
-                    Direccion = row["Direccion_med"].ToString(),
-                    Localidad = Convert.ToInt32(row["Localidad_med"]),
-                    Provincia = Convert.ToInt32(row["Provincia_med"]),
-                    CorreoElectronico = row["CorreoElectronico_med"].ToString(),
-                    Telefono = row["Telefono_med"].ToString(),
-                    Especialidad = Convert.ToInt32(row["Especialidad_med"])
-                };
-                listaMedicos.Add(medico);
-            }
-
-            return listaMedicos;
+            Console.WriteLine($"Error procesando fila: {ex.Message}");
         }
+    }
+
+    // Retornar la lista de médicos
+    return listaMedicos;
+}
+
+
+
+
+
+public List<Medico> FiltrarMedicosPorLegajo(int legajo)
+{
+    DataTable dt = ad.FiltrarMedicoPorLegajo(legajo);
+
+    List<Medico> listaMedicos = new List<Medico>();
+
+    foreach (DataRow row in dt.Rows)
+    {
+        try
+        {
+            Medico medico = new Medico
+            {
+                Legajo = int.TryParse(row["Legajo_med"]?.ToString(), out int legajoValue) ? legajoValue : 0,
+                DNI = row["DNI_med"]?.ToString() ?? string.Empty,
+                Nombre = row["Nombre_med"]?.ToString() ?? string.Empty,
+                Apellido = row["Apellido_med"]?.ToString() ?? string.Empty,
+                Genero = int.TryParse(row["Genero_med"]?.ToString(), out int genero) ? genero : 0,
+                Nacionalidad = int.TryParse(row["Nacionalidad_med"]?.ToString(), out int nacionalidad) ? nacionalidad : 0,
+                FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_med"]?.ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
+                Direccion = row["Direccion_med"]?.ToString() ?? string.Empty,
+                Localidad = int.TryParse(row["Localidad_med"]?.ToString(), out int localidad) ? localidad : 0,
+                Provincia = int.TryParse(row["Provincia_med"]?.ToString(), out int provincia) ? provincia : 0,
+                CorreoElectronico = row["CorreoElectronico_med"]?.ToString() ?? string.Empty,
+                Telefono = row["Telefono_med"]?.ToString() ?? string.Empty,
+                Especialidad = int.TryParse(row["Especialidad_med"]?.ToString(), out int especialidad) ? especialidad : 0
+            };
+
+            listaMedicos.Add(medico);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error procesando fila: {ex.Message}");
+        }
+    }
+
+    return listaMedicos;
+}
+
 
 
 
