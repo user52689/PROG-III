@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoMedico.aspx.cs" Inherits="Vistas.ListadoMedico" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoMedico.aspx.cs" Inherits="Vistas.ListadoMedico" %>
 
 
 <head runat="server">
@@ -53,6 +53,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvLegajoMedico" runat="server" ControlToValidate="txtBuscarPorLegajo" ValidationGroup="gp1">*CompletarCampo</asp:RequiredFieldValidator>
+                        <asp:Label ID="lblMensajeMedico" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>
