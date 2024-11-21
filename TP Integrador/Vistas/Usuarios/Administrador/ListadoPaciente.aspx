@@ -50,6 +50,8 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvDNI" runat="server" ControlToValidate="txtBuscarPorDNI" ValidationGroup="gp1">*CompletarCampo</asp:RequiredFieldValidator>
+                        <asp:Label ID="lblMensajePaciente" runat="server"></asp:Label>
+                        <br />
                     </td>
                 </tr>
             </table>
@@ -79,3 +81,4 @@
         </div>
     </form>
 </body>
+
