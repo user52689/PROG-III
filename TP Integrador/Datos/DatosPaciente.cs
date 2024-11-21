@@ -18,64 +18,85 @@ namespace Datos
         SqlConnection conexion = new SqlConnection();
         SqlDataAdapter adapter = new SqlDataAdapter();
 
-      public List<Paciente> FiltrarPacientesPorDNI(string dni)
-  {
-      DataTable dt = ad.FiltrarPacientePorDni(dni); 
-      List<Paciente> listaPacientes = new List<Paciente>();
+ public List<Paciente> FiltrarPacientesPorDNI(string dni)
+{
+    DataTable dt = ad.FiltrarPacientePorDni(dni); // Método que filtra por DNI
 
-      foreach (DataRow row in dt.Rows)
-      {
-          Paciente paciente = new Paciente
-          {
+    List<Paciente> listaPacientes = new List<Paciente>();
 
-              DNI = row["DNI_pac"].ToString(),
-              Nombre = row["Nombre_pac"].ToString(),
-              Apellido = row["Apellido_pac"].ToString(),
-              Genero = Convert.ToInt32(row["Genero_pac"]),
-              Nacionalidad = int.TryParse(row["Nacionalidad_pac"].ToString(), out int nacionalidad) ? nacionalidad : 0,
-              FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"].ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
-              Direccion = row["Direccion_pac"].ToString(),
-              Localidad = int.TryParse(row["Localidad_pac"].ToString(), out int localidad) ? localidad : 0,
-              Provincia = int.TryParse(row["Provincia_pac"].ToString(), out int provincia) ? provincia : 0,
-              CorreoElectronico = row["CorreoElectronico_pac"].ToString(),
-              Telefono = row["Telefono_pac"].ToString()
-          };
-          listaPacientes.Add(paciente);
-      }
+    foreach (DataRow row in dt.Rows)
+    {
+        try
+        {
+            Paciente paciente = new Paciente
+            {
+                DNI = row["DNI_pac"]?.ToString() ?? string.Empty,
+                Nombre = row["Nombre_pac"]?.ToString() ?? string.Empty,
+                Apellido = row["Apellido_pac"]?.ToString() ?? string.Empty,
+                Genero = int.TryParse(row["Genero_pac"]?.ToString(), out int genero) ? genero : 0,
+                Nacionalidad = int.TryParse(row["Nacionalidad_pac"]?.ToString(), out int nacionalidad) ? nacionalidad : 0,
+                FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"]?.ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
+                Direccion = row["Direccion_pac"]?.ToString() ?? string.Empty,
+                Localidad = int.TryParse(row["Localidad_pac"]?.ToString(), out int localidad) ? localidad : 0,
+                Provincia = int.TryParse(row["Provincia_pac"]?.ToString(), out int provincia) ? provincia : 0,
+                CorreoElectronico = row["CorreoElectronico_pac"]?.ToString() ?? string.Empty,
+                Telefono = row["Telefono_pac"]?.ToString() ?? string.Empty
+            };
 
-      return listaPacientes;
-  }
+            listaPacientes.Add(paciente);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error procesando fila: {ex.Message}");
+        }
+    }
+
+   
+    return listaPacientes;
+}
 
 
-  public List<Paciente> ObtenerListaPacientes()
-  {
-      string consulta = "SELECT * FROM Pacientes";
-      DataTable dt = ad.ObtenerTabla("Pacientes", consulta);
+public List<Paciente> ObtenerListaPacientes()
+{
+    string consulta = "SELECT * FROM Pacientes";
+    DataTable dt = ad.ObtenerTabla("Pacientes", consulta);
 
-      List<Paciente> listaPaciente = new List<Paciente>();
+    if (dt.Rows.Count == 0)
+    {
+        Console.WriteLine("No se encontraron registros en la tabla Pacientes.");
+    }
 
-      foreach (DataRow row in dt.Rows)
-      {
-          Paciente paciente = new Paciente
-          {
+    List<Paciente> listaPaciente = new List<Paciente>();
 
-              DNI = row["DNI_pac"].ToString(),
-              Nombre = row["Nombre_pac"].ToString(),
-              Apellido = row["Apellido_pac"].ToString(),
-              Genero = Convert.ToInt32(row["Genero_pac"]),
-              Nacionalidad = int.TryParse(row["Nacionalidad_pac"].ToString(), out int nacionalidad) ? nacionalidad : 0,
-              FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"].ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue,
-              Direccion = row["Direccion_pac"].ToString(),
-              Localidad = int.TryParse(row["Localidad_pac"].ToString(), out int localidad) ? localidad : 0,
-              Provincia = int.TryParse(row["Provincia_pac"].ToString(), out int provincia) ? provincia : 0,
-              CorreoElectronico = row["CorreoElectronico_pac"].ToString(),
-              Telefono = row["Telefono_pac"].ToString()
-          };
-          listaPaciente.Add(paciente);
-      }
+    foreach (DataRow row in dt.Rows)
+    {
+        try
+        {
+            Paciente paciente = new Paciente();
 
-      return listaPaciente;
-  }
+            paciente.DNI = row["DNI_pac"]?.ToString() ?? string.Empty;
+            paciente.Nombre = row["Nombre_pac"]?.ToString() ?? string.Empty;
+            paciente.Apellido = row["Apellido_pac"]?.ToString() ?? string.Empty;
+            paciente.Genero = int.TryParse(row["Genero_pac"]?.ToString(), out int genero) ? genero : 0;
+            paciente.Nacionalidad = int.TryParse(row["Nacionalidad_pac"]?.ToString(), out int nacionalidad) ? nacionalidad : 0;
+            paciente.FechaNacimiento = DateTime.TryParse(row["FechaNacimiento_pac"]?.ToString(), out DateTime fechaNacimiento) ? fechaNacimiento : DateTime.MinValue;
+            paciente.Direccion = row["Direccion_pac"]?.ToString() ?? string.Empty;
+            paciente.Localidad = int.TryParse(row["Localidad_pac"]?.ToString(), out int localidad) ? localidad : 0;
+            paciente.Provincia = int.TryParse(row["Provincia_pac"]?.ToString(), out int provincia) ? provincia : 0;
+            paciente.CorreoElectronico = row["CorreoElectronico_pac"]?.ToString() ?? string.Empty;
+            paciente.Telefono = row["Telefono_pac"]?.ToString() ?? string.Empty;
+
+            listaPaciente.Add(paciente);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error procesando fila: {ex.Message}");
+        }
+    }
+
+    // Retornar la lista de pacientes
+    return listaPaciente;
+}
 
    
   public bool AgregarPaciente(Paciente paciente)
