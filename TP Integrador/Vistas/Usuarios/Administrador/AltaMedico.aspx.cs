@@ -49,6 +49,15 @@ namespace Vistas
             {
                 DateTime fechanacimiento = DateTime.Parse(txtFechaNacimiento.Value);
 
+                List<(int dia, int hora)> diaxhora = new List<(int dia, int hora)>();
+                foreach (ListItem item in CheckBoxList1.Items)
+                {
+                    if (item.Selected)
+                    {
+                        diaxhora.Add((int.Parse(item.Value), int.Parse(ddlHorarioAtencion.SelectedValue)));
+                    }
+                }
+
                 Medico nuevoMedico = new Medico
                 {
                     DNI = txtDni.Text,
@@ -63,6 +72,7 @@ namespace Vistas
                     Provincia = int.Parse(ddlProvincia.SelectedValue),
                     CorreoElectronico = txtEmail.Text,
                     Telefono = txtTelefono.Text,
+                    Diaxhora = diaxhora,
                     Estado = true
                 };
 

@@ -123,7 +123,7 @@
                                 <asp:Label ID="lblProvinciaMedico" runat="server" Text='<%# Bind("Nombre_prov") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-        
+
                         <asp:TemplateField HeaderText="Localidad">
                             <EditItemTemplate>
                                 <asp:DropDownList ID="ddlLocalidad" runat="server"></asp:DropDownList>
@@ -132,7 +132,7 @@
                                 <asp:Label ID="lblLocalidadMedico" runat="server" Text='<%# Bind("Nombre_loc") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-        
+
                         <asp:TemplateField HeaderText="E-mail">
                             <EditItemTemplate>
                                 <asp:TextBox ID="txt_it_EmailMedico" runat="server" Text='<%# Bind("CorreoElectronico_med") %>'></asp:TextBox>
@@ -141,7 +141,7 @@
                                 <asp:Label ID="lblEmailMedico" runat="server" Text='<%# Bind("CorreoElectronico_med") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-        
+
                         <asp:TemplateField HeaderText="Telefono">
                             <EditItemTemplate>
                                 <asp:TextBox ID="txt_it_TelefonoMedico" runat="server" Text='<%# Bind("Telefono_med") %>'></asp:TextBox>
@@ -150,23 +150,62 @@
                                 <asp:Label ID="lblTelefonoMedico" runat="server" Text='<%# Bind("Telefono_med") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-        
+
                         <asp:TemplateField HeaderText="Especialidad">
                             <EditItemTemplate>
-                                <asp:DropDownList ID="ddlEspecialidad" runat="server" ></asp:DropDownList>
+                                <asp:DropDownList ID="ddlEspecialidad" runat="server"></asp:DropDownList>
                             </EditItemTemplate>
                             <ItemTemplate>
                                 <asp:Label ID="lblEspecialidadMedico" runat="server" Text='<%# Bind("Nombre_esp") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-                    </Columns>
-                   </asp:GridView>
+                        <asp:TemplateField HeaderText="Dias Laborales">
+                            <EditItemTemplate>
+                                <asp:CheckBoxList ID="cblDias" runat="server">
+                                    <asp:ListItem Value="1">Lunes</asp:ListItem>
+                                    <asp:ListItem Value="2">Martes</asp:ListItem>
+                                    <asp:ListItem Value="3">Miercoles</asp:ListItem>
+                                    <asp:ListItem Value="4">Jueves</asp:ListItem>
+                                    <asp:ListItem Value="5">Viernes</asp:ListItem>
+                                    <asp:ListItem Value="6">Sabado</asp:ListItem>
+                                    <asp:ListItem Value="7">Domingo</asp:ListItem>
+                                </asp:CheckBoxList>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblDias" runat="server" Text='<%# Bind("Dias") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
 
-                  <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                        <asp:TemplateField HeaderText="Horario">
+                            <EditItemTemplate>
+                                <asp:DropDownList ID="ddlHorarioAtencion" runat="server" Height="16px">
+                                    <asp:ListItem Value="1">08:00</asp:ListItem>
+                                    <asp:ListItem Value="2">09:00</asp:ListItem>
+                                    <asp:ListItem Value="3">10:00</asp:ListItem>
+                                    <asp:ListItem Value="4">11:00</asp:ListItem>
+                                    <asp:ListItem Value="5">12:00</asp:ListItem>
+                                    <asp:ListItem Value="6">13:00</asp:ListItem>
+                                    <asp:ListItem Value="7">14:00</asp:ListItem>
+                                    <asp:ListItem Value="8">15:00</asp:ListItem>
+                                    <asp:ListItem Value="9">16:00</asp:ListItem>
+                                    <asp:ListItem Value="10">17:00</asp:ListItem>
+                                    <asp:ListItem Value="11">18:00</asp:ListItem>
+                                    <asp:ListItem Value="12">19:00</asp:ListItem>
+                                    <asp:ListItem Value="13">20:00</asp:ListItem>
+                                </asp:DropDownList>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblHorario" runat="server" Text='<%# Bind("Horario_h") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                 </asp:GridView>
+
+                      <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                   </td>
                   <td>&nbsp;</td>
-              </tr>     
-          </table>
+              </tr>
+            </table>
         </div>
     </form>
 </body>

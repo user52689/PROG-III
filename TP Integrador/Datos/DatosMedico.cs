@@ -48,6 +48,18 @@ namespace Datos
                     cmd.Parameters.AddWithValue("@Estado_med", medico.Estado);
 
                     int filasAfectadas = cmd.ExecuteNonQuery();
+                    if (filasAfectadas > 0)
+                    {
+                        foreach (var item in medico.Diaxhora)
+                        {
+                            bool respusta = AgregarMedicoDiaHora(item.dia, item.hora);
+                            if (!respusta)
+                            {
+                                return false;
+                            }
+                        }
+
+                    }
                     return filasAfectadas > 0;
                 }
             }
@@ -102,6 +114,15 @@ namespace Datos
             cmd.Parameters.AddWithValue("@Estado_med", medico.Estado);
 
             ad.EjecutarProcedimientoAlmacenado(cmd, "SP_ModificarMedico");
+
+            foreach (var item in medico.Diaxhora)
+            {
+                bool respuesta = ModificarMedicoDiaHora(medico, item.dia, item.hora);
+                if (!respuesta)
+                {
+                    return null;
+                }
+            }
             if (ad != null)
             {
                 return dt;
@@ -149,26 +170,47 @@ namespace Datos
 
         public DataTable FiltrarMedicoLegajoDatos(int Legajo) //Medico filtrado para la modificacion
         {
-            string consulta = @"SELECT m.Legajo_med," + 
-                                        "m.DNI_med, " +
-                                        "m.Nombre_med, " +
-                                        "m.Apellido_med, " +
-                                        "g.Descripcion_g , " +
-                                        "n.Nombre_pais , " +
-                                        "m.FechaNacimiento_med, " +
-                                        "m.Direccion_med, " +
-                                        "pr.Nombre_prov, " +
-                                        "l.Nombre_loc , " +
-                                        "m.CorreoElectronico_med, " +
-                                        "m.Telefono_med, " +
-                                        "es.Nombre_esp " +
-                                        "FROM Medicos AS m " +
-                                        "INNER JOIN Generos AS g ON m.Genero_med = g.IdGenero_g " +
-                                        "INNER JOIN Paises AS n ON m.Nacionalidad_med = n.IdPais_p " +
-                                        "INNER JOIN Localidades AS l ON m.Localidad_med = l.IdLocalidad_loc " +
-                                        "INNER JOIN Provincias AS pr ON m.Provincia_med = pr.IdProvincia_prov " +
-                                        "INNER JOIN Especialidades as es ON m.Especialidad_med = es.IdEspecialidad_esp " +
-                                        "WHERE m.Legajo_med = @Legajo AND Estado_med = 1";
+            string consulta = @"SELECT m.Legajo_med, 
+                                       m.DNI_med, 
+                                       m.Nombre_med, 
+                                       m.Apellido_med, 
+                                       g.Descripcion_g, 
+                                       n.Nombre_pais, 
+                                       m.FechaNacimiento_med, 
+                                       m.Direccion_med, 
+                                       pr.Nombre_prov, 
+                                       l.Nombre_loc, 
+                                       m.CorreoElectronico_med, 
+                                       m.Telefono_med, 
+                                       es.Nombre_esp,
+                                       STRING_AGG(d.NombreDia_d, ', ') AS Dias,
+                                       h.Horario_h
+                                FROM Medicos AS m
+                                INNER JOIN Generos AS g ON m.Genero_med = g.IdGenero_g 
+                                INNER JOIN Paises AS n ON m.Nacionalidad_med = n.IdPais_p 
+                                INNER JOIN Localidades AS l ON m.Localidad_med = l.IdLocalidad_loc 
+                                INNER JOIN Provincias AS pr ON m.Provincia_med = pr.IdProvincia_prov 
+                                INNER JOIN Especialidades AS es ON m.Especialidad_med = es.IdEspecialidad_esp 
+                                INNER JOIN MedicoXDias AS md ON m.Legajo_med = md.Legajo_med_mxd
+                                INNER JOIN Dias AS d ON md.IdDia_d_mxd = d.IdDia_d
+                                INNER JOIN Horarios AS h ON md.IdHorario_h_mxd = h.Id_h
+                                WHERE m.Legajo_med = @Legajo 
+                                  AND md.Estado_mxd = 1 
+                                  AND m.Estado_med = 1
+                                GROUP BY m.Legajo_med, 
+                                         m.DNI_med, 
+                                         m.Nombre_med, 
+                                         m.Apellido_med, 
+                                         g.Descripcion_g, 
+                                         n.Nombre_pais, 
+                                         m.FechaNacimiento_med, 
+                                         m.Direccion_med, 
+                                         pr.Nombre_prov, 
+                                         l.Nombre_loc, 
+                                         m.CorreoElectronico_med, 
+                                         m.Telefono_med, 
+                                         es.Nombre_esp, 
+                                         h.Horario_h;";
 
             conexion = ad.ObtenerConexion();
             cmd = new SqlCommand(consulta, conexion);
@@ -181,6 +223,86 @@ namespace Datos
 
             return null;
         }
+        //---------------------------------------------------------------------------------------------agregar a tabla medicoxdias
+        public bool AgregarMedicoDiaHora(int dia, int hora)
+        {
+            try
+            {
+                using (SqlConnection conexion = ad.ObtenerConexion())
+                {
+                    if (conexion == null) throw new Exception("No se pudo establecer la conexión con la base de datos.");
+
+                    string consulta = "INSERT INTO MedicoXDias (Legajo_med_mxd, IdDia_d_mxd, IdHorario_h_mxd, Estado_mxd) " +
+                                      "VALUES (@Legajo_med_mxd, @IdDia_d_mxd, @IdHorario_h_mxd, @Estado_mxd)";
+
+                    SqlCommand cmd = new SqlCommand(consulta, conexion);
+
+                    cmd.Parameters.AddWithValue("@Legajo_med_mxd", ((ObtenerMaximoLegajoDatos()) - 1));
+                    cmd.Parameters.AddWithValue("@IdDia_d_mxd", dia);
+                    cmd.Parameters.AddWithValue("@IdHorario_h_mxd", hora);
+                    cmd.Parameters.AddWithValue("@Estado_mxd", 1);
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+
+                    return filasAfectadas > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al agregar el médico: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool ModificarMedicoDiaHora(Medico medico, int dia, int hora)
+        {
+            try
+            {
+                using (SqlConnection conexion = ad.ObtenerConexion())
+                {
+                    if (conexion == null) throw new Exception("No se pudo establecer la conexión con la base de datos.");
+
+                    string consulta = @"
+                    IF EXISTS (
+                        SELECT 1 
+                        FROM MedicoXDias 
+                        WHERE Legajo_med_mxd = @Legajo_med_mxd 
+                          AND IdDia_d_mxd = @IdDia_d_mxd 
+                          AND IdHorario_h_mxd = @IdHorario_h_mxd
+                    )
+                    BEGIN
+                        -- Si ya existe, actualiza el estado a true (1)
+                        UPDATE MedicoXDias
+                        SET Estado_mxd = 1
+                        WHERE Legajo_med_mxd = @Legajo_med_mxd 
+                          AND IdDia_d_mxd = @IdDia_d_mxd 
+                          AND IdHorario_h_mxd = @IdHorario_h_mxd;
+                    END
+                    ELSE
+                    BEGIN
+                        -- Si no existe, inserta una nueva fila
+                        INSERT INTO MedicoXDias (Legajo_med_mxd, IdDia_d_mxd, IdHorario_h_mxd, Estado_mxd)
+                        VALUES (@Legajo_med_mxd, @IdDia_d_mxd, @IdHorario_h_mxd, @Estado_mxd);
+                    END";
+
+                    SqlCommand cmd = new SqlCommand(consulta, conexion);
+
+                    cmd.Parameters.AddWithValue("@Legajo_med_mxd", medico.Legajo);
+                    cmd.Parameters.AddWithValue("@IdDia_d_mxd", dia);
+                    cmd.Parameters.AddWithValue("@IdHorario_h_mxd", hora);
+                    cmd.Parameters.AddWithValue("@Estado_mxd", 1);
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+
+                    return filasAfectadas > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al agregar el médico: " + ex.Message);
+                return false;
+            }
+        }
 
         //--------------------------------------------------------------------------------------------------------------------Metodos
 
@@ -189,5 +311,7 @@ namespace Datos
             string consulta = "SELECT COUNT(*) FROM Medicos";
             return (ad.ObtenerMaximo(consulta) + 1);
         }
+
+
     }
 }

@@ -100,6 +100,19 @@ namespace Vistas
                     string _CorreoElectronico_med = ((TextBox)grdModificacionMedico.Rows[e.RowIndex].FindControl("txt_it_EmailMedico"))?.Text ?? string.Empty;
                     string _Telefono_med = ((TextBox)grdModificacionMedico.Rows[e.RowIndex].FindControl("txt_it_TelefonoMedico"))?.Text ?? string.Empty;
 
+
+                    List<(int dia, int hora)> diaxhora = new List<(int dia, int hora)>();
+                    CheckBoxList cblDias = (CheckBoxList)grdModificacionMedico.Rows[e.RowIndex].FindControl("cblDias");
+                    DropDownList ddlHorarioAtencion = (DropDownList)grdModificacionMedico.Rows[e.RowIndex].FindControl("ddlHorarioAtencion");
+
+                    foreach (ListItem item in cblDias.Items)
+                    {
+                        if (item.Selected)
+                        {
+                            diaxhora.Add((int.Parse(item.Value), int.Parse(ddlHorarioAtencion.SelectedValue)));
+                        }
+                    }
+
                     Medico medico = new Medico
                     {
                         Legajo = _Legajo,
@@ -115,6 +128,7 @@ namespace Vistas
                         CorreoElectronico = _CorreoElectronico_med,
                         Telefono = _Telefono_med,
                         Especialidad = _Especialidad_med,
+                        Diaxhora = diaxhora,
                         Estado = true
                     };
 
@@ -125,7 +139,6 @@ namespace Vistas
 
                     lblMensaje.Text = "Médico modificado con éxito.";
                     lblMensaje.ForeColor = System.Drawing.Color.Green;
-                    txtBuscarPorLegajo.Text = string.Empty;
                 }
                 else
                 {

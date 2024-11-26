@@ -77,6 +77,11 @@ BEGIN
 			Estado_med = @Estado_med
         WHERE Legajo_med = @Legajo_med;
 
+        UPDATE MedicoXDias
+        SET Estado_mxd = 0
+        WHERE Legajo_med_mxd = @Legajo_med;
+
+
         COMMIT TRANSACTION;
         RETURN 1; 
     END TRY

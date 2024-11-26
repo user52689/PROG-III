@@ -22,5 +22,6 @@ namespace Entidades
         public string Telefono { get; set; }
         public int Especialidad { get; set; }
         public bool Estado { get; set; }
+        public List<(int dia, int hora)> Diaxhora { get; set; }
     }
 }
