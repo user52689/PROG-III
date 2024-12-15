@@ -162,6 +162,19 @@ body {
     flex: 1;
     margin-top: 150px;
 }
+.wrapper2 {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    margin-top: 150px;
+}
+
 /*Etilo para las tablas*/
     .wrapper table {
         width: 100%;
