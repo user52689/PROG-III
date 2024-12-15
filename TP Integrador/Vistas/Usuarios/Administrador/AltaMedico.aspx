@@ -9,6 +9,10 @@
     <link href="../../Estilos/Estilos.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
        
+        .auto-style1 {
+            height: 22px;
+        }
+       
      </style>
 </head>
 <body>
@@ -43,7 +47,7 @@
             </nav>
         </header>
 
-        <div class="wrapper">
+        <div class="wrapper2">
            
             <h1><asp:Label ID="lblTitulo" runat="server" Font-Size="XX-Large" Text="Alta Médico"></asp:Label></h1>
             <table class="auto-style1">
@@ -83,26 +87,26 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style1">
                         <asp:Label ID="lblApellido" runat="server" Text="Apellido:"></asp:Label>
                     </td>
-                    <td class="auto-style7">
+                    <td class="auto-style1">
                         <asp:TextBox ID="txtApellido" runat="server" CssClass="auto-style10" placeholder="Apellido"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="txtApellido">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style1">
                         <asp:Label ID="lblSexo" runat="server" Text="Genero:"></asp:Label>
                     </td>
-                    <td class="auto-style7">
+                    <td class="auto-style1">
                          <asp:DropDownList ID="ddlGenero" runat="server">
                          </asp:DropDownList>
                     </td>
-                    <td>
-                        <asp:RequiredFieldValidator ID="rfvGenero" runat="server" ControlToValidate="ddlGenero">*Completar campo</asp:RequiredFieldValidator>
+                    <td class="auto-style1">
+                        <asp:RequiredFieldValidator ID="rfvGenero" runat="server" ControlToValidate="ddlGenero" InitialValue="0">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -114,7 +118,7 @@
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvNacionalidad" runat="server" ControlToValidate="ddlNacionalidad">*Completar campo</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvNacionalidad" runat="server" ControlToValidate="ddlNacionalidad" InitialValue="0">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -125,7 +129,7 @@
                             <input type="date" id="txtFechaNacimiento" runat="server"/>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvFechaNacimiento" runat="server" ControlToValidate="txtDni">*Completar campo</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvFechaNacimiento" runat="server" ControlToValidate="txtFechaNacimiento">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -148,7 +152,7 @@
                             </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia">*Completar campo</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" InitialValue="0">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -160,7 +164,7 @@
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="ddlLocalidad">*Completar campo</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="ddlLocalidad" InitialValue="0">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -209,6 +213,7 @@
                     </td>
                     <td class="auto-style7">
                         <asp:DropDownList ID="ddlHorarioAtencion" runat="server" Height="16px">
+                            <asp:ListItem>--Seleccionar--</asp:ListItem>
                             <asp:ListItem Value="1">08:00</asp:ListItem>
                             <asp:ListItem Value="2">09:00</asp:ListItem>
                             <asp:ListItem Value="3">10:00</asp:ListItem>
@@ -226,7 +231,7 @@
                     
                     
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvHorarioAtencion" runat="server" ControlToValidate="ddlHorarioAtencion">*Completar campo</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvHorarioAtencion" runat="server" ControlToValidate="ddlHorarioAtencion" InitialValue="--Seleccionar--">*Completar campo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -248,6 +253,8 @@
                             
                    </td>
                          <td>
+
+                        <asp:RequiredFieldValidator ID="rfvEspecialidad" runat="server" ControlToValidate="ddlEspecialidad" InitialValue="0">*Completar campo</asp:RequiredFieldValidator>
 
                            </td>  
 
