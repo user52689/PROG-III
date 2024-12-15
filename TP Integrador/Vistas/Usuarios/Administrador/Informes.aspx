@@ -76,7 +76,8 @@
                 <!-- Segunda columna -->
                 <div class="columna-contenedor">
                     <h2>Informe de Asistencias Pacientes</h2>
-                    <asp:GridView ID="gvInforme" runat="server" AutoGenerateColumns="False" CssClass="wrapper">
+                    <asp:GridView ID="gvInforme" runat="server" AutoGenerateColumns="False" CssClass="wrapper" AllowPaging="True" PageSize="10" OnPageIndexChanging="gvInforme_PageIndexChanging">
+                        <PagerSettings Mode="NextPrevious"  PreviousPageText="Anterior"  NextPageText="Siguiente" />
                         <Columns>
                             <asp:BoundField DataField="IdTurno" HeaderText="ID Turno" />
                             <asp:BoundField DataField="NombrePaciente" HeaderText="Nombre" />

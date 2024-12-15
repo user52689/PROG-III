@@ -100,5 +100,11 @@ namespace Vistas.Usuarios.Administrador
             Session.Clear();
             Response.Redirect("~/Inicio/InicioSesion.aspx");
         }
+
+        protected void gvUsuarios_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvUsuarios.PageIndex = e.NewPageIndex;
+            CargarUsuarios(); // Recargar datos de la nueva página.
+        }
     }
 }

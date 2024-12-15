@@ -28,3 +28,9 @@ C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades
 C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
 C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb

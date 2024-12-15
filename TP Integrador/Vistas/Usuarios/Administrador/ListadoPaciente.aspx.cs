@@ -40,6 +40,8 @@ namespace Vistas
 
         void mostrarTodos()
         {
+            lblMensajePaciente.Text = string.Empty;
+            grdListadoPaciente.AllowPaging = true;
             DataTable dt = negociosPaciente.GetTablaPacienteNegocios();
             CargarGridPacientes(dt);
         }
@@ -82,6 +84,12 @@ namespace Vistas
         {
             Session.Clear();
             Response.Redirect("~/Inicio/InicioSesion.aspx");
+        }
+
+        protected void grdListadoPaciente_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdListadoPaciente.PageIndex = e.NewPageIndex;
+            mostrarTodos(); // Vuelve a cargar los datos - para mantener la paginacion.
         }
     }
 }

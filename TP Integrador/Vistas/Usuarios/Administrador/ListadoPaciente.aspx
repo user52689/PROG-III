@@ -73,7 +73,8 @@
             </div>
 
             <div class="contenedor-gridview">
-                <asp:GridView ID="grdListadoPaciente" runat="server" AutoGenerateColumns="False">
+                <asp:GridView ID="grdListadoPaciente" runat="server" AutoGenerateColumns="False" AllowPaging="False" PageSize="10" OnPageIndexChanging="grdListadoPaciente_PageIndexChanging">
+                    <PagerSettings Mode="NextPrevious"  PreviousPageText="Anterior"  NextPageText="Siguiente" />
                     <Columns>
                          <asp:TemplateField HeaderText="DNI">
                               <ItemTemplate>

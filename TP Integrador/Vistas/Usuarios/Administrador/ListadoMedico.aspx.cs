@@ -24,7 +24,6 @@ namespace Vistas
 
         protected void btnMostrarTodo_Click(object sender, EventArgs e)
         {
-            lblMensajeMedico.Text = string.Empty;
             MostrarTodos();
         }
 
@@ -56,6 +55,8 @@ namespace Vistas
         //----------------------------------------------------------------------------------------------------------Metodos
         void MostrarTodos()
         {
+            lblMensajeMedico.Text = string.Empty;
+            grdListadoMedico.AllowPaging = true;
             DataTable dt = negociosMedico.GetTablaMedicosNegocios();
             CargarGridMedicos(dt);
         }
@@ -85,6 +86,12 @@ namespace Vistas
         {
             Session.Clear();
             Response.Redirect("~/Inicio/InicioSesion.aspx");
+        }
+
+        protected void grdListadoMedico_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdListadoMedico.PageIndex = e.NewPageIndex;
+            MostrarTodos(); // Vuelve a cargar los datos - para mantener la paginacion.
         }
     }
 }

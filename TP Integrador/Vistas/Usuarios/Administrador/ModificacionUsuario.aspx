@@ -41,7 +41,9 @@
          </header>
         <div class="wrapper">
             <h1>Modificar Usuarios</h1>
-            <asp:GridView ID="gvUsuarios" runat="server" AutoGenerateColumns="False" CssClass="grid-view" DataKeyNames="Id" OnRowEditing="gvUsuarios_RowEditing" OnRowCancelingEdit="gvUsuarios_RowCancelingEdit" OnRowUpdating="gvUsuarios_RowUpdating">
+            <asp:GridView ID="gvUsuarios" runat="server" AutoGenerateColumns="False" CssClass="grid-view" DataKeyNames="Id" OnRowEditing="gvUsuarios_RowEditing" OnRowCancelingEdit="gvUsuarios_RowCancelingEdit" OnRowUpdating="gvUsuarios_RowUpdating" 
+                AllowPaging="True" PageSize="10" OnPageIndexChanging="gvUsuarios_PageIndexChanging">
+                <PagerSettings Mode="NextPrevious" PreviousPageText="Anterior" NextPageText="Siguiente" />
     <Columns>
         <asp:BoundField DataField="Id" HeaderText="ID" ReadOnly="True" />
         <asp:BoundField DataField="NombreUsuario" HeaderText="Usuario" />
