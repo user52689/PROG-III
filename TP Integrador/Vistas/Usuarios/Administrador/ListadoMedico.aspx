@@ -78,6 +78,12 @@
                 <asp:GridView ID="grdListadoMedico" runat="server" AutoGenerateColumns="False" AllowPaging="False" PageSize="10" OnPageIndexChanging="grdListadoMedico_PageIndexChanging">
                     <PagerSettings Mode="NextPrevious"  PreviousPageText="Anterior"  NextPageText="Siguiente" />
                     <Columns>
+                        <asp:TemplateField HeaderText="Leg">
+                               <ItemTemplate>
+                                   <asp:Label ID="lblLegajoMedico" runat="server" Text='<%# Bind("Legajo_med") %>'></asp:Label>
+                               </ItemTemplate>
+                           </asp:TemplateField>
+
                            <asp:TemplateField HeaderText="DNI">
                                <ItemTemplate>
                                    <asp:Label ID="lblDniMedico" runat="server" Text='<%# Bind("DNI_med") %>'></asp:Label>
