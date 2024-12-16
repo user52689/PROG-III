@@ -28,7 +28,7 @@ namespace Vistas
                 CargarGeneros(ddlGenero);
                 CargarPaises(ddlNacionalidad);
                 CargarProvincias(ddlProvincia);
-                CargarLocalidadesPorProvincia(Convert.ToInt32(ddlProvincia.Text), ddlLocalidad);
+                
                 CargarEspecialidades(ddlEspecialidad);
             }
         }
