@@ -1,0 +1,130 @@
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\princ\OneDrive\Desktop\PROG-III-master\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\oskyup\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\Datos.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\Datos.pdb
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\Seguridad.pdb
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\obj\Debug\Datos.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Datos\obj\Debug\Datos.pdb

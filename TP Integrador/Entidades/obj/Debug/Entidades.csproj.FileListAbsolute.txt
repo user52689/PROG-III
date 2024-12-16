@@ -1,0 +1,48 @@
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\princ\OneDrive\Desktop\Nueva carpeta\PROG-III-master\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\Nueva carpeta\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\copia informes protec\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\Respaldo Master\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\modificaciones finales\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\BORRAR MASTER\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Abraham\Desktop\ultimo master 20-11-2024\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\PROG-III\TP Integrador\Entidades\obj\Debug\Entidades.pdb

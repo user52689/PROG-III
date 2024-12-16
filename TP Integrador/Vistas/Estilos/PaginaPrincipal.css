@@ -1,0 +1,281 @@
+﻿/* Reseteo de márgenes y padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el encabezado */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.6); /* Fondo más oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+    header .logo h1 {
+        font-family: sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
+.nav-bar {
+    list-style-type: none;
+}
+
+    .nav-bar li {
+        display: inline-block;
+        padding: 0px 15px;
+    }
+
+        .nav-bar li a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+            .nav-bar li a:hover {
+                color: aqua;
+            }
+
+/* Estilo para el cuerpo de la página */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagenes/fondopantalla.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para las secciones */
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    box-sizing: border-box;
+    flex: 1;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Contenedores con fondo blanco */
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 10%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    opacity: 0; /* Hace que los contenedores sean invisibles al principio */
+    transform: translateY(50px); /* Los hace comenzar fuera de la vista */
+    animation: slideIn 1s forwards; /* Agrega la animación */
+}
+
+/* Animaciones para el movimiento de los contenedores */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Comienza desde abajo */
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(0); /* Se mueve al centro */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Se establece en su posición final */
+    }
+}
+
+/* Definimos animaciones con retrasos y diferentes direcciones */
+.wrapper1 {
+    animation: slideInFromLeft 1s forwards;
+    animation-delay: 0.5s; /* Retraso para el primer contenedor */
+}
+
+.wrapper2 {
+    animation: slideInFromRight 1s forwards;
+    animation-delay: 1s; /* Retraso para el segundo contenedor */
+}
+
+.wrapper3 {
+    animation: slideInFromTop 1s forwards;
+    animation-delay: 1.5s; /* Retraso para el tercer contenedor */
+}
+
+/* Animación para que el contenedor se deslice desde la izquierda */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Comienza fuera de la pantalla por la izquierda */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición original */
+    }
+}
+
+/* Animación para que el contenedor se deslice desde la derecha */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%); /* Comienza fuera de la pantalla por la derecha */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición original */
+    }
+}
+
+/* Animación para que el contenedor se deslice desde la parte superior */
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Comienza fuera de la pantalla arriba */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Llega a su posición original */
+    }
+}
+
+/* Alineación de los contenedores */
+.wrapper1 {
+    margin-left: 0; /* Alineación izquierda para el primer contenedor */
+    margin-right: auto; /* No tiene margen a la derecha */
+}
+
+.wrapper2 {
+    margin: 0 auto; /* Centrado para el segundo contenedor */
+}
+
+.wrapper3 {
+    margin-left: auto; /* Alineación derecha para el tercer contenedor */
+    margin-right: 0; /* No tiene margen a la derecha */
+}
+
+/* Estilo para las secciones */
+.welcome-section, .about-section, .contact-section {
+    margin-bottom: 40px;
+}
+
+    .welcome-section h2 {
+        font-size: 28px;
+        color: #007BFF;
+        text-align: center;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-section h2, .contact-section h2 {
+        font-size: 24px;
+        color: #007BFF;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .about-section p, .contact-section p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+/* Estilo para los iconos de redes */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .social-media a {
+        font-size: 40px;
+        width: 50px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        transition: color 0.3s ease;
+        color: inherit; /* Mantiene el color original del icono */
+    }
+
+        /* Cambiar color al pasar el ratón sobre los iconos */
+        .social-media a:hover {
+            color: #007bff; /* Color al pasar el mouse */
+        }
+
+        /* El color de los iconos al hacer clic y mantenerlo igual al color del hover */
+        .social-media a:active {
+            color: #007bff; /* Mantiene el color cuando se hace clic */
+        }
+
+        /* Evitar que se modifique el color al recibir foco */
+        .social-media a:focus {
+            color: #007bff; 
+        }
+
+/* Estilo para el pie de página */
+footer {
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: initial;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+    footer p {
+        font-size: 14px;
+    }
+
+/* Mejorar la presentación de los iconos de redes sociales */
+.bx {
+    font-size: 30px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .nav-bar li {
+        display: block;
+        text-align: center;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,406 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para la barra de navegación 2.0 */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.4); /* Fondo gris semitransparente */
+    padding: 10px 20px;
+}
+
+/* Elementos de la barra de navegación */
+.nav-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor del usuario */
+.user-container {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    text-align: center;
+    gap: 10px; /* Espaciado entre el ícono y los detalles */
+    background-color: inherit; /* Hereda el fondo de .nav-bar */
+}
+
+/* Ícono del usuario */
+.user-icon {
+    font-size: 20px; /* Tamaño del ícono */
+    color: black; /* Color del ícono */
+}
+
+/* Nombre del usuario */
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+/* Rol del usuario */
+.role-label {
+    font-size: 12px;
+    color: #333;
+    display: block;
+}
+
+/*.nav-bar {
+    list-style-type: none;
+}*/
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+    .nav-bar li a {
+        transition: 10ms;
+        display: block;
+        padding: .6em 1em;
+    }
+
+        .nav-bar li a:hover {
+            color: aqua;
+        }
+
+/* Botón de cerrar sesión */
+.btn-cerrar-sesion {
+    background-color: #FF6347; /* Rojo suave */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-cerrar-sesion:hover {
+        background-color: #FF4500; /* Rojo más oscuro */
+    }
+/*fin estilos barra superior */
+
+/*Estilo para el encabezado*/
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .register-link a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+header li, header a, header p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+/*Fin Estilo para el encabezado*/
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagenes/fondopantalla.png');
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal de los forms*/
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    margin-top: 150px;
+}
+.wrapper2 {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    margin-top: 150px;
+}
+
+/*Etilo para las tablas*/
+    .wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    .wrapper th, .wrapper td {
+        padding: 10px 12px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .wrapper th {
+        background-color: #5a9fd6; /* Un azul suave para el encabezado */
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .wrapper tr {
+        background-color: #f9f9f9; 
+    }
+
+
+    .wrapper tr:hover {
+        background-color: #ddeaf7; /* Fondo suave al pasar el ratón */
+        cursor: pointer;
+    }
+
+    .wrapper td {
+        vertical-align: middle;
+    }
+
+    .wrapper caption {
+        caption-side: top;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+/*Fin estilo apra las tablas*/
+
+
+/*Estilo para los hyperlinks*/
+
+    .wrapper a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        text-align: center; /* Centra el texto */
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        display: inline-block; /* Asegura que el ancho se aplique correctamente */
+        width: 180px; /* Define un ancho específico */
+    }
+
+    .wrapper a:hover {
+        background-color: #0056b3; /* Color de fondo al pasar el ratón */
+        color: #e0e0e0; /* Color del texto al pasar el ratón */
+    }
+
+/*Fin estilo para los hyperlinks*/
+
+/*Estilo para el btn cessar sesion*/
+.btn-cerrar-sesion {
+    background-color: #FF6347; /* Color de fondo rojo suave */
+    color: white; /* Color de texto */
+    padding: 8px 16px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Icono de mano al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+    .btn-cerrar-sesion:hover {
+        background-color: #FF4500; /* Color de fondo al pasar el mouse */
+    }
+/*Fin estilo para el btn cessar sesion*/
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/*Estilos para los btn generales*/
+.btn {
+    width: 100%;
+    max-width: 120px; 
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+.botones-container {
+    display: flex; 
+    justify-content: center; 
+}
+/**Fin estilos para botones generales*/
+
+.mensaje {
+    font-size: 1rem; /* Ajusta el tamaño según el estilo que prefieras */
+    color: red; /* Cambia a otro color según prefieras */
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------   ESTILOS PARA LOS INFORMES  */
+.especialidades-panel {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.especialidad-barra {
+    display: flex;
+    justify-content: space-between; /* Mantener nombre a la izquierda y porcentaje a la derecha */
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.barra {
+    position: relative;
+    flex: 1; /* La barra ocupa todo el espacio disponible */
+    height: 20px;
+    background-color: #e0e0e0; /* Fondo gris claro */
+    margin: 0 10px; /* Espaciado entre el nombre y el porcentaje */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.barra-progreso {
+    height: 100%;
+    background-color: #4caf50; /* Color de la barra de progreso */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados en el inicio */
+    position: relative; /* Para posicionar contenido dentro */
+}
+
+.barra span {
+    position: absolute;
+    right: 10px; /* Mover hacia la derecha dentro de la barra */
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+}
+
+.informes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.informe-column {
+    flex: 1; /* Distribución equitativa del ancho */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.contenedor-tres-columnas {
+    display: flex;
+    justify-content: space-between; /* Separación uniforme entre columnas */
+    align-items: flex-start; /* Alinear contenido al inicio verticalmente */
+    gap: 20px; /* Espacio uniforme entre columnas */
+    margin-top: 20px;
+}
+
+.columna-contenedor {
+    flex: 1; /* Cada columna ocupa la misma proporción de espacio */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.botones-container {
+    display: flex;
+    gap: 10px; /* Espaciado entre botones */
+    margin-top: 10px;
+}
